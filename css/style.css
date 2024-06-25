@@ -2974,28 +2974,29 @@ button.custom-button:hover svg path {
   width: 27%
 }
 
-.stars {
-  padding-top: 1rem
-}
-
 .avis {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   border-radius: 20px;
   background-color: rgba(21, 27, 34, 1);
   padding: 1rem
 }
 
-.content {
-  border-radius: 20px;
-  background-color: rgba(30, 39, 49, .5);
-  padding: 1rem;
-  margin: 2rem 0;
-  overflow: hidden;
-  text-overflow: ellipsis
+.stars {
+  margin-bottom: .5rem;
 }
 
 .name {
-  padding-bottom: 1rem
+  margin-top: .5rem;
+}
+
+.content {
+  border-radius: 20px;
+  background-color: rgba(30, 39, 49, .5);
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 #contact {
@@ -3041,6 +3042,12 @@ footer a.brand:hover {
   color: #969696
 }
 
+@media (max-width: 992px) {
+  #presentation-card, #presentation-wrapper {
+    grid-area: 1/2/-1/-2
+  }
+}
+
 @media (max-width: 768px) {
   .extra-long-container {
     width: 2000px
@@ -3050,7 +3057,8 @@ footer a.brand:hover {
     left: 800px
   }
 
-  #presentation-card-2, #presentation-wrapper-2 {
+  #presentation-card, #presentation-wrapper,
+  #presentation-card, #presentation-wrapper-2 {
     grid-area: 1/1/-1/-1
   }
 
@@ -3065,21 +3073,8 @@ footer a.brand:hover {
   }
 
   .box {
-    position: relative;
     width: 100%;
-    height: 60vw;
     margin-bottom: 2rem;
-    z-index: 3
-  }
-
-  .avis {
-    height: 100%;
-    display: flex;
-    flex-direction: column
-  }
-
-  .content {
-    width: 100%
   }
 
   #contact {
