@@ -7,6 +7,7 @@ Planet'Iris est un site web spécialisé dans la photographie d'iris, offrant de
 - [Introduction](#introduction)
 - [Technologies Utilisées](#technologies-utilisées)
 - [Plugins Utilisés](#plugins-utilisés)
+- [CI/CD](#cicd)
 - [Licence](#licence)
 - [Contact](#contact)
 
@@ -33,6 +34,10 @@ Voici une liste des principaux plugins utilisés dans ce projet :
 - **FontAwesome** : Pour les icônes vectorielles et les logos sociaux.
 - **Google Analytics** : Pour le suivi des visiteurs et l'analyse du trafic.
 
+## CI/CD
+
+Planet'Iris utilise GitLab CI/CD pour l'intégration continue et le déploiement continu, garantissant une livraison rapide et fiable des mises à jour et des nouvelles fonctionnalités. De plus, nous utilisons la fonctionnalité de mirroring de GitLab pour assurer une synchronisation efficace et sécurisée entre nos dépôts Git.
+
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE.txt) pour plus d'informations.
@@ -41,4 +46,4 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE.txt) pour plus
 
 Pour toute question, veuillez me contacter via LinkedIn : https://www.linkedin.com/in/denis-wojtowicz
 
-
+Découvrez-en plus sur notre site web : [Planet'Iris](https://www.planet-iris.com)
