@@ -178,55 +178,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+});
 
-  // REVIEW
-  // if (window.innerWidth < 768) {
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: "#avis",
-  //       start: "top 7%",
-  //       end: "bottom+=50% center",
-  //       pin: true,
-  //       pinSpacing: false,
-  //       scrub: true,
-  //       markers: true,
-  //     }
-  //   });
+document.getElementById("tarif-button").addEventListener("click", function () {
+  const popin = document.getElementById("popin");
+  popin.classList.remove("hidden");
+  setTimeout(() => {
+    popin.classList.add("open");
+  }, 10);
+  document.body.classList.add('no-scroll');
+});
 
-  // const details = gsap.utils.toArray(".avis:not(:first-child)")
-  // const photos = gsap.utils.toArray(".box:not(:first-child)")
-  //
-  //
-  // gsap.set(photos, {yPercent: 101})
-  //
-  // const allPhotos = gsap.utils.toArray(".box")
-  //
-  //
-  // ScrollTrigger.create({
-  //   trigger: "#avis",
-  //   start: "top top",
-  //   end: "bottom bottom",
-  //   pin: ".box"
-  // })
-  //
-  // //create scrolltrigger for each details section
-  // //trigger photo animation when headline of each details section
-  // //reaches 80% of window height
-  // details.forEach((detail, index) => {
-  //
-  //   let headline = detail.querySelector("h1")
-  //   let animation = gsap.timeline()
-  //     .to(photos[index], {yPercent: 0})
-  //     .set(allPhotos[index], {autoAlpha: 0})
-  //
-  //   ScrollTrigger.create({
-  //     trigger: headline,
-  //     start: "top 80%",
-  //     end: "top 50%",
-  //     animation: animation,
-  //     scrub: true,
-  //     markers: false
-  //   })
-  // })
-  // }
+document.getElementById("close-button").addEventListener("click", function () {
+  const popin = document.getElementById("popin");
+  popin.classList.remove("open");
+  setTimeout(() => {
+    popin.classList.add("hidden");
+    document.body.classList.remove('no-scroll');
+  }, 500);
 });
