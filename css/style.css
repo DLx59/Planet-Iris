@@ -266,6 +266,7 @@ p {
 }
 
 .popin {
+  -webkit-backdrop-filter: blur(34px);
   backdrop-filter: blur(34px);
   background-color: rgba(33, 33, 33, .8);
   position: fixed;
