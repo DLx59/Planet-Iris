@@ -352,6 +352,23 @@ body.no-scroll {
   transform: translate(-50%, -50%) scale(1)
 }
 
+.table-responsive table.custom-table th:nth-last-child(2),
+.table-responsive table.custom-table td:nth-last-child(2){
+  border-right: 3px solid rgba(33, 33, 33, .8);
+}
+
+.table-responsive table.custom-table th:last-child {
+  border-bottom: none;
+}
+
+.table-responsive table.custom-table th:last-child,
+.table-responsive table.custom-table td:last-child {
+  background-color: lightgrey;
+  color: dimgray;
+  font-family: Dosis, sans-serif;
+  border-right: none;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 10px;

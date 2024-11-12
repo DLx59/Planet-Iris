@@ -197,3 +197,69 @@ document.getElementById("close-button").addEventListener("click", function () {
     document.body.classList.remove('no-scroll');
   }, 500);
 });
+
+fetch('data.json')
+  .then((response) => response.json())
+  .then((data) => {
+    generateTables(data);
+  })
+  .catch((error) => {
+    console.error('Erreur lors du chargement des données :', error);
+  });
+
+function generateTables(data) {
+  const container = document.getElementById('table-container');
+  container.innerHTML = ''; // Réinitialise le contenu du conteneur
+
+  for (const [support, ratios] of Object.entries(data)) {
+    const titleHTML = `<h2>Impression ${support}</h2>`;
+    container.innerHTML += titleHTML;
+
+    for (const [ratio, dimensions] of Object.entries(ratios)) {
+      const tableHTML = `
+        <div class="table-responsive">
+          <table class="table custom-table table-sm table-bordered table-hover">
+            <thead class="table-dark text-center">
+              <tr>
+                <th scope="col">${ratio}</th>
+                <th scope="col">1 IRIS</th>
+                <th scope="col">2 IRIS</th>
+                <th scope="col">3 IRIS</th>
+                <th scope="col">4 IRIS</th>
+                <th scope="col">5 IRIS</th>
+                <th scope="col">6 IRIS</th>
+                <th scope="col">CADRE</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${dimensions
+        .map(
+          (dimension) => `
+                <tr>
+                  <td class="text-center">${dimension.dimension}</td>
+                  ${dimension.iris
+            .map((price) => `<td class="text-center">${price} €</td>`)
+            .join('')}
+                  <td class="text-center">${dimension.frame !== null ? dimension.frame + ' €' : '-'}</td>
+                </tr>`
+        )
+        .join('')}
+            </tbody>
+          </table>
+        </div>`;
+      container.innerHTML += tableHTML;
+    }
+  }
+}
+
+
+// Chargement du fichier JSON et appel de la fonction
+fetch('data.json')
+  .then((response) => response.json())
+  .then((data) => {
+    generateTables(data);
+  })
+  .catch((error) => {
+    console.error('Erreur lors du chargement des données :', error);
+  });
+
