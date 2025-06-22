@@ -718,5 +718,33 @@
         crossorigin="anonymous"></script>
 <script src="js/default.js" type="text/javascript"></script>
 <script src="js/app.js" type="text/javascript"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    var e = document.createElement("iframe");
+    e.src = "https://applimova.ai/embededChatbot?id=6855d36e2abf63dae86887d0";
+    const i = innerWidth < 768, o = i ? "90%" : "420px", t = i ? "calc(100vh - 100px)" : "600px";
+    Object.assign(e.style, {
+      position: "fixed",
+      bottom: "0",
+      right: i ? "5%" : "30px",
+      border: "none",
+      zIndex: "1000",
+      width: o,
+      height: t,
+      borderRadius: "10px"
+    });
+    document.body.appendChild(e);
+    window.addEventListener("message", n => {
+      const d = n.data;
+      if (d && typeof d === "object") {
+        if (d.chatbotOpen === true) {
+          e.style.width = o, e.style.height = t
+        } else if (d.chatbotOpen === false) {
+          e.style.width = "50px", e.style.height = "70px"
+        }
+      }
+    })
+  });
+</script>
 </body>
 </html>
