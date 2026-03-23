@@ -10,7 +10,6 @@ variables:
   BACKUP_DIR: $BACKUP_DIR
   DEPLOY_DIR: $DEPLOY_DIR
 
-
 before_script:
   - apk update && apk add --no-cache openssh-client tar rsync
   - eval $(ssh-agent -s)
@@ -19,14 +18,13 @@ before_script:
   - chmod 700 ~/.ssh
   - ssh-keyscan -p 65002 $SERVER_IP >> ~/.ssh/known_hosts
   - chmod 644 ~/.ssh/known_hosts
-  - echo "StrictHostKeyChecking no" >> ~/.ssh/config
-  - echo "Port 65002" >> ~/.ssh/config
+  - echo -e "Host *\n  StrictHostKeyChecking no\n  Port 65002" >> ~/.ssh/config
 
 prepare:
   image: alpine:latest
   stage: prepare
   script:
-    - apk update && apk add --no-cache openssh-client tar rsync
+    - echo "Preparation OK"
   only:
     - master
 
@@ -34,30 +32,22 @@ backup:
   image: alpine:latest
   stage: backup
   script:
-    - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-    - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
     - DATE=$(date +%d-%m-%Y-%Hh-%Mm-%Ss)
     - echo "Creating local backup directory at $BACKUP_DIR/backup_$DATE"
     - mkdir -p $BACKUP_DIR/backup_$DATE
     - echo "Creating backup archive"
     - tar czf $BACKUP_DIR/backup_$DATE/backup.tar.gz --exclude=$BACKUP_DIR/backup_$DATE/backup.tar.gz .
     - echo "Ensuring remote directory exists"
-    - ssh -p 65002 $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE"
+    - ssh $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE"
     - echo "Transferring backup file"
     - scp -P 65002 $BACKUP_DIR/backup_$DATE/backup.tar.gz $SERVER_USER@$SERVER_IP:$BACKUP_DIR/backup_$DATE/
   only:
     - master
 
-
 deploy:
   image: alpine:latest
   stage: deploy
   script:
-    - apk update && apk add --no-cache rsync
     - rsync -avz -e "ssh -p 65002" --exclude='.git*' --exclude='config.php' --exclude='reviews_cache.json' --delete . $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/
   only:
     - master
