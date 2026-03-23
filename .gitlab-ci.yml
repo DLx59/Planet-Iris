@@ -48,6 +48,11 @@ deploy:
   image: alpine:latest
   stage: deploy
   script:
+    - echo "=== DEBUG ==="
+    - echo "SERVER_USER=$SERVER_USER SERVER_IP=$SERVER_IP DEPLOY_DIR=$DEPLOY_DIR"
+    - ssh $SERVER_USER@$SERVER_IP "echo 'SSH OK' && ls $DEPLOY_DIR | head -10"
     - rsync -avz -e "ssh -p 65002" --exclude='.git*' --exclude='config.php' --exclude='reviews_cache.json' --delete . $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/
+    - echo "=== Vérification post-deploy ==="
+    - ssh $SERVER_USER@$SERVER_IP "ls -la $DEPLOY_DIR | head -10"
   only:
     - master
