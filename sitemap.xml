@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.planet-iris.com/</loc>
-    <lastmod>2024-10-21</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.planet-iris.com/mentions-legales</loc>
-    <lastmod>2024-06-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.planet-iris.com/politique-de-confidentialite</loc>
-    <lastmod>2024-06-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://www.planet-iris.com/img/planet-iris.webp</image:loc>
+      <image:title>Photographie d'iris par Planet'Iris - Studio photo à Avelgem, proche de Courtrai (Kortrijk) et Mouscron, Belgique</image:title>
+      <image:caption>Portrait macro artistique d'un iris réalisé par Planet'Iris, studio de photographie d'iris à Avelgem (8580), proche de Courtrai (Kortrijk) et Mouscron, Belgique</image:caption>
+    </image:image>
   </url>
 </urlset>
