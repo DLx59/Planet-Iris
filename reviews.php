@@ -5,7 +5,7 @@ header('Access-Control-Allow-Origin: https://www.planet-iris.com');
 require_once __DIR__ . '/config.php';
 $API_KEY    = GOOGLE_API_KEY;
 $CACHE_FILE = __DIR__ . '/reviews_cache.json';
-$CACHE_TTL  = 3600; // 1 heure
+$CACHE_TTL  = 21600; // 6 heures
 
 // --- Retourner le cache s'il est encore frais ---
 if (file_exists($CACHE_FILE) && (time() - filemtime($CACHE_FILE)) < $CACHE_TTL) {
@@ -85,7 +85,7 @@ $place_id = $search_data['places'][0]['id'];
 $details_data = places_get(
     'https://places.googleapis.com/v1/places/' . $place_id . '?languageCode=fr',
     $API_KEY,
-    'reviews'
+    'reviews.rating,reviews.text,reviews.authorAttribution.displayName,reviews.authorAttribution.photoUri'
 );
 
 $reviews = $details_data['reviews'] ?? [];
@@ -95,10 +95,12 @@ $formatted = [];
 foreach ($reviews as $review) {
     $text = $review['text']['text'] ?? '';
     if (empty(trim($text))) continue;
+    $photo = $review['authorAttribution']['photoUri'] ?? null;
     $formatted[] = [
         'name'   => format_name($review['authorAttribution']['displayName'] ?? 'Anonyme'),
         'rating' => (float) ($review['rating'] ?? 5),
         'text'   => $text,
+        'photo'  => $photo,
     ];
 }
 
