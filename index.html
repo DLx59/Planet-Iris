@@ -837,15 +837,33 @@
   // --- Avis Google ---
   (function () {
     function buildStars(rating) {
+      const uid = Math.random().toString(36).slice(2, 7);
       let html = '';
       for (let i = 1; i <= 5; i++) {
-        const filled = i <= rating;
+        const diff = rating - (i - 1);
+        let fill, stroke;
+        if (diff >= 1) {
+          fill = '#FBBC04'; stroke = '#FBBC04';          // pleine
+        } else if (diff >= 0.25) {
+          const gradId = `hstar-${uid}-${i}`;
+          const pct = Math.round(diff * 100) + '%';
+          html += `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <linearGradient id="${gradId}">
+                <stop offset="${pct}" stop-color="#FBBC04"/>
+                <stop offset="${pct}" stop-color="none"/>
+              </linearGradient>
+            </defs>
+            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              fill="url(#${gradId})" stroke="#FBBC04" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>`;
+          continue;
+        } else {
+          fill = 'none'; stroke = '#ccc';                // vide
+        }
         html += `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
           <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
-            fill="${filled ? '#FBBC04' : 'none'}"
-            stroke="${filled ? '#FBBC04' : '#ccc'}"
-            stroke-width="1.5"
-            stroke-linejoin="round"/>
+            fill="${fill}" stroke="${stroke}" stroke-width="1.5" stroke-linejoin="round"/>
         </svg>`;
       }
       return html;
@@ -866,7 +884,7 @@
         const box = boxes[i];
         box.querySelector('.stars').innerHTML =
           buildStars(review.rating) +
-          `<span class="sr-only">Note : ${review.rating} sur 5</span>`;
+          `<span class="visually-hidden">Note : ${review.rating} sur 5</span>`;
         box.querySelector('.content p').textContent = '\u201C' + review.text + '\u201D';
         box.querySelector('.name em').textContent = '- ' + review.name;
       });

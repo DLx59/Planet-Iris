@@ -13,13 +13,35 @@ if (file_exists($CACHE_FILE) && (time() - filemtime($CACHE_FILE)) < $CACHE_TTL) 
     exit;
 }
 
-// --- Helpers ---
-function google_request(string $url): ?array {
+// --- Helper POST (Places API New) ---
+function places_post(string $url, array $body, string $api_key): ?array {
+    $json = json_encode($body);
+    $ch   = curl_init($url);
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 10,
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => $json,
+        CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/json',
+            'X-Goog-Api-Key: ' . $api_key,
+            'X-Goog-FieldMask: places.id',
+        ],
+    ]);
+    $response = curl_exec($ch);
+    curl_close($ch);
+    return $response ? json_decode($response, true) : null;
+}
+
+function places_get(string $url, string $api_key, string $fields): ?array {
     $ch = curl_init($url);
     curl_setopt_array($ch, [
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_TIMEOUT        => 10,
-        CURLOPT_SSL_VERIFYPEER => true,
+        CURLOPT_HTTPHEADER     => [
+            'X-Goog-Api-Key: ' . $api_key,
+            'X-Goog-FieldMask: ' . $fields,
+        ],
     ]);
     $response = curl_exec($ch);
     curl_close($ch);
@@ -35,45 +57,48 @@ function format_name(string $full_name): string {
     return "$first $last";
 }
 
-// --- Étape 1 : trouver le Place ID via findplacefromtext ---
-$find_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?' . http_build_query([
-    'input'        => "Planet'Iris",
-    'inputtype'    => 'textquery',
-    'locationbias' => 'circle:500@50.7737773,3.4330256',
-    'fields'       => 'place_id',
-    'key'          => $API_KEY,
-]);
+// --- Étape 1 : trouver le Place ID (Places API New - Text Search) ---
+$search_data = places_post(
+    'https://places.googleapis.com/v1/places:searchText',
+    [
+        'textQuery'    => "Planet'Iris",
+        'languageCode' => 'fr',
+        'locationBias' => [
+            'circle' => [
+                'center' => ['latitude' => 50.7737773, 'longitude' => 3.4330256],
+                'radius' => 500.0,
+            ],
+        ],
+    ],
+    $API_KEY
+);
 
-$find_data = google_request($find_url);
-
-if (empty($find_data['candidates'][0]['place_id'])) {
+if (empty($search_data['places'][0]['id'])) {
     http_response_code(500);
-    echo json_encode(['error' => 'Place introuvable']);
+    echo json_encode(['error' => 'Place introuvable', 'debug' => $search_data]);
     exit;
 }
 
-$place_id = $find_data['candidates'][0]['place_id'];
+$place_id = $search_data['places'][0]['id'];
 
-// --- Étape 2 : récupérer les avis ---
-$details_url = 'https://maps.googleapis.com/maps/api/place/details/json?' . http_build_query([
-    'place_id'     => $place_id,
-    'fields'       => 'reviews',
-    'language'     => 'fr',
-    'reviews_sort' => 'newest',
-    'key'          => $API_KEY,
-]);
+// --- Étape 2 : récupérer les avis (Places API New - Place Details) ---
+$details_data = places_get(
+    'https://places.googleapis.com/v1/places/' . $place_id . '?languageCode=fr',
+    $API_KEY,
+    'reviews'
+);
 
-$details_data = google_request($details_url);
-$reviews      = $details_data['result']['reviews'] ?? [];
+$reviews = $details_data['reviews'] ?? [];
 
 // --- Étape 3 : formater ---
 $formatted = [];
 foreach ($reviews as $review) {
-    if (empty(trim($review['text']))) continue; // ignorer sans texte
+    $text = $review['text']['text'] ?? '';
+    if (empty(trim($text))) continue;
     $formatted[] = [
-        'name'   => format_name($review['author_name']),
-        'rating' => (int) $review['rating'],
-        'text'   => $review['text'],
+        'name'   => format_name($review['authorAttribution']['displayName'] ?? 'Anonyme'),
+        'rating' => (float) ($review['rating'] ?? 5),
+        'text'   => $text,
     ];
 }
 
