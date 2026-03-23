@@ -38,7 +38,7 @@ backup:
     - echo "Creating backup archive"
     - tar czf $BACKUP_DIR/backup_$DATE/backup.tar.gz --exclude=$BACKUP_DIR/backup_$DATE/backup.tar.gz .
     - echo "Ensuring remote directory exists"
-    - ssh $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE"
+    - ssh $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE && echo 'Deny from all' > $BACKUP_DIR/.htaccess"
     - echo "Transferring backup file"
     - scp -P 65002 $BACKUP_DIR/backup_$DATE/backup.tar.gz $SERVER_USER@$SERVER_IP:$BACKUP_DIR/backup_$DATE/
   only:
