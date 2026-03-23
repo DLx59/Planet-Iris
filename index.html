@@ -53,13 +53,22 @@
     .avis-top .stars { display: flex; gap: 3px; }
     .avis .content {
       flex: 1;
-      overflow: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.2) transparent;
+    }
+    .avis .content::-webkit-scrollbar {
+      width: 4px;
+    }
+    .avis .content::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .avis .content::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.2);
+      border-radius: 2px;
     }
     .avis .content p {
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
       line-height: 1.6;
       font-style: italic;
     }
