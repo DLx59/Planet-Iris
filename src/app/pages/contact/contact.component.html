@@ -5,11 +5,8 @@
   <section class="section contact-hero">
     <div class="container">
       <div class="contact-hero-content">
-        <h1 class="title fade-in-on-scroll">Contactez-nous</h1>
-        <p class="fade-in-on-scroll">
-          Nous sommes joignables uniquement par message privé sur nos réseaux sociaux.<br>
-          Nous vous répondons dans les plus brefs délais.
-        </p>
+        <h1 class="title fade-in-on-scroll" transloco="contact-page.hero.title"></h1>
+        <p class="fade-in-on-scroll" [innerHTML]="'contact-page.hero.desc' | transloco"></p>
       </div>
     </div>
   </section>
@@ -22,7 +19,7 @@
            target="_blank"
            rel="noopener noreferrer"
            class="contact-card fade-in-on-scroll"
-           aria-label="Nous contacter sur Facebook">
+           [attr.aria-label]="'contact-page.fb-label' | transloco">
           <div class="contact-card-icon">
             <img src="img/vector/facebook.svg" alt="Facebook" width="56" height="56" loading="lazy">
           </div>
@@ -42,7 +39,7 @@
            target="_blank"
            rel="noopener noreferrer"
            class="contact-card fade-in-on-scroll"
-           aria-label="Nous contacter sur Instagram">
+           [attr.aria-label]="'contact-page.ig-label' | transloco">
           <div class="contact-card-icon">
             <img src="img/vector/instagram.svg" alt="Instagram" width="56" height="56" loading="lazy">
           </div>
@@ -63,9 +60,9 @@
       <div class="contact-location fade-in-on-scroll">
         <div class="contact-location-pin">📍</div>
         <div>
-          <strong>Studio Planet'Iris</strong><br>
-          8580 Avelgem, Belgique<br>
-          <span class="contact-location-sub">Entre Courtrai (Kortrijk) &amp; Mouscron</span>
+          <strong transloco="contact-page.location-name"></strong><br>
+          <span transloco="contact-page.location-address"></span><br>
+          <span class="contact-location-sub" transloco="contact-page.location-nearby"></span>
         </div>
       </div>
     </div>

@@ -5,8 +5,8 @@
   <section class="section tarifs-hero">
     <div class="container">
       <div class="tarifs-hero-content fade-in-on-scroll">
-        <h1 class="title">Nos tarifs</h1>
-        <p>Transparents, sans surprise. Choisissez le format qui vous correspond.</p>
+        <h1 class="title" transloco="tarifs-page.hero.title"></h1>
+        <p transloco="tarifs-page.hero.desc"></p>
       </div>
     </div>
   </section>
@@ -15,16 +15,13 @@
     <div class="container">
 
       <div class="tarifs-note fade-in-on-scroll">
-        <p>
-          Pour chaque <strong>enfant de moins de 12 ans</strong>, un supplément de <strong>35 €</strong> est appliqué.
-          La <strong>photographie d'animaux</strong> est disponible avec un supplément de <strong>65 €</strong> par animal.
-        </p>
+        <p [innerHTML]="'tarifs-page.note' | transloco"></p>
       </div>
 
       <!-- Fichier digital HD -->
       <div class="tarif-block fade-in-on-scroll">
-        <h2>Fichier digital HD</h2>
-        <p>Livraison sous 3 jours ouvrables après la séance.</p>
+        <h2 transloco="tarifs-page.digital-title"></h2>
+        <p transloco="tarifs-page.digital-desc"></p>
         <div class="table-responsive">
           <table class="table table-sm table-bordered table-hover">
             <thead class="table-dark text-center">
@@ -54,8 +51,8 @@
       <!-- Impressions par support -->
       @for (support of tarifs(); track support.support) {
         <div class="tarif-block fade-in-on-scroll">
-          <h2>Impression {{ support.support }}</h2>
-          <p>Livraison sous 15 jours ouvrables après réception du fichier digital.</p>
+          <h2><span transloco="tarifs-page.impression"></span> {{ support.support }}</h2>
+          <p transloco="tarifs-page.print-desc"></p>
           @for (ratio of support.ratios; track ratio.name) {
             <h3>{{ ratio.name }}</h3>
             <div class="table-responsive">
@@ -63,7 +60,7 @@
                      [class.custom-table]="ratio.name !== 'Rond'">
                 <thead class="table-dark text-center">
                   <tr>
-                    <th scope="col">Format</th>
+                    <th scope="col" transloco="tarifs-page.format"></th>
                     <th scope="col">1 IRIS</th>
                     <th scope="col">2 IRIS</th>
                     <th scope="col">3 IRIS</th>
@@ -71,7 +68,7 @@
                     <th scope="col">5 IRIS</th>
                     <th scope="col">6 IRIS</th>
                     @if (ratio.name !== 'Rond') {
-                      <th scope="col">CADRE</th>
+                      <th scope="col" transloco="tarifs-page.frame"></th>
                     }
                   </tr>
                 </thead>

@@ -1,0 +1,111 @@
+// ── Hero text ─────────────────────────────────────
+.hero-text {
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 14vw;
+  font-weight: 800;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  &._02 {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
+
+.hero-text-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: PlayfairDisplay-Medium, sans-serif;
+}
+
+.hero-text-holder {
+  perspective: 1000px;
+  white-space: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+// ── Hero layout ───────────────────────────────────
+.hero-section {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  pointer-events: none;
+}
+
+.hero-section-text-holder {
+  width: 100%;
+  height: 130vh;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.hero-section-sticky {
+  width: 100%;
+  position: sticky;
+  top: 50%;
+}
+
+.hero-sticky-holder {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.iris-holder {
+  z-index: -1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: 15%;
+}
+
+// ── Hero paragraph & CTA ─────────────────────────
+.hero-section-paragraph-holder {
+  grid-row-gap: 36px;
+  flex-direction: column;
+  padding-top: clamp(140px, 18vh, 320px);
+  padding-bottom: 80px;
+  display: flex;
+  pointer-events: auto;
+}
+
+.hero-paragraph-holder {
+  max-width: 750px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.hero-cta-btn {
+  margin-top: 1.5rem;
+  pointer-events: auto;
+  display: inline-block;
+}
+
+// ── Responsive ────────────────────────────────────
+@media screen and (max-width: 991px) {
+  .iris-holder { top: 18%; }
+}
+
+@media screen and (max-width: 767px) {
+  .iris-holder { top: 22%; }
+}
+
+@media screen and (max-width: 479px) {
+  .hero-text { font-size: 16vw; }
+  .hero-section-paragraph-holder { padding-top: 40px; }
+  .iris-holder { top: 20%; }
+}

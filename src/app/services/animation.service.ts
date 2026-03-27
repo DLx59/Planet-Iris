@@ -2,8 +2,13 @@ import { Injectable } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+const FADE_SELECTOR = '.fade-in-on-scroll, .fade-in-move-on-scroll';
+
 @Injectable({ providedIn: 'root' })
 export class AnimationService {
+
+  private fadeObserver: IntersectionObserver | null = null;
+  private domObserver: MutationObserver | null = null;
 
   initGlobalAnimations(): void {
     gsap.registerPlugin(ScrollTrigger);
@@ -13,37 +18,38 @@ export class AnimationService {
   }
 
   initFadeInOnScroll(): void {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.utils.toArray<HTMLElement>('.fade-in-on-scroll').forEach(el => {
-      gsap.fromTo(el,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 85%',
-          }
+    this.fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          this.fadeObserver!.unobserve(entry.target);
         }
-      );
+      });
+    }, { threshold: 0.15 });
+
+    const observeAll = (root: ParentNode) => {
+      root.querySelectorAll<Element>(FADE_SELECTOR).forEach(el => {
+        if (!el.classList.contains('visible')) {
+          this.fadeObserver!.observe(el);
+        }
+      });
+    };
+
+    observeAll(document);
+
+    this.domObserver = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            const el = node as Element;
+            if (el.matches(FADE_SELECTOR)) this.fadeObserver!.observe(el);
+            observeAll(el);
+          }
+        });
+      });
     });
 
-    gsap.utils.toArray<HTMLElement>('.fade-in-move-on-scroll').forEach(el => {
-      gsap.fromTo(el,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.9,
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 85%',
-          }
-        }
-      );
-    });
+    this.domObserver.observe(document.body, { childList: true, subtree: true });
   }
 
   private initFloatingIris(): void {
@@ -101,5 +107,9 @@ export class AnimationService {
 
   destroyAll(): void {
     ScrollTrigger.getAll().forEach(t => t.kill());
+    this.fadeObserver?.disconnect();
+    this.fadeObserver = null;
+    this.domObserver?.disconnect();
+    this.domObserver = null;
   }
 }

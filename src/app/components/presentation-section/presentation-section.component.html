@@ -3,7 +3,7 @@
     <div class="presentation-section">
       <div class="center-title">
         <div class="title-holder">
-          <h1 class="title">Présentation de Planet'Iris</h1>
+          <h1 class="title" transloco="presentation.title"></h1>
         </div>
       </div>
       <div class="presentation-cards-holder">
@@ -24,13 +24,13 @@
                 </div>
                 <div class="presentation-card-text-holder">
                   <div class="presentation-paragraph-holder">
-                    <p>Tout a commencé par une fascination : la beauté cachée dans chaque œil. <em>Emilie</em> et <em>Denis</em> ont fondé <strong>Planet'Iris</strong> en 2024 à <strong>Avelgem</strong>, entre <strong>Courtrai</strong> et <strong>Mouscron</strong>, avec une idée simple, révéler ce que l'œil nu ne voit pas.</p>
-                    <p>Grâce à la <strong>photographie macro d'iris</strong>, chaque séance dévoile les textures, les couleurs et les motifs absolument uniques de votre regard. Le résultat est une image haute définition d'une précision saisissante : une véritable <strong>œuvre d'art personnalisée</strong>, que ce soit pour vous, pour offrir en cadeau ou pour immortaliser un moment en famille.</p>
-                    <p>Parce que chaque iris est une empreinte unique, autant que vos empreintes digitales, et que ça mérite d'être vu.</p>
+                    <p [innerHTML]="'presentation.p1' | transloco"></p>
+                    <p [innerHTML]="'presentation.p2' | transloco"></p>
+                    <p [innerHTML]="'presentation.p3' | transloco"></p>
                     <address>
-                      <strong>Planet'Iris</strong> — Studio photo iris<br>
-                      <span>8580</span> Avelgem, Belgique<br>
-                      Proche de Courtrai (Kortrijk) &amp; Mouscron
+                      <strong transloco="presentation.studio"></strong><br>
+                      <span transloco="presentation.zip"></span> <span transloco="presentation.city"></span><br>
+                      <span transloco="presentation.nearby"></span>
                     </address>
                   </div>
                 </div>

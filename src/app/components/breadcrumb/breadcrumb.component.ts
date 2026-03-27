@@ -1,31 +1,34 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
+import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
 import { filter, map } from 'rxjs';
 
-const ROUTE_LABELS: Record<string, string> = {
-  'services': 'Services',
-  'tarifs': 'Tarifs',
-  'contact': 'Contact',
-  'mentions-legales': 'Mentions légales',
-  'politique-de-confidentialite': 'Politique de confidentialité',
-};
-
 interface BreadcrumbItem {
-  label: string;
+  labelKey: string;
   path: string;
   current: boolean;
 }
 
+const ROUTE_KEYS: Record<string, string> = {
+  'services': 'breadcrumb.services',
+  'tarifs': 'breadcrumb.tarifs',
+  'contact': 'breadcrumb.contact',
+  'mentions-legales': 'breadcrumb.mentions-legales',
+  'politique-de-confidentialite': 'breadcrumb.politique-de-confidentialite',
+};
+
 @Component({
   selector: 'app-breadcrumb',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslocoModule],
   templateUrl: './breadcrumb.component.html',
+  styleUrl: './breadcrumb.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BreadcrumbComponent {
   private router = inject(Router);
+  private transloco = inject(TranslocoService);
 
   private url = toSignal(
     this.router.events.pipe(
@@ -38,14 +41,14 @@ export class BreadcrumbComponent {
   items = computed<BreadcrumbItem[]>(() => {
     const segments = this.url().split('/').filter(Boolean);
     const crumbs: BreadcrumbItem[] = [
-      { label: 'Accueil', path: '/', current: segments.length === 0 },
+      { labelKey: 'breadcrumb.home', path: '/', current: segments.length === 0 },
     ];
 
     let currentPath = '';
     segments.forEach((segment, i) => {
       currentPath += '/' + segment;
       crumbs.push({
-        label: ROUTE_LABELS[segment] ?? segment,
+        labelKey: ROUTE_KEYS[segment] ?? segment,
         path: currentPath,
         current: i === segments.length - 1,
       });

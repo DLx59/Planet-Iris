@@ -1,26 +1,29 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslocoModule } from '@jsverse/transloco';
 
 interface IrisItem {
   number: string;
-  label: string;
+  labelKey: string;
   name: string;
-  alt: string;
+  altKey: string;
 }
 
 @Component({
   selector: 'app-vos-iris-section',
   standalone: true,
+  imports: [TranslocoModule],
   templateUrl: './vos-iris-section.component.html',
+  styleUrl: './vos-iris-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VosIrisSectionComponent {
   irisItems: IrisItem[] = [
-    { number: '1iris', label: "Être seul, c'est parfois mieux que mal accompagné, et franchement, votre iris se suffit à lui-même.", name: 'uno', alt: "Photo d'un iris seul par Planet'Iris" },
-    { number: '2iris', label: "Votre moitié a aussi un iris magnifique ? C'est le moment de vérifier, et d'immortaliser ça.", name: 'duo', alt: "Photo de deux iris par Planet'Iris" },
-    { number: '3iris', label: "Deux, c'était bien. Trois, c'est mieux. Surtout quand on peut les accrocher au mur.", name: 'trio', alt: "Photo de trois iris par Planet'Iris" },
-    { number: '4iris', label: "Parce que la ressemblance familiale, ça se lit aussi dans les yeux. Spoiler : c'est souvent frappant.", name: 'quatuor', alt: "Photo de quatre iris par Planet'Iris" },
-    { number: '5iris', label: "À ce stade, c'est carrément une galerie d'art. Manque juste l'étiquette avec le prix.", name: 'quintuor', alt: "Photo de cinq iris par Planet'Iris" },
-    { number: '6iris', label: "Six iris, c'est la famille au complet. Les grands-parents compris, et ils méritent leur place sur le mur.", name: 'sextuor', alt: "Photo de six iris par Planet'Iris" },
+    { number: '1iris', labelKey: 'vos-iris.items.1.label', name: 'uno',      altKey: 'vos-iris.items.1.alt' },
+    { number: '2iris', labelKey: 'vos-iris.items.2.label', name: 'duo',      altKey: 'vos-iris.items.2.alt' },
+    { number: '3iris', labelKey: 'vos-iris.items.3.label', name: 'trio',     altKey: 'vos-iris.items.3.alt' },
+    { number: '4iris', labelKey: 'vos-iris.items.4.label', name: 'quatuor',  altKey: 'vos-iris.items.4.alt' },
+    { number: '5iris', labelKey: 'vos-iris.items.5.label', name: 'quintuor', altKey: 'vos-iris.items.5.alt' },
+    { number: '6iris', labelKey: 'vos-iris.items.6.label', name: 'sextuor',  altKey: 'vos-iris.items.6.alt' },
   ];
 
   getSrcset(name: string): string {

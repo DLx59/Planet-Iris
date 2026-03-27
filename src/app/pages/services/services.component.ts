@@ -6,6 +6,7 @@ import {
   inject,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { TranslocoModule } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { VosIrisSectionComponent } from '../../components/vos-iris-section/vos-iris-section.component';
@@ -65,6 +66,7 @@ const FAQ_SCHEMA = {
   selector: 'app-services',
   standalone: true,
   imports: [
+    TranslocoModule,
     NavbarComponent,
     BreadcrumbComponent,
     VosIrisSectionComponent,
@@ -73,6 +75,7 @@ const FAQ_SCHEMA = {
     FooterComponent,
   ],
   templateUrl: './services.component.html',
+  styleUrl: './services.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesComponent {

@@ -1,0 +1,245 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "tarifs": "Tarieven",
+    "contact": "Contact"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "services": "Diensten",
+    "tarifs": "Tarieven",
+    "contact": "Contact",
+    "mentions-legales": "Wettelijke vermeldingen",
+    "politique-de-confidentialite": "Privacybeleid"
+  },
+  "hero": {
+    "desc1": "Planet'Iris legt de schoonheid van elke iris vast via unieke macrofoto's.",
+    "desc2": "Transformeer uw irissen in gepersonaliseerde kunstwerken",
+    "price": "vanaf €50.",
+    "cta": "Bekijk onze formules"
+  },
+  "stats": {
+    "from": "vanaf",
+    "digital": "digitale levering",
+    "unique": "uniek zoals u",
+    "reviews": "Google-recensies"
+  },
+  "why": {
+    "title": "Waarom Planet'Iris?",
+    "card1": {
+      "title": "Uniek als uw vingerafdrukken",
+      "desc": "Uw iris is even uniek als uw vingerafdrukken. Onze macro-lens onthult wat het blote oog nooit ziet."
+    },
+    "card2": {
+      "title": "Kunst & precisie",
+      "desc": "Elk beeld is een werk in hoge definitie: texturen, kleuren en patronen van adembenemende precisie."
+    },
+    "card3": {
+      "title": "Een eeuwige herinnering",
+      "desc": "Voor uzelf, als cadeau, voor de familie. Als enkel digitaal bestand, of als print ingelijst of zonder lijst met het digitaal bestand inbegrepen."
+    }
+  },
+  "process": {
+    "title": "Hoe werkt het?",
+    "step1": {
+      "title": "Reserveer",
+      "desc": "Neem contact met ons op via sociale media om uw sessie in Avelgem te plannen, tussen Kortrijk en Moeskroen."
+    },
+    "step2": {
+      "title": "De sessie",
+      "desc": "30 minuten volstaan. Onze macro-lens gaat tot op enkele millimeter van uw oog om alles te onthullen."
+    },
+    "step3": {
+      "title": "Uw kunstwerk",
+      "desc": "HD-bestanden binnen 3 werkdagen. Ingelijste prints binnen 15 dagen. Aan huis geleverd."
+    }
+  },
+  "home-cta": {
+    "title": "Onthul uw iris",
+    "desc": "Vanaf <strong>€50</strong> · Studio in Avelgem, België",
+    "formulas": "Bekijk onze formules",
+    "contact": "Neem contact op"
+  },
+  "presentation": {
+    "title": "Over Planet'Iris",
+    "p1": "Het begon met een fascinatie: de verborgen schoonheid in elk oog. <em>Emilie</em> en <em>Denis</em> richtten <strong>Planet'Iris</strong> op in 2024 in <strong>Avelgem</strong>, tussen <strong>Kortrijk</strong> en <strong>Moeskroen</strong>, met een eenvoudig idee: onthullen wat het blote oog niet kan zien.",
+    "p2": "Dankzij <strong>iris-macrofotografie</strong> onthult elke sessie de unieke texturen, kleuren en patronen van uw blik. Het resultaat is een adembenemend beeld in hoge definitie: een waar <strong>gepersonaliseerd kunstwerk</strong>, of het nu voor uzelf is, als cadeau of om een familiemoment te vereeuwigen.",
+    "p3": "Omdat elke iris een unieke afdruk is, net als uw vingerafdrukken, en dat verdient gezien te worden.",
+    "studio": "Planet'Iris, iris fotostudio",
+    "zip": "8580",
+    "city": "Avelgem, België",
+    "nearby": "Nabij Kortrijk & Moeskroen"
+  },
+  "vos-iris": {
+    "title": "Ontdek Uw Unieke Irissen",
+    "desc": "Wist u dat uw iris even uniek is als uw vingerafdrukken? Met onze macro-lens gaan we tot op enkele millimeter van uw oog om elk detail te onthullen: de texturen, de kleurvariaties, de patronen die u nooit echt hebt gezien. Het resultaat zal u verrassen, gegarandeerd.",
+    "items": {
+      "1": {
+        "label": "Alleen zijn is soms beter dan slecht gezelschap. En eerlijk gezegd is uw iris zichzelf genoeg.",
+        "alt": "Foto van één iris door Planet'Iris"
+      },
+      "2": {
+        "label": "Heeft uw wederhelft ook een prachtige iris? Tijd om dat te ontdekken en te vereeuwigen.",
+        "alt": "Foto van twee irissen door Planet'Iris"
+      },
+      "3": {
+        "label": "Twee was goed. Drie is beter. Zeker als u ze aan de muur kunt hangen.",
+        "alt": "Foto van drie irissen door Planet'Iris"
+      },
+      "4": {
+        "label": "Want de familiegelijkenis is ook in de ogen te zien. Spoiler: het is vaak opvallend.",
+        "alt": "Foto van vier irissen door Planet'Iris"
+      },
+      "5": {
+        "label": "Op dit punt is het gewoon een kunstgalerij. Alleen nog het prijskaartje.",
+        "alt": "Foto van vijf irissen door Planet'Iris"
+      },
+      "6": {
+        "label": "Zes irissen, het volledige gezin. Grootouders inbegrepen. Ze verdienen hun plekje aan de muur.",
+        "alt": "Foto van zes irissen door Planet'Iris"
+      }
+    }
+  },
+  "tarif-section": {
+    "delivery-title": "Snelle doorlooptijd",
+    "delivery-desc": "Wij leveren <strong>digitale bestanden</strong> binnen <strong>3 werkdagen</strong> en <strong>prints</strong> binnen <strong>15 werkdagen</strong> na ontvangst van het digitale bestand.",
+    "see-tarifs": "Bekijk onze tarieven",
+    "interested": "Geïnteresseerd?",
+    "contact-us": "Neem contact op"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Alles wat u moet weten voordat u uw sessie boekt.",
+    "q1": "Hoe verloopt een fotosessie?",
+    "a1": "De sessie duurt ongeveer 30 minuten in ons studio in Avelgem. Geen speciale voorbereiding nodig. Onze macro-lens gaat tot op enkele millimeter van uw oog om elk detail van uw iris vast te leggen: texturen, kleuren, patronen, onder de beste omstandigheden.",
+    "q2": "Doet het pijn of is het gevaarlijk?",
+    "a2": "Helemaal niet. Het apparaat raakt uw oog nooit aan. De sessie maakt alleen gebruik van zacht licht en een macro-lens. Het is een aangenaam, contactloos ervaring, toegankelijk voor iedereen. Dragers van contactlenzen moeten deze eenvoudigweg verwijderen voor de sessie.",
+    "q3": "Hoe lang duurt het voor ik mijn foto's ontvang?",
+    "a3": "Digitale bestanden in hoge definitie worden geleverd binnen 3 werkdagen na uw sessie. Prints zijn beschikbaar binnen 15 werkdagen na ontvangst van het digitale bestand. Het digitale bestand is inbegrepen bij elke printbestelling.",
+    "q4": "Welke afdrukformaten en materialen biedt u aan?",
+    "a4": "Wij bieden verschillende materialen (papier, aluminium…) en ratio's (vierkant, rechthoek, rond). Afmetingen variëren per formaat. Bekijk onze Tarieven-pagina voor alle details over formaten, afmetingen en beschikbare prijzen.",
+    "q5": "Kunnen kinderen worden gefotografeerd?",
+    "a5": "Ja, kinderen zijn welkom. Een toeslag van €35 per kind onder 12 jaar wordt toegepast, vanwege de extra zorg die nodig is om scherp te stellen op een bewegende iris.",
+    "q6": "Kunnen huisdieren worden gefotografeerd?",
+    "a6": "Ja! Een toeslag van €65 per dier wordt toegepast. Neem vooraf contact met ons op via sociale media om de haalbaarheid te controleren afhankelijk van het diertype.",
+    "q7": "Waar is de studio gelegen?",
+    "a7": "Ons studio is gelegen in Avelgem (8580), België, tussen Kortrijk en Moeskroen. Het exacte adres wordt meegedeeld bij de bevestiging van uw afspraak.",
+    "q8": "Hoe reserveer ik een sessie?",
+    "a8": "Reserveren gebeurt uitsluitend via privébericht op onze sociale media: Facebook (planet.iris.belgique) of Instagram (planet_iris_belgique). Wij antwoorden zo snel mogelijk om een datum af te spreken."
+  },
+  "confiance": {
+    "title": "Zij vertrouwden ons",
+    "subtitle": "Waarom u niet?"
+  },
+  "footer": {
+    "follow": "Volg ons",
+    "made-by": "Gemaakt door",
+    "powered-by": "Aangedreven door",
+    "services": "Diensten",
+    "tarifs": "Tarieven",
+    "contact": "Contact",
+    "legal": "Wettelijke vermeldingen",
+    "privacy": "Privacybeleid"
+  },
+  "services-page": {
+    "hero": {
+      "title": "Onze formules",
+      "desc": "Van de fotosessie tot de print, alles wat u moet weten voor u reserveert."
+    },
+    "included": {
+      "title": "Wat is inbegrepen",
+      "subtitle": "Een eenvoudige ervaring, van begin tot levering.",
+      "item1": {
+        "title": "Fotosessie",
+        "desc": "Ongeveer 30 minuten in ons studio in Avelgem. Geen speciale voorbereiding nodig."
+      },
+      "item2": {
+        "title": "HD-bestanden",
+        "desc": "Foto's in hoge definitie geleverd binnen <strong>3 werkdagen</strong> na uw sessie."
+      },
+      "item3": {
+        "title": "Prints",
+        "desc": "Prints beschikbaar binnen <strong>15 werkdagen</strong>, in vele formaten en ratio's. Ingelijst of zonder lijst, uw keuze."
+      },
+      "item4": {
+        "title": "Tot 6 irissen",
+        "desc": "Solo, duo, familie of huisdieren, tot 6 irissen op één print. Toeslag van €35 per kind onder 12 jaar."
+      }
+    }
+  },
+  "tarifs-page": {
+    "hero": {
+      "title": "Onze tarieven",
+      "desc": "Transparant, geen verrassingen. Kies het formaat dat bij u past."
+    },
+    "note": "Voor elk <strong>kind onder 12 jaar</strong> wordt een toeslag van <strong>€35</strong> toegepast. <strong>Huisdierfotografie</strong> is beschikbaar met een toeslag van <strong>€65</strong> per dier.",
+    "digital-title": "Digitaal HD-bestand",
+    "digital-desc": "Levering binnen 3 werkdagen na de sessie.",
+    "print-desc": "Levering binnen 15 werkdagen na ontvangst van het digitale bestand.",
+    "impression": "Print",
+    "format": "Formaat",
+    "frame": "LIJST"
+  },
+  "contact-page": {
+    "hero": {
+      "title": "Contacteer ons",
+      "desc": "We zijn alleen bereikbaar via privébericht op onze sociale media.<br>We antwoorden zo snel mogelijk."
+    },
+    "fb-label": "Contacteer ons op Facebook",
+    "ig-label": "Contacteer ons op Instagram",
+    "location-name": "Planet'Iris Studio",
+    "location-address": "8580 Avelgem, België",
+    "location-nearby": "Tussen Kortrijk & Moeskroen"
+  },
+  "mentions-legales": {
+    "title": "Wettelijke vermeldingen",
+    "publisher-title": "Uitgever van de website",
+    "publisher-desc": "<strong>Planet'Iris</strong><br>Dottignies, België<br>Opgericht in 2024 door Emilie Deman en Denis Wojtowicz",
+    "responsible-title": "Verantwoordelijke voor de publicatie",
+    "responsible-desc": "Denis Wojtowicz",
+    "hosting-title": "Website-hosting",
+    "hosting-desc": "Naam van de host: Infomaniak<br>Adres van de host: Infomaniak Network SA - Rue Eugène Marziano 25 - 1227 Les Acacias (GE)<br>Contact van de host: <a href=\"https://www.infomaniak.com/fr/aide\">www.infomaniak.com/fr/aide</a>",
+    "ip-title": "Intellectueel eigendom",
+    "ip-desc": "Alle inhoud op de website Planet'Iris, inclusief maar niet beperkt tot afbeeldingen, teksten, video's, animaties, geluiden, logo's, gifs en pictogrammen en hun opmaak zijn het exclusieve eigendom van Planet'Iris, behalve handelsmerken, logo's of inhoud van andere partnerondernemingen of auteurs.",
+    "data-title": "Bescherming van persoonsgegevens",
+    "data-desc": "Overeenkomstig de wet heeft u recht op inzage, rectificatie, wijziging en verwijdering van gegevens die u betreffen. U kunt dit recht uitoefenen door een e-mail te sturen naar <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>.",
+    "cookies-title": "Cookies",
+    "cookies-desc": "Planet'Iris kan u om acceptatie van cookies vragen voor statistische en weergavedoeleinden. Een cookie is informatie die op uw harde schijf wordt opgeslagen door de server van de website die u bezoekt.",
+    "links-title": "Hyperlinks",
+    "links-desc": "Planet'Iris kan hyperlinks bevatten naar andere sites op het internet. Links naar deze andere bronnen brengen u weg van de website Planet'Iris.",
+    "contact-title": "Contact",
+    "contact-desc": "Voor vragen of informatie over de website kunt u contact met ons opnemen via: <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>."
+  },
+  "politique": {
+    "title": "Privacybeleid",
+    "intro-title": "Inleiding",
+    "intro-desc": "Welkom bij Planet'Iris. Wij nemen de privacy van uw persoonsgegevens zeer serieus. Dit privacybeleid legt uit welke informatie wij verzamelen, hoe wij deze gebruiken en hoe wij deze beschermen.",
+    "collect-title": "Informatie die wij verzamelen",
+    "collect-desc": "Wij verzamelen verschillende soorten informatie om onze diensten te verlenen en te verbeteren:",
+    "collect-li1": "<strong>Persoonlijke informatie</strong>: wanneer u onze website gebruikt, kunnen wij informatie verzamelen zoals uw naam, e-mailadres en andere informatie die u vrijwillig verstrekt.",
+    "collect-li2": "<strong>Gebruiksinformatie</strong>: wij gebruiken Google Analytics om informatie te verzamelen over hoe u onze website gebruikt.",
+    "use-title": "Gebruik van informatie",
+    "use-desc": "Wij gebruiken de verzamelde informatie voor de volgende doeleinden:",
+    "use-li1": "Onze diensten verlenen en verbeteren",
+    "use-li2": "Uw ervaring op onze website personaliseren",
+    "use-li3": "Het gebruik van de website analyseren en de prestaties verbeteren",
+    "use-li4": "Marketingcommunicatie sturen als u daarmee heeft ingestemd",
+    "sharing-title": "Delen van informatie",
+    "sharing-desc": "Wij verkopen, verhandelen of overdragen uw persoonlijke informatie niet aan derden zonder uw toestemming, behalve voor de doeleinden beschreven in dit beleid.",
+    "ga-title": "Google Analytics",
+    "ga-desc": "Wij gebruiken Google Analytics om informatie te verzamelen over het gebruik van onze website. U kunt voorkomen dat Google Analytics u herkent bij toekomstige bezoeken door cookies in uw browser uit te schakelen.",
+    "security-title": "Beveiliging van informatie",
+    "security-desc": "Wij implementeren een verscheidenheid aan beveiligingsmaatregelen om de veiligheid van uw persoonlijke informatie te handhaven.",
+    "rights-title": "Uw rechten",
+    "rights-desc": "Overeenkomstig de toepasselijke wetgeving heeft u de volgende rechten:",
+    "rights-li1": "Toegang tot uw persoonsgegevens",
+    "rights-li2": "Onjuiste of onvolledige gegevens rectificeren",
+    "rights-li3": "Verwijdering van uw persoonsgegevens aanvragen",
+    "rights-li4": "De verwerking van uw persoonsgegevens beperken",
+    "rights-li5": "Bezwaar maken tegen de verwerking van uw persoonsgegevens",
+    "rights-li6": "Overdraagbaarheid van uw persoonsgegevens aanvragen",
+    "contact-title": "Contacteer ons",
+    "contact-desc": "E-mail: <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>"
+  }
+}

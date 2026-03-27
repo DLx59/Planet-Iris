@@ -8,6 +8,7 @@ import {
 import { RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { TranslocoModule } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { ConfianceSectionComponent } from '../../components/confiance-section/confiance-section.component';
@@ -19,12 +20,14 @@ import { AnimationService } from '../../services/animation.service';
   standalone: true,
   imports: [
     RouterLink,
+    TranslocoModule,
     NavbarComponent,
     HeroSectionComponent,
     ConfianceSectionComponent,
     FooterComponent,
   ],
   templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {

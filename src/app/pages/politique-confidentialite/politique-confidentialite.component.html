@@ -2,68 +2,65 @@
 <app-breadcrumb />
 
 <main class="container legal-page">
-  <h1>Politique de Confidentialité</h1>
-    <section>
-      <h2>Introduction</h2>
-      <p>Bienvenue sur Planet'Iris. Nous prenons la confidentialité de vos données personnelles très au sérieux. Cette
-        politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et
-        comment nous les protégeons.</p>
-    </section>
-    <section>
-      <h2>Informations que nous collectons</h2>
-      <p>Nous collectons différents types d'informations dans le but de vous fournir et améliorer nos services :</p>
-      <ul>
-        <li><strong>Informations personnelles</strong> : lorsque vous utilisez notre site, nous pouvons collecter des
-          informations telles que votre nom, votre adresse e-mail, et toute autre information que vous fournissez
-          volontairement.
-        </li>
-        <li><strong>Informations d'utilisation</strong> : nous utilisons Google Analytics pour collecter des
-          informations sur la manière dont vous utilisez notre site.
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Utilisation des informations</h2>
-      <p>Nous utilisons les informations collectées pour les raisons suivantes :</p>
-      <ul>
-        <li>Fournir et améliorer nos services</li>
-        <li>Personnaliser votre expérience sur notre site</li>
-        <li>Analyser l'utilisation de notre site et améliorer sa performance</li>
-        <li>Envoyer des communications marketing si vous y avez consenti</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Partage des informations</h2>
-      <p>Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles à des tiers sans votre
-        consentement, sauf pour les fins décrites dans la présente politique.</p>
-    </section>
-    <section>
-      <h2>Google Analytics</h2>
-      <p>Nous utilisons Google Analytics pour collecter des informations sur l'utilisation de notre site. Vous pouvez
-        empêcher Google Analytics de vous reconnaître lors de vos prochaines visites en désactivant les cookies sur
-        votre navigateur.</p>
-    </section>
-    <section>
-      <h2>Protection des informations</h2>
-      <p>Nous mettons en œuvre une variété de mesures de sécurité pour maintenir la sécurité de vos informations
-        personnelles.</p>
-    </section>
-    <section>
-      <h2>Vos droits</h2>
-      <p>Conformément à la législation applicable, vous disposez des droits suivants :</p>
-      <ul>
-        <li>Accéder à vos données personnelles</li>
-        <li>Rectifier les données inexactes ou incomplètes</li>
-        <li>Demander l'effacement de vos données personnelles</li>
-        <li>Limiter le traitement de vos données personnelles</li>
-        <li>Vous opposer au traitement de vos données personnelles</li>
-        <li>Demander la portabilité de vos données personnelles</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contactez-nous</h2>
-      <p>Email : <a class="email" href="mailto:contact@planetiris.com">contact&#64;planetiris.com</a></p>
-    </section>
+  <h1 transloco="politique.title"></h1>
+
+  <section>
+    <h2 transloco="politique.intro-title"></h2>
+    <p transloco="politique.intro-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.collect-title"></h2>
+    <p transloco="politique.collect-desc"></p>
+    <ul>
+      <li [innerHTML]="'politique.collect-li1' | transloco"></li>
+      <li [innerHTML]="'politique.collect-li2' | transloco"></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 transloco="politique.use-title"></h2>
+    <p transloco="politique.use-desc"></p>
+    <ul>
+      <li transloco="politique.use-li1"></li>
+      <li transloco="politique.use-li2"></li>
+      <li transloco="politique.use-li3"></li>
+      <li transloco="politique.use-li4"></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 transloco="politique.sharing-title"></h2>
+    <p transloco="politique.sharing-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.ga-title"></h2>
+    <p transloco="politique.ga-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.security-title"></h2>
+    <p transloco="politique.security-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.rights-title"></h2>
+    <p transloco="politique.rights-desc"></p>
+    <ul>
+      <li transloco="politique.rights-li1"></li>
+      <li transloco="politique.rights-li2"></li>
+      <li transloco="politique.rights-li3"></li>
+      <li transloco="politique.rights-li4"></li>
+      <li transloco="politique.rights-li5"></li>
+      <li transloco="politique.rights-li6"></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 transloco="politique.contact-title"></h2>
+    <p [innerHTML]="'politique.contact-desc' | transloco"></p>
+  </section>
 </main>
 
 <app-footer />

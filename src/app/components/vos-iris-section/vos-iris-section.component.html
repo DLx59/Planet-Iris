@@ -1,18 +1,18 @@
 <section id="vos-iris" class="section">
   <div class="sticky-section">
     <div class="container wide-container">
-      <div class="w-layout-grid grid-6-col">
-        <div id="w-node-_0f99c55c-aef0-ebd9-f690-9830ff12bd17-5ffe7f77" class="trusted-content">
+      <div class="iris-grid">
+        <div class="trusted-content iris-col">
           <div class="content-sticky">
             <div class="fade-in-on-scroll">
-              <h2 class="title smaller">Découvrez Vos Iris Uniques</h2>
+              <h2 class="title smaller" transloco="vos-iris.title"></h2>
             </div>
             <div class="fade-in-on-scroll">
-              <p>Saviez-vous que votre iris est aussi unique que vos empreintes digitales ? Grâce à notre appareil macro, on s'approche à quelques millimètres de votre œil pour en révéler chaque détail : les reliefs, les nuances de couleur, les motifs que vous n'avez jamais vraiment vus. Le résultat vous surprendra, garanti.</p>
+              <p transloco="vos-iris.desc"></p>
             </div>
           </div>
         </div>
-        <div id="w-node-_0f99c55c-aef0-ebd9-f690-9830ff12bd1f-5ffe7f77" class="trusted-content trusted-list">
+        <div class="trusted-content trusted-list iris-col">
           <div class="trusted-overlay-container">
             <div class="trusted-white-overlay"></div>
             <div class="trusted-white-overlay bottom"></div>
@@ -22,7 +22,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">{{ item.number }}</h2>
                 <div class="card-title">
-                  <strong>{{ item.label }}</strong>
+                  <strong [transloco]="item.labelKey"></strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -31,7 +31,7 @@
                     sizes="(max-width: 1400px) 100vw, 1400px"
                     [srcset]="getSrcset(item.name)"
                     [src]="'img/vos-iris/' + item.name + '_w_1400.webp'"
-                    [alt]="item.alt">
+                    [attr.alt]="item.altKey | transloco">
                 </picture>
               </div>
             </div>

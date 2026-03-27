@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+// Gradient text fill (headings)
+@mixin gradient-text($direction: to top) {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient($direction, $clr-heading-light, $clr-heading-dark);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+// Blurred glass pill / panel
+@mixin glass($blur: 34px, $bg: $clr-glass-bg, $border: $clr-glass-border) {
+  -webkit-backdrop-filter: blur($blur);
+  backdrop-filter: blur($blur);
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+// Fade-in on scroll animation
+@mixin fade-scroll($y: 20px, $duration: 0.6s) {
+  opacity: 0;
+  transform: translateY($y);
+  transition: opacity $duration ease, transform $duration ease;
+
+  &.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Responsive breakpoint shorthand
+@mixin respond($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}

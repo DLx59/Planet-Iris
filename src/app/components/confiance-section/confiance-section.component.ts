@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { TranslocoModule } from '@jsverse/transloco';
 import { ReviewService } from '../../services/review.service';
 import { Review } from '../../models/review.model';
 
@@ -11,8 +12,9 @@ const BOX_SPEEDS = ['0.80', '1', '0.85'] as const;
 @Component({
   selector: 'app-confiance-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   templateUrl: './confiance-section.component.html',
+  styleUrl: './confiance-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ConfianceSectionComponent {

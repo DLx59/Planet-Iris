@@ -7,13 +7,15 @@ import {
   inject,
 } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { TranslocoModule } from '@jsverse/transloco';
 import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-tarif-section',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslocoModule],
   templateUrl: './tarif-section.component.html',
+  styleUrl: './tarif-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TarifSectionComponent {

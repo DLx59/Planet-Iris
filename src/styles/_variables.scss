@@ -1,0 +1,40 @@
+// ── Colors ────────────────────────────────────────
+$clr-white:         #fff;
+$clr-black:         #000;
+$clr-bg:            #000;
+$clr-text:          #b4bcd0;
+$clr-grey:          #969696;
+$clr-muted:         #8b92a8;
+$clr-heading-light: #f5f5f8;
+$clr-heading-dark:  #bbbbbd;
+$clr-nav-fg:        #81859f;
+$clr-link-legal:    #c6caf6;
+
+// Glass / blur surfaces
+$clr-glass-bg:     rgba(33, 33, 33, 0.8);
+$clr-glass-border: rgba(255, 255, 255, 0.1);
+$clr-glass-hover:  rgba(255, 255, 255, 0.08);
+
+// ── Typography ────────────────────────────────────
+$font-body:           Dosis-Regular, sans-serif;
+$font-bold:           Dosis-Bold, sans-serif;
+$font-semibold:       Dosis-SemiBold, sans-serif;
+$font-light:          Dosis-Light, sans-serif;
+$font-display:        PlayfairDisplay-Regular, serif;
+$font-display-medium: PlayfairDisplay-Medium, sans-serif;
+$font-display-bold:   PlayfairDisplay-Bold, serif;
+
+// ── Layout ────────────────────────────────────────
+$container-max:   1170px;
+$container-wide:  1370px;
+$container-legal: 860px;
+
+// ── Breakpoints ───────────────────────────────────
+$bp-xl: 1440px;
+$bp-lg: 991px;
+$bp-md: 767px;
+$bp-sm: 479px;
+
+// ── Z-indexes ─────────────────────────────────────
+$z-nav:   20;
+$z-popin: 1000;

@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { TranslocoModule } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -10,8 +11,9 @@ import { SupportEntry } from '../../models/tarif.model';
 @Component({
   selector: 'app-tarifs',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, BreadcrumbComponent, FooterComponent],
+  imports: [CommonModule, TranslocoModule, NavbarComponent, BreadcrumbComponent, FooterComponent],
   templateUrl: './tarifs.component.html',
+  styleUrl: './tarifs.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TarifsComponent {

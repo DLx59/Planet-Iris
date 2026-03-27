@@ -7,6 +7,7 @@ import {
   inject,
 } from '@angular/core';
 import { gsap } from 'gsap';
+import { TranslocoModule } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -15,8 +16,9 @@ import { AnimationService } from '../../services/animation.service';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [NavbarComponent, BreadcrumbComponent, FooterComponent],
+  imports: [TranslocoModule, NavbarComponent, BreadcrumbComponent, FooterComponent],
   templateUrl: './contact.component.html',
+  styleUrl: './contact.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {

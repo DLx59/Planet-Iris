@@ -7,14 +7,16 @@ import {
   inject,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslocoModule } from '@jsverse/transloco';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslocoModule],
   templateUrl: './hero-section.component.html',
+  styleUrl: './hero-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroSectionComponent {

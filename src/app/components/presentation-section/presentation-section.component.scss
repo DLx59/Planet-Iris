@@ -1,0 +1,193 @@
+.presentation-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.presentation-cards-holder {
+  perspective: 1000px;
+  margin-top: 90px;
+}
+
+.presentation-grid {
+  width: 100%;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  perspective: 1000px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+  position: relative;
+}
+
+#presentation-card,
+#presentation-wrapper {
+  grid-area: 1/3/-1/-3;
+}
+
+.presentation-wrapper {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  display: flex;
+}
+
+.presentation-card {
+  z-index: 5;
+  width: 100%;
+  background-color: #30363d;
+  border-radius: 26px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.presentation-card-content {
+  z-index: 5;
+  opacity: 1;
+  background-color: #161b22;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1px;
+  display: flex;
+  position: relative;
+}
+
+.presentation-card-image-holder {
+  width: 100%;
+  position: relative;
+}
+
+.presentation-card-image {
+  width: 100%;
+}
+
+.presentation-gradient {
+  height: 70px;
+  background-image: linear-gradient(rgba(21, 27, 34, 0), #151b22);
+  position: absolute;
+  top: auto;
+  bottom: -3%;
+  left: 0;
+  right: 0;
+}
+
+.presentation-card-text-holder {
+  grid-row-gap: 6px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.presentation-paragraph-holder {
+  padding: 0 2rem;
+  max-width: 490px;
+
+  p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #8b92a8;
+  }
+
+  address {
+    font-style: normal;
+    font-size: 14px;
+    color: #8b92a8;
+    margin-top: 1rem;
+    line-height: 1.7;
+  }
+}
+
+// ── Card glow effect ──────────────────────────────
+.light-wrapper {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.light-wrapper-in-front {
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+}
+
+.light {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.light-inside {
+  width: 200px;
+  height: 200px;
+  filter: blur(70px);
+  background-color: #fff;
+}
+
+.light-outside {
+  width: 200px;
+  height: 200px;
+  opacity: 0.1;
+  filter: blur(70px);
+  background-color: #fff;
+}
+
+// ── Responsive ────────────────────────────────────
+@media screen and (min-width: 1440px) {
+  .presentation-gradient { height: 130px; }
+}
+
+@media screen and (max-width: 991px) {
+  .presentation-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #presentation-card,
+  #presentation-wrapper {
+    grid-area: 1/2/-1/-2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #presentation-wrapper {
+    grid-column: span 3/span 3;
+  }
+
+  .presentation-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .presentation-card-text-holder {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .presentation-card { border-radius: 16px; }
+  .presentation-card-content { border-radius: 15px; }
+
+  #presentation-card,
+  #presentation-wrapper {
+    grid-area: 1/1/-1/-1;
+  }
+}

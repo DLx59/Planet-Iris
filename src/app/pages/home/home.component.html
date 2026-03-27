@@ -1,7 +1,6 @@
 <app-navbar />
 
 <main>
-  <!-- Hero avec GSAP + bouton CTA intégré -->
   <app-hero-section />
 
   <!-- Chiffres clés -->
@@ -10,19 +9,19 @@
       <div class="stats-grid">
         <div class="stat-item fade-in-on-scroll">
           <span class="stat-value" data-stat="price">50€</span>
-          <span class="stat-label">à partir de</span>
+          <span class="stat-label" transloco="stats.from"></span>
         </div>
         <div class="stat-item fade-in-on-scroll">
           <span class="stat-value" data-stat="days">3 j</span>
-          <span class="stat-label">livraison digitale</span>
+          <span class="stat-label" transloco="stats.digital"></span>
         </div>
         <div class="stat-item fade-in-on-scroll">
           <span class="stat-value" data-stat="unique">100%</span>
-          <span class="stat-label">unique comme vous</span>
+          <span class="stat-label" transloco="stats.unique"></span>
         </div>
         <div class="stat-item fade-in-on-scroll">
           <span class="stat-value" data-stat="rating">⭐ 5/5</span>
-          <span class="stat-label">avis Google</span>
+          <span class="stat-label" transloco="stats.reviews"></span>
         </div>
       </div>
     </div>
@@ -32,23 +31,23 @@
   <section class="section why-section">
     <div class="container">
       <div class="center-title fade-in-on-scroll">
-        <h2 class="title">Pourquoi Planet'Iris ?</h2>
+        <h2 class="title" transloco="why.title"></h2>
       </div>
       <div class="why-grid">
         <div class="why-card fade-in-on-scroll">
           <div class="why-icon">👁️</div>
-          <h3>Unique comme vos empreintes</h3>
-          <p>Votre iris est aussi unique que vos empreintes digitales. Notre appareil macro révèle ce que l'œil nu ne voit jamais.</p>
+          <h3 transloco="why.card1.title"></h3>
+          <p transloco="why.card1.desc"></p>
         </div>
         <div class="why-card fade-in-on-scroll">
           <div class="why-icon">🎨</div>
-          <h3>Art &amp; précision</h3>
-          <p>Chaque image est une œuvre en haute définition — textures, couleurs et motifs d'une précision saisissante.</p>
+          <h3 transloco="why.card2.title"></h3>
+          <p transloco="why.card2.desc"></p>
         </div>
         <div class="why-card fade-in-on-scroll">
           <div class="why-icon">🖼️</div>
-          <h3>Souvenir éternel</h3>
-          <p>Pour vous, pour offrir, pour la famille. Disponible en fichier digital ou en impression encadrée.</p>
+          <h3 transloco="why.card3.title"></h3>
+          <p transloco="why.card3.desc"></p>
         </div>
       </div>
     </div>
@@ -58,23 +57,37 @@
   <section class="section process-section">
     <div class="container">
       <div class="center-title fade-in-on-scroll">
-        <h2 class="title">Comment ça marche ?</h2>
+        <h2 class="title" transloco="process.title"></h2>
       </div>
-      <div class="process-grid">
-        <div class="process-step fade-in-on-scroll">
-          <div class="process-number">01</div>
-          <h3>Réservez</h3>
-          <p>Contactez-nous via nos réseaux sociaux pour fixer votre séance à Avelgem, entre Courtrai et Mouscron.</p>
+      <div class="stepper">
+        <div class="stepper-step fade-in-on-scroll">
+          <div class="stepper-head">
+            <div class="stepper-dot"></div>
+            <div class="stepper-line"></div>
+          </div>
+          <div class="stepper-body">
+            <h3 transloco="process.step1.title"></h3>
+            <p transloco="process.step1.desc"></p>
+          </div>
         </div>
-        <div class="process-step fade-in-on-scroll">
-          <div class="process-number">02</div>
-          <h3>La séance</h3>
-          <p>30 minutes suffisent. Notre appareil macro s'approche à quelques millimètres de votre œil pour tout révéler.</p>
+        <div class="stepper-step fade-in-on-scroll">
+          <div class="stepper-head">
+            <div class="stepper-dot"></div>
+            <div class="stepper-line"></div>
+          </div>
+          <div class="stepper-body">
+            <h3 transloco="process.step2.title"></h3>
+            <p transloco="process.step2.desc"></p>
+          </div>
         </div>
-        <div class="process-step fade-in-on-scroll">
-          <div class="process-number">03</div>
-          <h3>Votre œuvre</h3>
-          <p>Fichiers HD sous 3 jours ouvrables. Impressions encadrées sous 15 jours. Livrées chez vous.</p>
+        <div class="stepper-step fade-in-on-scroll">
+          <div class="stepper-head">
+            <div class="stepper-dot"></div>
+          </div>
+          <div class="stepper-body">
+            <h3 transloco="process.step3.title"></h3>
+            <p transloco="process.step3.desc"></p>
+          </div>
         </div>
       </div>
     </div>
@@ -87,11 +100,11 @@
   <section class="section home-cta">
     <div class="container">
       <div class="home-cta-content fade-in-on-scroll">
-        <h2 class="title">Révélez votre iris</h2>
-        <p>À partir de <strong>50€</strong> · Studio à Avelgem, Belgique</p>
+        <h2 class="title" transloco="home-cta.title"></h2>
+        <p [innerHTML]="'home-cta.desc' | transloco"></p>
         <div class="home-cta-buttons">
-          <a routerLink="/services" class="button">Voir nos formules</a>
-          <a routerLink="/contact" class="button button-outline">Nous contacter</a>
+          <a routerLink="/services" class="button" transloco="home-cta.formulas"></a>
+          <a routerLink="/contact" class="button button-outline" transloco="home-cta.contact"></a>
         </div>
       </div>
     </div>

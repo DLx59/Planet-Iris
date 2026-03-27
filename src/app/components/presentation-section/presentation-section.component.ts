@@ -8,10 +8,14 @@ import {
 } from '@angular/core';
 import { gsap } from 'gsap';
 
+import { TranslocoModule } from '@jsverse/transloco';
+
 @Component({
   selector: 'app-presentation-section',
   standalone: true,
+  imports: [TranslocoModule],
   templateUrl: './presentation-section.component.html',
+  styleUrl: './presentation-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PresentationSectionComponent {

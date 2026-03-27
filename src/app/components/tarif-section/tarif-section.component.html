@@ -4,13 +4,11 @@
       <div class="center-title">
         <div class="title-holder">
           <div class="fade-in-move-on-scroll">
-            <h2 class="title">Faible temps de traitement</h2>
+            <h2 class="title" transloco="tarif-section.delivery-title"></h2>
           </div>
           <div class="fade-in-move-on-scroll">
             <div class="presentation-paragraph-holder">
-              <p>Nous vous fournissons <strong>les photos au format digital</strong> dans les <strong>3 jours
-                ouvrables</strong> et les <strong>impressions</strong> dans les <strong>15 jours ouvrables</strong> à
-                compter de la réception du format digital.</p>
+              <p [innerHTML]="'tarif-section.delivery-desc' | transloco"></p>
             </div>
           </div>
         </div>
@@ -18,7 +16,7 @@
 
       <div class="download-badge-holder">
         <div class="download-badge-container">
-          <a routerLink="/tarifs" class="custom-button mt-2">Voir nos tarifs</a>
+          <a routerLink="/tarifs" class="custom-button mt-2" transloco="tarif-section.see-tarifs"></a>
         </div>
       </div>
     </div>
@@ -28,7 +26,7 @@
     <div class="effortlessly-integration-container">
       <div class="center-title">
         <div class="fade-in-move-on-scroll">
-          <h2 class="title">Vous êtes intéressé ?</h2>
+          <h2 class="title" transloco="tarif-section.interested"></h2>
         </div>
       </div>
       <div class="download-badge-holder">
@@ -38,7 +36,7 @@
               <path
                 d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
             </svg>
-            Nous contacter
+            <span transloco="tarif-section.contact-us"></span>
           </button>
         </div>
       </div>
