@@ -1,0 +1,51 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main>
+  <section class="section services-hero">
+    <div class="container">
+      <div class="services-hero-content fade-in-on-scroll">
+        <h1 class="title" transloco="services-page.hero.title"></h1>
+        <p transloco="services-page.hero.desc"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ce que vous obtenez -->
+  <section class="section included-section">
+    <div class="container">
+      <div class="center-title fade-in-on-scroll">
+        <h2 class="title" transloco="services-page.included.title"></h2>
+        <p transloco="services-page.included.subtitle"></p>
+      </div>
+      <div class="included-grid">
+        <div class="included-item fade-in-on-scroll">
+          <div class="included-icon">📸</div>
+          <h3 transloco="services-page.included.item1.title"></h3>
+          <p transloco="services-page.included.item1.desc"></p>
+        </div>
+        <div class="included-item fade-in-on-scroll">
+          <div class="included-icon">💾</div>
+          <h3 transloco="services-page.included.item2.title"></h3>
+          <p [innerHTML]="'services-page.included.item2.desc' | transloco"></p>
+        </div>
+        <div class="included-item fade-in-on-scroll">
+          <div class="included-icon">🖼️</div>
+          <h3 transloco="services-page.included.item3.title"></h3>
+          <p [innerHTML]="'services-page.included.item3.desc' | transloco"></p>
+        </div>
+        <div class="included-item fade-in-on-scroll">
+          <div class="included-icon">👨‍👩‍👧</div>
+          <h3 transloco="services-page.included.item4.title"></h3>
+          <p transloco="services-page.included.item4.desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-vos-iris-section />
+  <app-tarif-section />
+  <app-faq-section />
+</main>
+
+<app-footer />

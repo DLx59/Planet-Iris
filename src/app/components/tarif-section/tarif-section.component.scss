@@ -1,0 +1,39 @@
+.effortlessly-integration-container {
+  padding-top: 120px;
+}
+
+.download-badge-holder {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.download-badge-container {
+  grid-column-gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  @media screen and (max-width: 479px) {
+    grid-row-gap: 20px;
+    flex-direction: column;
+  }
+}
+
+.presentation-paragraph-holder {
+  padding: 0 2rem;
+  max-width: 490px;
+}
+
+#eye-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  margin-bottom: 3px;
+}

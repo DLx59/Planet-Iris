@@ -1,0 +1,66 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main class="container legal-page">
+  <h1 transloco="politique.title"></h1>
+
+  <section>
+    <h2 transloco="politique.intro-title"></h2>
+    <p transloco="politique.intro-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.collect-title"></h2>
+    <p transloco="politique.collect-desc"></p>
+    <ul>
+      <li [innerHTML]="'politique.collect-li1' | transloco"></li>
+      <li [innerHTML]="'politique.collect-li2' | transloco"></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 transloco="politique.use-title"></h2>
+    <p transloco="politique.use-desc"></p>
+    <ul>
+      <li transloco="politique.use-li1"></li>
+      <li transloco="politique.use-li2"></li>
+      <li transloco="politique.use-li3"></li>
+      <li transloco="politique.use-li4"></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 transloco="politique.sharing-title"></h2>
+    <p transloco="politique.sharing-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.ga-title"></h2>
+    <p transloco="politique.ga-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.security-title"></h2>
+    <p transloco="politique.security-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="politique.rights-title"></h2>
+    <p transloco="politique.rights-desc"></p>
+    <ul>
+      <li transloco="politique.rights-li1"></li>
+      <li transloco="politique.rights-li2"></li>
+      <li transloco="politique.rights-li3"></li>
+      <li transloco="politique.rights-li4"></li>
+      <li transloco="politique.rights-li5"></li>
+      <li transloco="politique.rights-li6"></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 transloco="politique.contact-title"></h2>
+    <p [innerHTML]="'politique.contact-desc' | transloco"></p>
+  </section>
+</main>
+
+<app-footer />

@@ -1,0 +1,49 @@
+<section id="presentation" class="section">
+  <div class="container">
+    <div class="presentation-section">
+      <div class="center-title">
+        <div class="title-holder">
+          <h1 class="title" transloco="presentation.title"></h1>
+        </div>
+      </div>
+      <div class="presentation-cards-holder">
+        <div class="presentation-grid">
+          <div id="presentation-wrapper" class="presentation-wrapper">
+            <article id="presentation-card" data-pi-id="a1b2c3d4e5" class="presentation-card">
+              <div class="light-wrapper-in-front">
+                <div class="light">
+                  <div class="light-outside"></div>
+                </div>
+              </div>
+              <div class="presentation-card-content">
+                <div class="presentation-card-image-holder">
+                  <img src="img/planet-iris.webp" loading="lazy"
+                       alt="Portrait macro d'iris par Planet'Iris, studio de photographie à Avelgem, Belgique"
+                       class="presentation-card-image"/>
+                  <div class="presentation-gradient"></div>
+                </div>
+                <div class="presentation-card-text-holder">
+                  <div class="presentation-paragraph-holder">
+                    <p [innerHTML]="'presentation.p1' | transloco"></p>
+                    <p [innerHTML]="'presentation.p2' | transloco"></p>
+                    <p [innerHTML]="'presentation.p3' | transloco"></p>
+                    <address>
+                      <strong transloco="presentation.studio"></strong><br>
+                      <span transloco="presentation.zip"></span> <span transloco="presentation.city"></span><br>
+                      <span transloco="presentation.nearby"></span>
+                    </address>
+                  </div>
+                </div>
+              </div>
+              <div class="light-wrapper">
+                <div class="light">
+                  <div class="light-inside"></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

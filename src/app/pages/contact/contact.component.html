@@ -1,0 +1,72 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main>
+  <section class="section contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1 class="title fade-in-on-scroll" transloco="contact-page.hero.title"></h1>
+        <p class="fade-in-on-scroll" [innerHTML]="'contact-page.hero.desc' | transloco"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-cards-section">
+    <div class="container">
+      <div class="contact-cards">
+
+        <a href="https://www.facebook.com/planet.iris.belgique/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-card fade-in-on-scroll"
+           [attr.aria-label]="'contact-page.fb-label' | transloco">
+          <div class="contact-card-icon">
+            <img src="img/vector/facebook.svg" alt="Facebook" width="56" height="56" loading="lazy">
+          </div>
+          <div class="contact-card-info">
+            <h2>Facebook</h2>
+            <p>planet.iris.belgique</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/planet_iris_belgique/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-card fade-in-on-scroll"
+           [attr.aria-label]="'contact-page.ig-label' | transloco">
+          <div class="contact-card-icon">
+            <img src="img/vector/instagram.svg" alt="Instagram" width="56" height="56" loading="lazy">
+          </div>
+          <div class="contact-card-info">
+            <h2>Instagram</h2>
+            <p>planet_iris_belgique</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="contact-location fade-in-on-scroll">
+        <div class="contact-location-pin">📍</div>
+        <div>
+          <strong transloco="contact-page.location-name"></strong><br>
+          <span transloco="contact-page.location-address"></span><br>
+          <span class="contact-location-sub" transloco="contact-page.location-nearby"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer />

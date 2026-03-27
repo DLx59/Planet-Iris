@@ -1,0 +1,33 @@
+<section id="faq" class="section faq-section">
+  <div class="container">
+    <div class="center-title fade-in-on-scroll">
+      <h2 class="title" transloco="faq.title"></h2>
+      <p transloco="faq.subtitle"></p>
+    </div>
+
+    <div class="faq-list">
+      @for (item of faqItems; track item.questionKey; let i = $index) {
+        <div class="faq-item fade-in-on-scroll"
+             [class.open]="openIndex() === i"
+             (click)="toggle(i)"
+             role="button"
+             [attr.aria-expanded]="openIndex() === i">
+          <div class="faq-question">
+            <span [transloco]="item.questionKey"></span>
+            <div class="faq-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2.5"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p [transloco]="item.answerKey"></p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

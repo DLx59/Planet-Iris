@@ -1,0 +1,58 @@
+<section id="confiance" class="section avis-section">
+  <div class="container">
+    <div class="center-title fade-in-on-scroll">
+      <h2 class="title" transloco="confiance.title"></h2>
+      <p transloco="confiance.subtitle"></p>
+    </div>
+
+    <div class="avis-grid">
+      @if (hasReviews()) {
+        @for (review of displayedReviews(); track review.name) {
+          <div class="avis fade-in-on-scroll">
+            <div class="avis-top">
+              <div class="stars" [innerHTML]="buildStars(review.rating)"></div>
+            </div>
+            <div class="content">
+              <p>&#8220;{{ review.text }}&#8221;</p>
+            </div>
+            <div class="avis-footer">
+              <div class="avis-footer-left">
+                @if (review.photo) {
+                  <img class="avis-avatar"
+                       [src]="review.photo"
+                       [alt]="review.name"
+                       loading="lazy"
+                       (error)="$any($event.target).style.display='none'">
+                } @else {
+                  <div class="avis-avatar-placeholder">{{ getInitial(review.name) }}</div>
+                }
+                <span class="avis-author-name">{{ review.name }}</span>
+              </div>
+              <span [innerHTML]="googleLogo()"></span>
+            </div>
+          </div>
+        }
+      } @else {
+        @for (i of [1, 2, 3]; track i) {
+          <div class="avis avis-skeleton">
+            <div class="avis-top">
+              <div class="skel skel-stars"></div>
+            </div>
+            <div class="content skel-content">
+              <div class="skel skel-line skel-line--long"></div>
+              <div class="skel skel-line skel-line--med"></div>
+              <div class="skel skel-line skel-line--short"></div>
+            </div>
+            <div class="avis-footer">
+              <div class="avis-footer-left">
+                <div class="skel skel-avatar"></div>
+                <div class="skel skel-line skel-line--name"></div>
+              </div>
+              <div class="skel skel-logo"></div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+  </div>
+</section>

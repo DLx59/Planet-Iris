@@ -1,0 +1,57 @@
+<header class="navbar" role="banner">
+  <div class="container nav-container">
+
+    <!-- Main navigation pill -->
+    <div class="nav-menu-container bg-navbar" (mousemove)="onNavbarMouseMove($event)">
+      <a routerLink="/" class="brand">
+        Planet'Iris
+      </a>
+      <nav role="navigation" aria-label="Navigation principale"
+           class="nav-menu"
+           [class.open]="menuOpen()">
+        <div class="nav-link">
+          @for (link of navLinks; track link.routerLink) {
+            <div class="nav-link-active-holder">
+              <a [routerLink]="link.routerLink"
+                 routerLinkActive="is-active"
+                 [routerLinkActiveOptions]="{ exact: link.exact }"
+                 class="nav-link-holder"
+                 (click)="menuOpen.set(false)">
+                <div class="nav-link-text-holder">
+                  <div class="nav-link-text" [transloco]="link.labelKey"></div>
+                </div>
+              </a>
+              <a [routerLink]="link.routerLink"
+                 routerLinkActive="is-active"
+                 [routerLinkActiveOptions]="{ exact: link.exact }"
+                 class="circle-active-holder"></a>
+            </div>
+          }
+        </div>
+        <div class="nav-button-holder">
+          <a routerLink="/contact" class="button navbar-button"
+             transloco="nav.contact"
+             (click)="menuOpen.set(false)"></a>
+        </div>
+      </nav>
+      <div class="menu-button" aria-label="Menu" (click)="toggleMenu()">
+        <div class="center-box">
+          <img src="img/menu.svg" loading="lazy" alt=""/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Language switcher pill -->
+    <div class="lang-switcher bg-navbar" (mousemove)="onNavbarMouseMove($event)">
+      @for (lang of langOptions; track lang.code) {
+        <button class="lang-btn"
+                [class.active]="activeLang() === lang.code"
+                [attr.title]="lang.label"
+                (click)="setLang(lang.code)">
+          {{ lang.display }}
+        </button>
+      }
+    </div>
+
+  </div>
+</header>

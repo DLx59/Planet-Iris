@@ -1,0 +1,48 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main class="container legal-page">
+  <h1 transloco="mentions-legales.title"></h1>
+
+  <section>
+    <h2 transloco="mentions-legales.publisher-title"></h2>
+    <p [innerHTML]="'mentions-legales.publisher-desc' | transloco"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.responsible-title"></h2>
+    <p transloco="mentions-legales.responsible-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.hosting-title"></h2>
+    <p [innerHTML]="'mentions-legales.hosting-desc' | transloco"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.ip-title"></h2>
+    <p transloco="mentions-legales.ip-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.data-title"></h2>
+    <p [innerHTML]="'mentions-legales.data-desc' | transloco"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.cookies-title"></h2>
+    <p transloco="mentions-legales.cookies-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.links-title"></h2>
+    <p transloco="mentions-legales.links-desc"></p>
+  </section>
+
+  <section>
+    <h2 transloco="mentions-legales.contact-title"></h2>
+    <p [innerHTML]="'mentions-legales.contact-desc' | transloco"></p>
+  </section>
+</main>
+
+<app-footer />

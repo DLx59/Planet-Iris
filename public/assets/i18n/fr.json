@@ -1,0 +1,245 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "tarifs": "Tarifs",
+    "contact": "Contact"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "services": "Services",
+    "tarifs": "Tarifs",
+    "contact": "Contact",
+    "mentions-legales": "Mentions légales",
+    "politique-de-confidentialite": "Politique de confidentialité"
+  },
+  "hero": {
+    "desc1": "Planet'Iris capture la beauté de chaque iris à travers des portraits photographiques uniques.",
+    "desc2": "Transformez vos iris en œuvres d'art personnalisées",
+    "price": "à partir de 50€.",
+    "cta": "Voir nos formules"
+  },
+  "stats": {
+    "from": "à partir de",
+    "digital": "livraison digitale",
+    "unique": "unique comme vous",
+    "reviews": "avis Google"
+  },
+  "why": {
+    "title": "Pourquoi Planet'Iris ?",
+    "card1": {
+      "title": "Unique comme vos empreintes",
+      "desc": "Votre iris est aussi unique que vos empreintes digitales. Notre appareil macro révèle ce que l'œil nu ne voit jamais."
+    },
+    "card2": {
+      "title": "Art & précision",
+      "desc": "Chaque image est une œuvre en haute définition : textures, couleurs et motifs d'une précision saisissante."
+    },
+    "card3": {
+      "title": "Souvenir éternel",
+      "desc": "Pour vous, pour offrir, pour la famille. En fichier digital seul, ou en impression encadrée ou non avec le digital inclus."
+    }
+  },
+  "process": {
+    "title": "Comment ça marche ?",
+    "step1": {
+      "title": "Réservez",
+      "desc": "Contactez-nous via nos réseaux sociaux pour fixer votre séance à Avelgem, entre Courtrai et Mouscron."
+    },
+    "step2": {
+      "title": "La séance",
+      "desc": "30 minutes suffisent. Notre appareil macro s'approche à quelques millimètres de votre œil pour tout révéler."
+    },
+    "step3": {
+      "title": "Votre œuvre",
+      "desc": "Fichiers HD sous 3 jours ouvrables. Impressions sous 15 jours. Livrées chez vous."
+    }
+  },
+  "home-cta": {
+    "title": "Révélez votre iris",
+    "desc": "À partir de <strong>50€</strong> · Studio à Avelgem, Belgique",
+    "formulas": "Voir nos formules",
+    "contact": "Nous contacter"
+  },
+  "presentation": {
+    "title": "Présentation de Planet'Iris",
+    "p1": "Tout a commencé par une fascination : la beauté cachée dans chaque œil. <em>Emilie</em> et <em>Denis</em> ont fondé <strong>Planet'Iris</strong> en 2024 à <strong>Avelgem</strong>, entre <strong>Courtrai</strong> et <strong>Mouscron</strong>, avec une idée simple, révéler ce que l'œil nu ne voit pas.",
+    "p2": "Grâce à la <strong>photographie macro d'iris</strong>, chaque séance dévoile les textures, les couleurs et les motifs absolument uniques de votre regard. Le résultat est une image haute définition d'une précision saisissante : une véritable <strong>œuvre d'art personnalisée</strong>, que ce soit pour vous, pour offrir en cadeau ou pour immortaliser un moment en famille.",
+    "p3": "Parce que chaque iris est une empreinte unique, autant que vos empreintes digitales, et que ça mérite d'être vu.",
+    "studio": "Planet'Iris, studio photo iris",
+    "zip": "8580",
+    "city": "Avelgem, Belgique",
+    "nearby": "Proche de Courtrai (Kortrijk) & Mouscron"
+  },
+  "vos-iris": {
+    "title": "Découvrez Vos Iris Uniques",
+    "desc": "Saviez-vous que votre iris est aussi unique que vos empreintes digitales ? Grâce à notre appareil macro, on s'approche à quelques millimètres de votre œil pour en révéler chaque détail : les reliefs, les nuances de couleur, les motifs que vous n'avez jamais vraiment vus. Le résultat vous surprendra, garanti.",
+    "items": {
+      "1": {
+        "label": "Être seul, c'est parfois mieux que mal accompagné, et franchement, votre iris se suffit à lui-même.",
+        "alt": "Photo d'un iris seul par Planet'Iris"
+      },
+      "2": {
+        "label": "Votre moitié a aussi un iris magnifique ? C'est le moment de vérifier, et d'immortaliser ça.",
+        "alt": "Photo de deux iris par Planet'Iris"
+      },
+      "3": {
+        "label": "Deux, c'était bien. Trois, c'est mieux. Surtout quand on peut les accrocher au mur.",
+        "alt": "Photo de trois iris par Planet'Iris"
+      },
+      "4": {
+        "label": "Parce que la ressemblance familiale, ça se lit aussi dans les yeux. Spoiler : c'est souvent frappant.",
+        "alt": "Photo de quatre iris par Planet'Iris"
+      },
+      "5": {
+        "label": "À ce stade, c'est carrément une galerie d'art. Manque juste l'étiquette avec le prix.",
+        "alt": "Photo de cinq iris par Planet'Iris"
+      },
+      "6": {
+        "label": "Six iris, c'est la famille au complet. Les grands-parents compris, et ils méritent leur place sur le mur.",
+        "alt": "Photo de six iris par Planet'Iris"
+      }
+    }
+  },
+  "tarif-section": {
+    "delivery-title": "Faible temps de traitement",
+    "delivery-desc": "Nous vous fournissons <strong>les photos au format digital</strong> dans les <strong>3 jours ouvrables</strong> et les <strong>impressions</strong> dans les <strong>15 jours ouvrables</strong> à compter de la réception du format digital.",
+    "see-tarifs": "Voir nos tarifs",
+    "interested": "Vous êtes intéressé ?",
+    "contact-us": "Nous contacter"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir avant de réserver votre séance.",
+    "q1": "Comment se déroule une séance photo ?",
+    "a1": "La séance dure environ 30 minutes dans notre studio à Avelgem. Aucune préparation particulière n'est nécessaire. Notre appareil macro s'approche à quelques millimètres de votre œil pour capturer chaque détail de votre iris : reliefs, couleurs, motifs, dans les meilleures conditions.",
+    "q2": "Est-ce que ça fait mal ou est-ce dangereux ?",
+    "a2": "Pas du tout. L'appareil ne touche jamais votre œil. La séance utilise uniquement une lumière douce et une lentille macro. C'est une expérience agréable et sans contact, accessible à tous. Les personnes portant des lentilles de contact doivent simplement les retirer avant la séance.",
+    "q3": "Combien de temps avant de recevoir mes photos ?",
+    "a3": "Les fichiers digitaux haute définition sont livrés dans les 3 jours ouvrables suivant votre séance. Les impressions sont disponibles sous 15 jours ouvrables à compter de la réception du fichier digital. Le fichier digital est inclus dans toute commande d'impression.",
+    "q4": "Quels formats et supports d'impression proposez-vous ?",
+    "a4": "Nous proposons plusieurs supports (papier, aluminium…) et différents ratios (carré, rectangle, rond). Les dimensions varient selon le format choisi. Consultez notre page Tarifs pour le détail complet des formats, dimensions et prix disponibles.",
+    "q5": "Peut-on photographier des enfants ?",
+    "a5": "Oui, les enfants sont les bienvenus. Un supplément de 35 € par enfant de moins de 12 ans est appliqué, en raison du soin supplémentaire nécessaire pour réaliser la mise au point sur un iris en mouvement.",
+    "q6": "Peut-on photographier des animaux de compagnie ?",
+    "a6": "Oui ! Un supplément de 65 € par animal est appliqué. Contactez-nous au préalable via nos réseaux sociaux pour vérifier la faisabilité selon le type d'animal.",
+    "q7": "Où se situe le studio ?",
+    "a7": "Notre studio est situé à Avelgem (8580), en Belgique, entre Courtrai (Kortrijk) et Mouscron. L'adresse exacte vous sera communiquée lors de la confirmation de votre rendez-vous.",
+    "q8": "Comment réserver une séance ?",
+    "a8": "La réservation se fait uniquement par message privé sur nos réseaux sociaux : Facebook (planet.iris.belgique) ou Instagram (planet_iris_belgique). Nous vous répondrons dans les plus brefs délais pour convenir d'une date."
+  },
+  "confiance": {
+    "title": "Ils nous ont fait confiance",
+    "subtitle": "Pourquoi pas vous ?"
+  },
+  "footer": {
+    "follow": "Suivez-nous",
+    "made-by": "Made by",
+    "powered-by": "Powered by",
+    "services": "Services",
+    "tarifs": "Tarifs",
+    "contact": "Contact",
+    "legal": "Mentions légales",
+    "privacy": "Politique de Confidentialité"
+  },
+  "services-page": {
+    "hero": {
+      "title": "Nos formules",
+      "desc": "De la séance photo à l'impression, tout ce qu'il faut savoir avant de réserver."
+    },
+    "included": {
+      "title": "Ce qui est inclus",
+      "subtitle": "Une expérience simple, du début à la livraison.",
+      "item1": {
+        "title": "Séance photo",
+        "desc": "Environ 30 minutes dans notre studio à Avelgem. Aucune préparation particulière nécessaire."
+      },
+      "item2": {
+        "title": "Fichiers HD",
+        "desc": "Photos haute définition livrées dans les <strong>3 jours ouvrables</strong> après votre séance."
+      },
+      "item3": {
+        "title": "Impressions",
+        "desc": "Tirages disponibles sous <strong>15 jours ouvrables</strong>, dans de nombreux formats et ratios. Encadré ou non selon votre choix."
+      },
+      "item4": {
+        "title": "Jusqu'à 6 iris",
+        "desc": "Solo, duo, famille ou animaux, jusqu'à 6 iris sur une même impression. Supplément de 35€ par enfant de moins de 12 ans."
+      }
+    }
+  },
+  "tarifs-page": {
+    "hero": {
+      "title": "Nos tarifs",
+      "desc": "Transparents, sans surprise. Choisissez le format qui vous correspond."
+    },
+    "note": "Pour chaque <strong>enfant de moins de 12 ans</strong>, un supplément de <strong>35 €</strong> est appliqué. La <strong>photographie d'animaux</strong> est disponible avec un supplément de <strong>65 €</strong> par animal.",
+    "digital-title": "Fichier digital HD",
+    "digital-desc": "Livraison sous 3 jours ouvrables après la séance.",
+    "print-desc": "Livraison sous 15 jours ouvrables après réception du fichier digital.",
+    "impression": "Impression",
+    "format": "Format",
+    "frame": "CADRE"
+  },
+  "contact-page": {
+    "hero": {
+      "title": "Contactez-nous",
+      "desc": "Nous sommes joignables uniquement par message privé sur nos réseaux sociaux.<br>Nous vous répondons dans les plus brefs délais."
+    },
+    "fb-label": "Nous contacter sur Facebook",
+    "ig-label": "Nous contacter sur Instagram",
+    "location-name": "Studio Planet'Iris",
+    "location-address": "8580 Avelgem, Belgique",
+    "location-nearby": "Entre Courtrai (Kortrijk) & Mouscron"
+  },
+  "mentions-legales": {
+    "title": "Mentions Légales",
+    "publisher-title": "Éditeur du site",
+    "publisher-desc": "<strong>Planet'Iris</strong><br>Dottignies, Belgique<br>Créée en 2024 par Emilie Deman et Denis Wojtowicz",
+    "responsible-title": "Responsable de la publication",
+    "responsible-desc": "Denis Wojtowicz",
+    "hosting-title": "Hébergement du site",
+    "hosting-desc": "Nom de l'hébergeur : Infomaniak<br>Adresse de l'hébergeur : Infomaniak Network SA - Rue Eugène Marziano 25 - 1227 Les Acacias (GE)<br>Contact de l'hébergeur : <a href=\"https://www.infomaniak.com/fr/aide\">www.infomaniak.com/fr/aide</a>",
+    "ip-title": "Propriété intellectuelle",
+    "ip-desc": "Tous les contenus présents sur le site Planet'Iris, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de Planet'Iris à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.",
+    "data-title": "Protection des données personnelles",
+    "data-desc": "Conformément à la loi, vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données vous concernant. Vous pouvez exercer ce droit en envoyant un courrier électronique à <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>.",
+    "cookies-title": "Cookies",
+    "cookies-desc": "Le site Planet'Iris peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez.",
+    "links-title": "Liens hypertextes",
+    "links-desc": "Le site Planet'Iris peut contenir des liens hypertextes vers d'autres sites présents sur le réseau Internet. Les liens vers ces autres ressources vous font quitter le site Planet'Iris.",
+    "contact-title": "Contact",
+    "contact-desc": "Pour toute question ou information concernant le site, vous pouvez nous contacter à l'adresse suivante : <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>."
+  },
+  "politique": {
+    "title": "Politique de Confidentialité",
+    "intro-title": "Introduction",
+    "intro-desc": "Bienvenue sur Planet'Iris. Nous prenons la confidentialité de vos données personnelles très au sérieux. Cette politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et comment nous les protégeons.",
+    "collect-title": "Informations que nous collectons",
+    "collect-desc": "Nous collectons différents types d'informations dans le but de vous fournir et améliorer nos services :",
+    "collect-li1": "<strong>Informations personnelles</strong> : lorsque vous utilisez notre site, nous pouvons collecter des informations telles que votre nom, votre adresse e-mail, et toute autre information que vous fournissez volontairement.",
+    "collect-li2": "<strong>Informations d'utilisation</strong> : nous utilisons Google Analytics pour collecter des informations sur la manière dont vous utilisez notre site.",
+    "use-title": "Utilisation des informations",
+    "use-desc": "Nous utilisons les informations collectées pour les raisons suivantes :",
+    "use-li1": "Fournir et améliorer nos services",
+    "use-li2": "Personnaliser votre expérience sur notre site",
+    "use-li3": "Analyser l'utilisation de notre site et améliorer sa performance",
+    "use-li4": "Envoyer des communications marketing si vous y avez consenti",
+    "sharing-title": "Partage des informations",
+    "sharing-desc": "Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles à des tiers sans votre consentement, sauf pour les fins décrites dans la présente politique.",
+    "ga-title": "Google Analytics",
+    "ga-desc": "Nous utilisons Google Analytics pour collecter des informations sur l'utilisation de notre site. Vous pouvez empêcher Google Analytics de vous reconnaître lors de vos prochaines visites en désactivant les cookies sur votre navigateur.",
+    "security-title": "Protection des informations",
+    "security-desc": "Nous mettons en œuvre une variété de mesures de sécurité pour maintenir la sécurité de vos informations personnelles.",
+    "rights-title": "Vos droits",
+    "rights-desc": "Conformément à la législation applicable, vous disposez des droits suivants :",
+    "rights-li1": "Accéder à vos données personnelles",
+    "rights-li2": "Rectifier les données inexactes ou incomplètes",
+    "rights-li3": "Demander l'effacement de vos données personnelles",
+    "rights-li4": "Limiter le traitement de vos données personnelles",
+    "rights-li5": "Vous opposer au traitement de vos données personnelles",
+    "rights-li6": "Demander la portabilité de vos données personnelles",
+    "contact-title": "Contactez-nous",
+    "contact-desc": "Email : <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>"
+  }
+}

@@ -1,0 +1,121 @@
+.contact-hero {
+  padding: 140px 0 60px;
+  text-align: center;
+
+  p {
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+.contact-cards-section {
+  padding: 20px 0 120px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem 2.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: inherit;
+    transform: translateY(-5px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+
+    .contact-card-arrow {
+      transform: translateX(6px);
+      color: #fff;
+    }
+  }
+}
+
+.contact-card-icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  background-color: #0d1117;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+}
+
+.contact-card-info {
+  flex: 1;
+
+  h2 {
+    font-size: 26px;
+    margin: 0 0 4px;
+  }
+
+  p {
+    margin: 0;
+    color: #81859f;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.contact-card-arrow {
+  color: #81859f;
+  flex-shrink: 0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-location {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 720px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+
+  p,
+  div {
+    color: #b4bcd0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  strong {
+    color: #fff;
+  }
+}
+
+.contact-location-pin {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.contact-location-sub {
+  color: #81859f;
+  font-size: 13px;
+}
