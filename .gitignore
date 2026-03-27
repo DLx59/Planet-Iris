@@ -4,6 +4,8 @@
 node_modules
 dist
 .cache
+config.php
+reviews_cache.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all

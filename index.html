@@ -2,24 +2,34 @@
 <html data-pi-page="a1b2c3d4e5" lang="fr">
 <head>
   <meta name="description"
-        content="Planet'Iris offre une expérience unique de photographie d'iris à Dottignies - Mouscron en Belgique, permettant de mettre en lumière les motifs singuliers de chaque iris. Parfait pour les portraits personnels ou les projets artistiques.">
+        content="Planet'Iris, studio de photographie d'iris à Avelgem, proche de Courtrai (Kortrijk) et Mouscron en Belgique. Portraits macro artistiques de vos yeux, révélant les motifs uniques de chaque iris. À partir de 50 €.">
   <meta charset="utf-8">
-  <meta name="generator" content="WebStorm">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planet'Iris - Photographie d'Iris à Dottignies - Mouscron</title>
+  <title>Planet'Iris - Photographie d'Iris à Avelgem | Proche de Courtrai & Mouscron | Belgique</title>
   <meta name="author" content="Planet'Iris">
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="photographie d'iris, identité visuelle, portrait d'iris">
-  <meta property="og:locale" content="fr">
-  <meta property="og:url" content="https://planet-iris.com/">
-  <meta property="og:title" content="Planet'Iris - Photographie d'iris unique et artistique">
+  <meta name="keywords" content="photographie d'iris, portrait d'iris, macro photo oeil, photo iris Belgique, studio photo iris, Avelgem, Dottignies, Mouscron, Kortrijk, Courtrai, Belgique, cadeau photo original, portrait artistique, photo oeil macro, iris photography Belgium, identité visuelle">
+  <meta property="og:locale" content="fr_BE">
+  <meta property="og:url" content="https://www.planet-iris.com/">
+  <meta property="og:title" content="Planet'Iris - Photographie d'Iris à Avelgem, près de Courtrai & Mouscron | Belgique">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.planet-iris.com/img/planet-iris.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Photographie macro d'un iris réalisée par Planet'Iris">
   <meta property="og:description"
-        content="Découvrez Planet'Iris, le spécialiste de la photographie d'iris à Dottignies - Mouscron en Belgique. Capturez la beauté unique de vos yeux pour révéler votre identité visuelle personnelle. Visitez notre site pour plus d'informations !">
-  <meta property="og:updated_time" content="1718704468">
+        content="Découvrez Planet'Iris, le spécialiste de la photographie d'iris à Avelgem, proche de Courtrai (Kortrijk) et Mouscron en Belgique. Capturez la beauté unique de vos yeux en portrait artistique macro personnalisé. À partir de 50 €.">
+  <meta property="og:site_name" content="Planet'Iris">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planet'Iris - Photographie d'Iris à Avelgem, près de Courtrai & Mouscron | Belgique">
+  <meta name="twitter:description" content="Studio de photographie d'iris à Avelgem, proche de Courtrai (Kortrijk) et Mouscron en Belgique. Portraits macro artistiques de vos yeux à partir de 50 €.">
+  <meta name="twitter:image" content="https://www.planet-iris.com/img/planet-iris.webp">
+  <meta name="geo.region" content="BE-VWV">
+  <meta name="geo.placename" content="Avelgem, Belgique">
+  <meta name="geo.position" content="50.7747;3.6516">
+  <meta name="ICBM" content="50.7747, 3.6516">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="https://www.planet-iris.com">
+  <link rel="canonical" href="https://www.planet-iris.com/">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" sizes="192x192" href="android-chrome-192x192.png">
   <link rel="icon" sizes="512x512" href="android-chrome-512x512.png">
@@ -29,7 +39,204 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .avis {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .avis-top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .avis-top .stars { display: flex; gap: 3px; }
+    .avis .content {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.2) transparent;
+    }
+    .avis .content::-webkit-scrollbar {
+      width: 4px;
+    }
+    .avis .content::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .avis .content::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.2);
+      border-radius: 2px;
+    }
+    .avis .content p {
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .avis-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .avis-footer-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .avis-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .avis-avatar-placeholder {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: rgba(255,255,255,0.6);
+    }
+    .avis-author-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+  </style>
   <link rel="shortcut icon" href="favicon.ico">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.planet-iris.com/#business",
+        "name": "Planet'Iris",
+        "description": "Studio de photographie d'iris à Avelgem, proche de Courtrai (Kortrijk) et Mouscron, Belgique. Portraits macro artistiques et personnalisés de vos yeux.",
+        "url": "https://www.planet-iris.com/",
+        "email": "contact@planetiris.com",
+        "image": "https://www.planet-iris.com/img/planet-iris.webp",
+        "logo": "https://www.planet-iris.com/img/planet-iris.webp",
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Avelgem",
+          "addressRegion": "West-Vlaanderen",
+          "postalCode": "8580",
+          "addressCountry": "BE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 50.7747,
+          "longitude": 3.6516
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Avelgem"},
+          {"@type": "City", "name": "Dottignies"},
+          {"@type": "City", "name": "Mouscron"},
+          {"@type": "City", "name": "Kortrijk"},
+          {"@type": "City", "name": "Courtrai"},
+          {"@type": "City", "name": "Tournai"},
+          {"@type": "City", "name": "Lille"}
+        ],
+        "foundingDate": "2024",
+        "founder": [
+          {"@type": "Person", "name": "Emilie Deman"},
+          {"@type": "Person", "name": "Denis Wojtowicz"}
+        ],
+        "sameAs": [
+          "https://www.facebook.com/planet.iris.belgique/",
+          "https://www.instagram.com/planet_iris_belgique/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Photographie d'iris",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {"@type": "Service", "name": "Photo digitale HD – 1 iris"},
+              "price": "50",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {"@type": "Service", "name": "Photo digitale HD – 2 iris"},
+              "price": "90",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {"@type": "Service", "name": "Photo digitale HD – 3 iris"},
+              "price": "120",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {"@type": "Service", "name": "Photo digitale HD – 4 iris"},
+              "price": "140",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {"@type": "Service", "name": "Photo digitale HD – 5 iris"},
+              "price": "150",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {"@type": "Service", "name": "Photo digitale HD – 6 iris"},
+              "price": "160",
+              "priceCurrency": "EUR"
+            }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Pierre"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Une expérience incroyable ! La photo de mon iris est d'une précision et d'une beauté inégalées. La qualité du service était exceptionnelle, depuis la prise de rendez-vous jusqu'à la livraison de la photo. Je recommande vivement vos services à tous ceux qui cherchent quelque chose de spécial et de personnel."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Florence"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Je suis absolument ravie de ma photo d'iris ! Le résultat est époustouflant et tellement unique. Le professionnalisme et la patience dont vous avez fait preuve pendant la séance m'ont vraiment impressionnée. Merci pour cette magnifique œuvre d'art."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Sophie"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Je ne savais pas à quoi m'attendre en prenant rendez-vous pour une photographie d'iris, mais le résultat a dépassé toutes mes attentes. L'image est si détaillée et captivante. Chaque fois que je la regarde, je découvre de nouveaux détails fascinants. Merci pour cette expérience mémorable et cette œuvre unique !"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.planet-iris.com/#website",
+        "url": "https://www.planet-iris.com/",
+        "name": "Planet'Iris",
+        "description": "Studio de photographie d'iris à Avelgem, proche de Dottignies (Mouscron), Belgique",
+        "inLanguage": "fr-BE",
+        "publisher": {"@id": "https://www.planet-iris.com/#business"}
+      }
+    ]
+  }
+  </script>
   <script src="https://cmp.osano.com/AzZZHnUGeezSEDxHc/1356ca4a-e75d-4fd5-9b67-e1643f51f215/osano.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N4LRW8TB7"></script>
   <meta name="facebook-domain-verification" content="mk01zjofo4x47u33pchefngkmyzolx"/>
@@ -183,19 +390,20 @@
                 </div>
                 <div class="presentation-card-content">
                   <div class="presentation-card-image-holder">
-                    <img src="img/planet-iris.webp" loading="lazy" alt="planet'iris photographie"
+                    <img src="img/planet-iris.webp" loading="lazy" alt="Portrait macro d'iris par Planet'Iris, studio de photographie à Avelgem, Belgique"
                          class="presentation-card-image"/>
                     <div class="presentation-gradient"></div>
                   </div>
                   <div class="presentation-card-text-holder">
                     <div class="presentation-paragraph-holder">
-                      <p>Bienvenue chez <strong>Planet'Iris</strong>, votre studio de photographie d'iris basé à
-                        <strong>Dottignies</strong> (Mouscron), <strong>Belgique</strong>. Fondée en 2024 par
-                        <em>Emilie</em> et <em>Denis</em>,
-                        Planet'Iris capture la beauté unique de chaque iris avec des portraits photographiques
-                        artistiques et personnalisés. Nous transformons vos iris en œuvres d'art exceptionnelles,
-                        révélant des détails époustouflants et une véritable fenêtre sur votre âme. Découvrez notre
-                        savoir-faire et laissez-vous émerveiller par la magie de votre regard.</p>
+                      <p>Tout a commencé par une fascination : la beauté cachée dans chaque œil. <em>Emilie</em> et <em>Denis</em> ont fondé <strong>Planet'Iris</strong> en 2024 à <strong>Avelgem</strong>, entre <strong>Courtrai</strong> et <strong>Mouscron</strong>, avec une idée simple, révéler ce que l'œil nu ne voit pas.</p>
+                      <p>Grâce à la <strong>photographie macro d'iris</strong>, chaque séance dévoile les textures, les couleurs et les motifs absolument uniques de votre regard. Le résultat est une image haute définition d'une précision saisissante : une véritable <strong>œuvre d'art personnalisée</strong>, que ce soit pour vous, pour offrir en cadeau ou pour immortaliser un moment en famille.</p>
+                      <p>Parce que chaque iris est une empreinte unique, autant que vos empreintes digitales, et que ça mérite d'être vu.</p>
+                      <address>
+                        <strong>Planet'Iris</strong> — Studio photo iris<br>
+                        <span>8580</span> Avelgem, Belgique<br>
+                        Proche de Courtrai (Kortrijk) &amp; Mouscron
+                      </address>
                     </div>
                   </div>
                 </div>
@@ -219,13 +427,10 @@
           <div id="w-node-_0f99c55c-aef0-ebd9-f690-9830ff12bd17-5ffe7f77" class="trusted-content">
             <div class="content-sticky">
               <div class="fade-in-on-scroll">
-                <h1 class="title smaller">Découvrez Vos Iris Uniques</h1>
+                <h2 class="title smaller">Découvrez Vos Iris Uniques</h2>
               </div>
               <div class="fade-in-on-scroll">
-                <p>Plongez dans l'univers fascinant de vos iris. Chaque iris est une œuvre d'art unique, capturée avec
-                  précision pour révéler les détails et les couleurs qui rendent vos yeux si spéciaux. Découvrez comment
-                  vos iris peuvent se transformer en véritables pièces d'art, reflétant votre singularité et votre
-                  beauté intérieure.</p>
+                <p>Saviez-vous que votre iris est aussi unique que vos empreintes digitales ? Grâce à notre appareil macro, on s'approche à quelques millimètres de votre œil pour en révéler chaque détail : les reliefs, les nuances de couleur, les motifs que vous n'avez jamais vraiment vus. Le résultat vous surprendra, garanti.</p>
               </div>
             </div>
           </div>
@@ -238,7 +443,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">1iris</h2>
                 <div class="card-title">
-                  <strong>Être seul, c'est parfois mieux que mal accompagné. Appréciez votre singularité.</strong>
+                  <strong>Être seul, c'est parfois mieux que mal accompagné, et franchement, votre iris se suffit à lui-même.</strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -272,7 +477,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">2iris</h2>
                 <div class="card-title">
-                  <strong>À deux, c'est toujours mieux. Découvrez la magie de vos iris en tandem.</strong>
+                  <strong>Votre moitié a aussi un iris magnifique ? C'est le moment de vérifier, et d'immortaliser ça.</strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -306,7 +511,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">3iris</h2>
                 <div class="card-title">
-                  <strong>À trois, c'est encore plus beau. Admirez la splendeur de vos iris en trio.</strong>
+                  <strong>Deux, c'était bien. Trois, c'est mieux. Surtout quand on peut les accrocher au mur.</strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -340,7 +545,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">4iris</h2>
                 <div class="card-title">
-                  <strong>En famille, la beauté des iris se multiplie.</strong>
+                  <strong>Parce que la ressemblance familiale, ça se lit aussi dans les yeux. Spoiler : c'est souvent frappant.</strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -372,7 +577,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">5iris</h2>
                 <div class="card-title">
-                  <strong>Chaque regard est une histoire. Immortalisez ce moment unique avec vos proches.</strong>
+                  <strong>À ce stade, c'est carrément une galerie d'art. Manque juste l'étiquette avec le prix.</strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -406,7 +611,7 @@
               <div class="trusted-item-header">
                 <h2 class="trusted-no">6iris</h2>
                 <div class="card-title">
-                  <strong>Intégrez les regards des grands-parents pour une vraie symphonie familiale.</strong>
+                  <strong>Six iris, c'est la famille au complet. Les grands-parents compris, et ils méritent leur place sur le mur.</strong>
                 </div>
               </div>
               <div class="fade-in-on-scroll">
@@ -448,7 +653,7 @@
         <div class="center-title">
           <div class="title-holder">
             <div class="fade-in-move-on-scroll">
-              <h1 class="title">Faible temps de traitement</h1>
+              <h2 class="title">Faible temps de traitement</h2>
             </div>
             <div class="fade-in-move-on-scroll">
               <div class="presentation-paragraph-holder">
@@ -473,7 +678,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-8 offset-md-2">
-                    <h1 class="title">Nos tarifs</h1>
+                    <h2 class="title">Nos tarifs</h2>
                     <p>Pour chaque <strong>enfant de moins de 12 ans</strong>, un supplément de <strong>35 €</strong>
                       est appliqué. La <strong>photographie d'animaux</strong> est disponible avec un supplément de
                       <strong>65 €</strong> par animal.</p>
@@ -518,7 +723,7 @@
       <div class="effortlessly-integration-container">
         <div class="center-title">
           <div class="fade-in-move-on-scroll">
-            <h1 class="title">Vous êtes intéressé ?</h1>
+            <h2 class="title">Vous êtes intéressé ?</h2>
           </div>
         </div>
         <div class="download-badge-holder">
@@ -549,43 +754,23 @@
       <div class="box-container">
         <div class="box purple" data-speed="0.80">
           <div class="avis">
-            <div class="stars">
-              <img loading="lazy" src="img/rating.svg" alt="avis 5 étoiles" height="50" width="150">
-            </div>
-            <div class="content">
-              <p>"Une expérience incroyable ! La photo de mon iris est d'une précision et d'une beauté inégalées. La
-                qualité du service était exceptionnelle, depuis la prise de rendez-vous jusqu'à la livraison de la
-                photo. Je recommande vivement vos services à tous ceux qui cherchent quelque chose de spécial et de
-                personnel."</p>
-            </div>
-            <div class="name"><em>- Pierre</em></div>
+            <div class="stars"></div>
+            <div class="content"><p></p></div>
+            <div class="name"><em></em></div>
           </div>
         </div>
         <div class="box red" data-speed="1">
           <div class="avis">
-            <div class="stars">
-              <img loading="lazy" src="img/rating.svg" alt="avis 5 étoiles" height="50" width="150">
-            </div>
-            <div class="content">
-              <p>"Je suis absolument ravie de ma photo d'iris ! Le résultat est époustouflant et tellement unique. Le
-                professionnalisme et la patience dont vous avez fait preuve pendant la séance m'ont vraiment
-                impressionnée. Merci pour cette magnifique œuvre d'art."</p>
-            </div>
-            <div class="name"><em>- Florence</em></div>
+            <div class="stars"></div>
+            <div class="content"><p></p></div>
+            <div class="name"><em></em></div>
           </div>
         </div>
         <div class="box blue" data-speed="0.85">
           <div class="avis">
-            <div class="stars">
-              <img loading="lazy" src="img/rating.svg" alt="avis 5 étoiles" height="50" width="150">
-            </div>
-            <div class="content">
-              <p>"Je ne savais pas à quoi m'attendre en prenant rendez-vous pour une photographie d'iris, mais le
-                résultat a dépassé toutes mes attentes. L'image est si détaillée et captivante. Chaque fois que je la
-                regarde, je découvre de nouveaux détails fascinants. Merci pour cette expérience mémorable et cette
-                œuvre unique !"</p>
-            </div>
-            <div class="name"><em>- Sophie</em></div>
+            <div class="stars"></div>
+            <div class="content"><p></p></div>
+            <div class="name"><em></em></div>
           </div>
         </div>
       </div>
@@ -665,7 +850,7 @@
           <img src="https://assets.website-files.com/63aee5793ca698452efe7f60/63b596060d25401713e4cacd_instagram.svg"
                loading="lazy" alt="Instagram" class="social-media-icon"/>
         </a>
-        <a href="https://www.instagram.com/planet_iris_belgique/" target="_blank" aria-label="Facebook"
+        <a href="https://www.facebook.com/planet.iris.belgique/" target="_blank" aria-label="Facebook"
            class="social-media-link w-inline-block">
           <img src="https://assets.website-files.com/63aee5793ca698452efe7f60/63b596060d254036e8e4cacc_facebook.svg"
                loading="lazy" alt="Facebook" class="social-media-icon"/>
@@ -681,7 +866,7 @@
         </div>
         <div class="powered-by">
           <div class="light-grey">
-            Powered by <a href="https://www.infomaniak.com/fr" target="_blank" class="external-link">Infomaniak</a>
+            Powered by <a href="https://www.hostinger.com" target="_blank" class="external-link">Hostinger</a>
           </div>
         </div>
       </div>
@@ -718,7 +903,93 @@
         crossorigin="anonymous"></script>
 <script src="js/default.js" type="text/javascript"></script>
 <script src="js/app.js" type="text/javascript"></script>
+
 <script>
+  // ── Avis Google ──
+  (function () {
+    function buildStars(rating) {
+      const uid = Math.random().toString(36).slice(2, 7);
+      let html = '';
+      for (let i = 1; i <= 5; i++) {
+        const diff = rating - (i - 1);
+        let fill, stroke;
+        if (diff >= 1) {
+          fill = '#FBBC04'; stroke = '#FBBC04';
+        } else if (diff >= 0.25) {
+          const gradId = `hstar-${uid}-${i}`;
+          const pct = Math.round(diff * 100) + '%';
+          html += `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <linearGradient id="${gradId}">
+                <stop offset="${pct}" stop-color="#FBBC04"/>
+                <stop offset="${pct}" stop-color="none"/>
+              </linearGradient>
+            </defs>
+            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+              fill="url(#${gradId})" stroke="#FBBC04" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>`;
+          continue;
+        } else {
+          fill = 'none'; stroke = '#ccc';
+        }
+        html += `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+            fill="${fill}" stroke="${stroke}" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>`;
+      }
+      return html;
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function googleLogo() {
+      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22" height="22" aria-label="Avis Google" role="img">
+        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+      </svg>`;
+    }
+
+    function renderReviews(reviews) {
+      const boxes = document.querySelectorAll('.box-container .box');
+      const picked = shuffle([...reviews]).slice(0, boxes.length);
+      picked.forEach((review, i) => {
+        const initial = review.name.charAt(0).toUpperCase();
+        const avatar = review.photo
+          ? `<img class="avis-avatar" src="${review.photo}" alt="${review.name}" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avis-avatar-placeholder',textContent:'${initial}'}))">`
+          : `<div class="avis-avatar-placeholder">${initial}</div>`;
+        boxes[i].querySelector('.avis').innerHTML = `
+          <div class="avis-top">
+            <div class="stars">
+              ${buildStars(review.rating)}
+              <span class="visually-hidden">Note : ${review.rating} sur 5</span>
+            </div>
+          </div>
+          <div class="content"><p>\u201C${review.text}\u201D</p></div>
+          <div class="avis-footer">
+            <div class="avis-footer-left">
+              ${avatar}
+              <span class="avis-author-name">${review.name}</span>
+            </div>
+            ${googleLogo()}
+          </div>`;
+      });
+    }
+
+    fetch('/reviews.php')
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then(reviews => { if (reviews.length) renderReviews(reviews); })
+      .catch(() => {});
+  })();
+
   document.addEventListener("DOMContentLoaded", () => {
     var e = document.createElement("iframe");
     e.src = "https://applimova.ai/embededChatbot?id=6855d36e2abf63dae86887d0";
@@ -729,18 +1000,19 @@
       right: i ? "5%" : "30px",
       border: "none",
       zIndex: "1000",
-      width: o,
-      height: t,
-      borderRadius: "10px"
+      width: "50px",
+      height: "70px",
+      borderRadius: "10px",
+      pointerEvents: "none"
     });
     document.body.appendChild(e);
     window.addEventListener("message", n => {
       const d = n.data;
       if (d && typeof d === "object") {
         if (d.chatbotOpen === true) {
-          e.style.width = o, e.style.height = t
+          e.style.width = o, e.style.height = t, e.style.pointerEvents = "auto"
         } else if (d.chatbotOpen === false) {
-          e.style.width = "50px", e.style.height = "70px"
+          e.style.width = "50px", e.style.height = "70px", e.style.pointerEvents = "none"
         }
       }
     })

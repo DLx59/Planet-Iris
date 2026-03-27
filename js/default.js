@@ -186,15 +186,20 @@ document.getElementById("tarif-button").addEventListener("click", function () {
   setTimeout(() => {
     popin.classList.add("open");
   }, 10);
+  const scrollY = window.scrollY;
+  document.body.style.top = `-${scrollY}px`;
   document.body.classList.add('no-scroll');
 });
 
 document.getElementById("close-button").addEventListener("click", function () {
   const popin = document.getElementById("popin");
   popin.classList.remove("open");
+  const scrollY = parseInt(document.body.style.top || '0') * -1;
+  document.body.classList.remove('no-scroll');
+  document.body.style.top = '';
+  window.scrollTo(0, scrollY);
   setTimeout(() => {
     popin.classList.add("hidden");
-    document.body.classList.remove('no-scroll');
   }, 500);
 });
 
