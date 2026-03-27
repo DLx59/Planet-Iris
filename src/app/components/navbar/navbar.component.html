@@ -1,0 +1,34 @@
+<header class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner"
+        data-no-scroll="1" data-duration="500" data-doc-height="1">
+  <div class="container nav-container">
+    <div class="nav-menu-container bg-navbar" (mousemove)="onNavbarMouseMove($event)">
+      <a href="https://www.planet-iris.com" aria-current="page" class="brand w-nav-brand w--current">
+        Planet'Iris
+      </a>
+      <nav role="navigation" aria-label="Main navigation"
+           class="nav-menu w-nav-menu"
+           [class.open]="menuOpen()">
+        <div class="nav-link">
+          @for (link of navLinks; track link.href) {
+            <div class="nav-link-active-holder">
+              <a [href]="link.href" class="nav-link-holder w-inline-block" (click)="menuOpen.set(false)">
+                <div class="nav-link-text-holder">
+                  <div class="nav-link-text">{{ link.label }}</div>
+                </div>
+              </a>
+              <a [href]="link.href" class="cricle-active-holder w-inline-block"></a>
+            </div>
+          }
+        </div>
+        <div class="nav-button-holder">
+          <a href="#contact" class="button navbar-button w-button" (click)="menuOpen.set(false)">Contact</a>
+        </div>
+      </nav>
+      <div class="menu-button w-nav-button" aria-label="Open menu" (click)="toggleMenu()">
+        <div class="center-box">
+          <img src="img/menu.svg" loading="lazy" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

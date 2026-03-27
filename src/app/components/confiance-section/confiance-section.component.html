@@ -1,0 +1,49 @@
+<section id="confiance" class="overflow-hidden section">
+  <div class="main-container">
+    <div class="extra-long-container">
+      <img class="iris-flottant" src="img/iris.webp" alt="Planet'Iris flottant"/>
+    </div>
+  </div>
+  <div id="avis" class="text-center">
+    <h2>Ils nous ont fait confiance !</h2>
+    <p>Pourquoi pas vous ?</p>
+
+    <div class="box-container">
+      @if (hasReviews()) {
+        @for (review of displayedReviews(); track review.name; let i = $index) {
+          <div class="box {{ review.color }}" [attr.data-speed]="review.speed">
+            <div class="avis">
+              <div class="avis-top">
+                <div class="stars" [innerHTML]="buildStars(review.rating)">
+                </div>
+              </div>
+              <div class="content">
+                <p>&#8220;{{ review.text }}&#8221;</p>
+              </div>
+              <div class="avis-footer">
+                <div class="avis-footer-left">
+                  @if (review.photo) {
+                    <img class="avis-avatar"
+                         [src]="review.photo"
+                         [alt]="review.name"
+                         loading="lazy"
+                         (error)="$any($event.target).style.display='none'">
+                  } @else {
+                    <div class="avis-avatar-placeholder">{{ getInitial(review.name) }}</div>
+                  }
+                  <span class="avis-author-name">{{ review.name }}</span>
+                </div>
+                <span [innerHTML]="googleLogo()"></span>
+              </div>
+            </div>
+          </div>
+        }
+      } @else {
+        <!-- Boîtes vides en attendant le chargement -->
+        <div class="box purple" data-speed="0.80"><div class="avis"></div></div>
+        <div class="box red" data-speed="1"><div class="avis"></div></div>
+        <div class="box blue" data-speed="0.85"><div class="avis"></div></div>
+      }
+    </div>
+  </div>
+</section>
