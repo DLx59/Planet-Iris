@@ -43,7 +43,7 @@ backup:
   <<: *ssh_setup
   script:
     - DATE=$(date +%d-%m-%Y-%Hh-%Mm-%Ss)
-    - ssh $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE && tar czf $BACKUP_DIR/backup_$DATE/backup.tar.gz -C $DEPLOY_DIR . && echo 'Deny from all' > $BACKUP_DIR/.htaccess"
+    - ssh $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE && tar czf $BACKUP_DIR/backup_$DATE/backup.tar.gz -C $DEPLOY_DIR --exclude='./planet-iris-backup' . && echo 'Deny from all' > $BACKUP_DIR/.htaccess"
   only:
     - master
 
@@ -52,6 +52,6 @@ deploy:
   stage: deploy
   <<: *ssh_setup
   script:
-    - rsync -avz --delete --exclude='config.php' --exclude='reviews_cache.json' -e "ssh -p 65002" dist/planet-iris/browser/ $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/
+    - rsync -avz --delete --exclude='config.php' --exclude='reviews_cache.json' --exclude='planet-iris-backup/' -e "ssh -p 65002" dist/planet-iris/browser/ $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/
   only:
     - master
