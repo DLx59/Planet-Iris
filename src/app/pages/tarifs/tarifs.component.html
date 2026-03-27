@@ -1,0 +1,103 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main>
+  <section class="section tarifs-hero">
+    <div class="container">
+      <div class="tarifs-hero-content fade-in-on-scroll">
+        <h1 class="title">Nos tarifs</h1>
+        <p>Transparents, sans surprise. Choisissez le format qui vous correspond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="tarifs-note fade-in-on-scroll">
+        <p>
+          Pour chaque <strong>enfant de moins de 12 ans</strong>, un supplément de <strong>35 €</strong> est appliqué.
+          La <strong>photographie d'animaux</strong> est disponible avec un supplément de <strong>65 €</strong> par animal.
+        </p>
+      </div>
+
+      <!-- Fichier digital HD -->
+      <div class="tarif-block fade-in-on-scroll">
+        <h2>Fichier digital HD</h2>
+        <p>Livraison sous 3 jours ouvrables après la séance.</p>
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered table-hover">
+            <thead class="table-dark text-center">
+              <tr>
+                <th scope="col">1 IRIS</th>
+                <th scope="col">2 IRIS</th>
+                <th scope="col">3 IRIS</th>
+                <th scope="col">4 IRIS</th>
+                <th scope="col">5 IRIS</th>
+                <th scope="col">6 IRIS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">50 €</td>
+                <td class="text-center">90 €</td>
+                <td class="text-center">120 €</td>
+                <td class="text-center">140 €</td>
+                <td class="text-center">150 €</td>
+                <td class="text-center">160 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Impressions par support -->
+      @for (support of tarifs(); track support.support) {
+        <div class="tarif-block fade-in-on-scroll">
+          <h2>Impression {{ support.support }}</h2>
+          <p>Livraison sous 15 jours ouvrables après réception du fichier digital.</p>
+          @for (ratio of support.ratios; track ratio.name) {
+            <h3>{{ ratio.name }}</h3>
+            <div class="table-responsive">
+              <table class="table table-sm table-bordered table-hover"
+                     [class.custom-table]="ratio.name !== 'Rond'">
+                <thead class="table-dark text-center">
+                  <tr>
+                    <th scope="col">Format</th>
+                    <th scope="col">1 IRIS</th>
+                    <th scope="col">2 IRIS</th>
+                    <th scope="col">3 IRIS</th>
+                    <th scope="col">4 IRIS</th>
+                    <th scope="col">5 IRIS</th>
+                    <th scope="col">6 IRIS</th>
+                    @if (ratio.name !== 'Rond') {
+                      <th scope="col">CADRE</th>
+                    }
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (dim of ratio.dimensions; track dim.dimension) {
+                    <tr>
+                      <td class="text-center">{{ dim.dimension }}</td>
+                      @for (price of dim.iris; track $index) {
+                        <td class="text-center">{{ price }} €</td>
+                      }
+                      @if (ratio.name !== 'Rond') {
+                        <td class="text-center">
+                          {{ dim.frame !== null ? dim.frame + ' €' : '-' }}
+                        </td>
+                      }
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          }
+        </div>
+      }
+
+    </div>
+  </section>
+</main>
+
+<app-footer />

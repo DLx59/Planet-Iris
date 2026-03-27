@@ -5,28 +5,21 @@ import {
   ElementRef,
   afterNextRender,
   inject,
-  signal,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { Router, RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
-import { TarifService } from '../../services/tarif.service';
-import { SupportEntry } from '../../models/tarif.model';
 
 @Component({
   selector: 'app-tarif-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [RouterLink],
   templateUrl: './tarif-section.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TarifSectionComponent {
-  private tarifService = inject(TarifService);
   private destroyRef = inject(DestroyRef);
   private elementRef = inject(ElementRef);
-
-  tarifs = toSignal(this.tarifService.getTarifs(), { initialValue: [] as SupportEntry[] });
-  isPopinOpen = signal(false);
+  private router = inject(Router);
 
   constructor() {
     afterNextRender(() => {
@@ -34,21 +27,8 @@ export class TarifSectionComponent {
     });
   }
 
-  openPopin(): void {
-    this.isPopinOpen.set(true);
-    document.body.classList.add('no-scroll');
-  }
-
-  closePopin(): void {
-    this.isPopinOpen.set(false);
-    setTimeout(() => {
-      document.body.classList.remove('no-scroll');
-    }, 500);
-  }
-
-  scrollToContact(): void {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  private navigateToContact(): void {
+    this.router.navigate(['/contact']);
   }
 
   private initContactButtonAnimation(): void {
@@ -81,7 +61,7 @@ export class TarifSectionComponent {
           yoyo: true,
           ease: 'power2.inOut',
           onComplete: () => {
-            this.scrollToContact();
+            this.navigateToContact();
             gsap.timeline().to(contactButton, {
               duration: 0.5,
               width: '164px',

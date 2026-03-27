@@ -1,13 +1,101 @@
 <app-navbar />
 
 <main>
+  <!-- Hero avec GSAP + bouton CTA intégré -->
   <app-hero-section />
-  <app-presentation-section />
-  <app-vos-iris-section />
-  <app-tarif-section />
+
+  <!-- Chiffres clés -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in-on-scroll">
+          <span class="stat-value" data-stat="price">50€</span>
+          <span class="stat-label">à partir de</span>
+        </div>
+        <div class="stat-item fade-in-on-scroll">
+          <span class="stat-value" data-stat="days">3 j</span>
+          <span class="stat-label">livraison digitale</span>
+        </div>
+        <div class="stat-item fade-in-on-scroll">
+          <span class="stat-value" data-stat="unique">100%</span>
+          <span class="stat-label">unique comme vous</span>
+        </div>
+        <div class="stat-item fade-in-on-scroll">
+          <span class="stat-value" data-stat="rating">⭐ 5/5</span>
+          <span class="stat-label">avis Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi Planet'Iris -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="center-title fade-in-on-scroll">
+        <h2 class="title">Pourquoi Planet'Iris ?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-icon">👁️</div>
+          <h3>Unique comme vos empreintes</h3>
+          <p>Votre iris est aussi unique que vos empreintes digitales. Notre appareil macro révèle ce que l'œil nu ne voit jamais.</p>
+        </div>
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-icon">🎨</div>
+          <h3>Art &amp; précision</h3>
+          <p>Chaque image est une œuvre en haute définition — textures, couleurs et motifs d'une précision saisissante.</p>
+        </div>
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-icon">🖼️</div>
+          <h3>Souvenir éternel</h3>
+          <p>Pour vous, pour offrir, pour la famille. Disponible en fichier digital ou en impression encadrée.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comment ça marche -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="center-title fade-in-on-scroll">
+        <h2 class="title">Comment ça marche ?</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step fade-in-on-scroll">
+          <div class="process-number">01</div>
+          <h3>Réservez</h3>
+          <p>Contactez-nous via nos réseaux sociaux pour fixer votre séance à Avelgem, entre Courtrai et Mouscron.</p>
+        </div>
+        <div class="process-step fade-in-on-scroll">
+          <div class="process-number">02</div>
+          <h3>La séance</h3>
+          <p>30 minutes suffisent. Notre appareil macro s'approche à quelques millimètres de votre œil pour tout révéler.</p>
+        </div>
+        <div class="process-step fade-in-on-scroll">
+          <div class="process-number">03</div>
+          <h3>Votre œuvre</h3>
+          <p>Fichiers HD sous 3 jours ouvrables. Impressions encadrées sous 15 jours. Livrées chez vous.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis clients -->
   <app-confiance-section />
-  <app-faq-section />
-  <app-contact-section />
+
+  <!-- CTA finale -->
+  <section class="section home-cta">
+    <div class="container">
+      <div class="home-cta-content fade-in-on-scroll">
+        <h2 class="title">Révélez votre iris</h2>
+        <p>À partir de <strong>50€</strong> · Studio à Avelgem, Belgique</p>
+        <div class="home-cta-buttons">
+          <a routerLink="/services" class="button">Voir nos formules</a>
+          <a routerLink="/contact" class="button button-outline">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <app-footer />

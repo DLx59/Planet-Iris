@@ -1,27 +1,33 @@
-<header class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner"
-        data-no-scroll="1" data-duration="500" data-doc-height="1">
+<header class="navbar w-nav" role="banner">
   <div class="container nav-container">
     <div class="nav-menu-container bg-navbar" (mousemove)="onNavbarMouseMove($event)">
-      <a href="https://www.planet-iris.com" aria-current="page" class="brand w-nav-brand w--current">
+      <a routerLink="/" class="brand w-nav-brand">
         Planet'Iris
       </a>
       <nav role="navigation" aria-label="Main navigation"
            class="nav-menu w-nav-menu"
            [class.open]="menuOpen()">
         <div class="nav-link">
-          @for (link of navLinks; track link.href) {
+          @for (link of navLinks; track link.routerLink) {
             <div class="nav-link-active-holder">
-              <a [href]="link.href" class="nav-link-holder w-inline-block" (click)="menuOpen.set(false)">
+              <a [routerLink]="link.routerLink"
+                 routerLinkActive="w--current"
+                 [routerLinkActiveOptions]="{ exact: link.exact }"
+                 class="nav-link-holder w-inline-block"
+                 (click)="menuOpen.set(false)">
                 <div class="nav-link-text-holder">
                   <div class="nav-link-text">{{ link.label }}</div>
                 </div>
               </a>
-              <a [href]="link.href" class="cricle-active-holder w-inline-block"></a>
+              <a [routerLink]="link.routerLink"
+                 routerLinkActive="w--current"
+                 [routerLinkActiveOptions]="{ exact: link.exact }"
+                 class="cricle-active-holder w-inline-block"></a>
             </div>
           }
         </div>
         <div class="nav-button-holder">
-          <a href="#contact" class="button navbar-button w-button" (click)="menuOpen.set(false)">Contact</a>
+          <a routerLink="/contact" class="button navbar-button w-button" (click)="menuOpen.set(false)">Contact</a>
         </div>
       </nav>
       <div class="menu-button w-nav-button" aria-label="Open menu" (click)="toggleMenu()">

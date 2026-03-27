@@ -6,12 +6,14 @@ import {
   afterNextRender,
   inject,
 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-hero-section',
   standalone: true,
+  imports: [RouterLink],
   templateUrl: './hero-section.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

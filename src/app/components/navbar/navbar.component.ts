@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -12,11 +12,9 @@ export class NavbarComponent {
   menuOpen = signal(false);
 
   navLinks = [
-    { href: '#presentation', label: 'Présentation' },
-    { href: '#vos-iris', label: 'Vos iris' },
-    { href: '#tarif', label: 'Tarif' },
-    { href: '#avis', label: 'Avis' },
-    { href: '#faq', label: 'FAQ' },
+    { routerLink: '/', label: 'Accueil', exact: true },
+    { routerLink: '/services', label: 'Services', exact: false },
+    { routerLink: '/tarifs', label: 'Tarifs', exact: false },
   ];
 
   onNavbarMouseMove(event: MouseEvent): void {
