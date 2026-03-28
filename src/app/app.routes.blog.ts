@@ -16,4 +16,14 @@ export const BLOG_ROUTES: Routes = [
     loadComponent: () =>
       import('./pages/blog/photo-iris-cataracte/photo-iris-cataracte.component').then(m => m.PhotoIrisCataracteComponent),
   },
+  {
+    path: 'photo-iris-animaux',
+    loadComponent: () =>
+      import('./pages/blog/photo-iris-animaux/photo-iris-animaux.component').then(m => m.PhotoIrisAnimauxComponent),
+  },
+  {
+    path: 'familles-meme-couleur-yeux',
+    loadComponent: () =>
+      import('./pages/blog/familles-meme-couleur-yeux/familles-meme-couleur-yeux.component').then(m => m.FamillesMemeCouleurYeuxComponent),
+  },
 ];

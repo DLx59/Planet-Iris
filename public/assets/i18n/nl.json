@@ -19,13 +19,15 @@
     "politique-de-confidentialite": "Privacybeleid",
     "blog": "Blog",
     "photo-iris-cataracte": "Iris & staar",
-    "iris-yeux-marrons": "Bruine ogen & iris"
+    "iris-yeux-marrons": "Bruine ogen & iris",
+    "photo-iris-animaux": "Diereniris",
+    "familles-meme-couleur-yeux": "Familie & zelfde kleur"
   },
   "hero": {
     "desc1": "Planet'Iris legt de schoonheid van elke iris vast via unieke macrofoto's.",
     "desc2": "Transformeer uw irissen in gepersonaliseerde kunstwerken",
     "price": "vanaf €50.",
-    "cta": "Bekijk onze formules"
+    "cta": "Bekijk onze diensten"
   },
   "stats": {
     "from": "vanaf",
@@ -60,13 +62,13 @@
     },
     "step3": {
       "title": "Uw kunstwerk",
-      "desc": "HD-bestanden binnen 3 werkdagen. Ingelijste prints binnen 15 dagen. Aan huis geleverd."
+      "desc": "HD-bestanden binnen 3 werkdagen. Ingelijste prints binnen 15 dagen. Af te halen in de studio."
     }
   },
   "home-cta": {
     "title": "Onthul uw iris",
     "desc": "Vanaf <strong>€50</strong> · Studio in Avelgem, België",
-    "formulas": "Bekijk onze formules",
+    "services": "Bekijk onze diensten",
     "contact": "Neem contact op"
   },
   "presentation": {
@@ -157,7 +159,7 @@
   },
   "services-page": {
     "hero": {
-      "title": "Onze formules",
+      "title": "Onze diensten",
       "desc": "Van de fotosessie tot de print,<br>alles wat u moet weten voor u reserveert."
     },
     "included": {
@@ -271,13 +273,15 @@
   },
   "page-title": {
     "home": "Planet'Iris – Irisfotografie | Avelgem, België",
-    "services": "Onze irisfotografie formules | Planet'Iris",
+    "services": "Onze irisfotografie diensten | Planet'Iris",
     "tarifs": "Irisfotografie tarieven | Planet'Iris",
     "contact": "Contact | Planet'Iris",
     "mentions-legales": "Wettelijke vermeldingen | Planet'Iris",
     "politique": "Privacybeleid | Planet'Iris",
     "article-cataracte": "Iris & staar: sessie mogelijk | Planet'Iris",
     "article-marrons": "Bruine ogen in irisfotografie: een verbluffend resultaat | Planet'Iris",
+    "article-animaux": "Irisfotografie voor dieren: honden, katten, paarden | Planet'Iris",
+    "article-famille-couleur": "Dezelfde oogkleur in de familie: elke iris is uniek | Planet'Iris",
     "blog": "Blog | Planet'Iris"
   },
   "blog-page": {
@@ -291,6 +295,12 @@
       },
       "photo-iris-cataracte": {
         "desc": "Heeft u staar? Ontdek waarom een irisfotografiesessie bij Planet'Iris perfect mogelijk is, met korte belichtingen per oog en geen contact met het oog."
+      },
+      "photo-iris-animaux": {
+        "desc": "Wist u dat we ook dierenirrissen fotograferen? Honden, katten, paarden... De sessie vindt plaats bij u thuis of in de stal. Alles over het verloop, de tarieven en de verplaatsingskosten."
+      },
+      "familles-meme-couleur-yeux": {
+        "desc": "Heeft uw familie allemaal dezelfde oogkleur? In macro onthult elke iris een unieke structuur: vlekken, texturen, reliëfs. Ontdek waarom uw ogen uniek zijn, zelfs binnen de familie."
       }
     }
   },
@@ -323,7 +333,7 @@
   },
   "article-cta": {
     "contact": "Contact opnemen",
-    "services": "Onze formules",
+    "services": "Onze diensten",
     "tarifs": "Onze tarieven"
   },
   "article-marrons": {
@@ -345,6 +355,50 @@
     "cta-title": "Klaar om uw iris te ontdekken?",
     "cta-desc": "Welke kleur uw ogen ook hebben, elke iris is een uniek kunstwerk. <strong>Neem contact op</strong> om uw sessie in Avelgem te boeken.",
     "meta-desc": "Denkt u dat uw bruine ogen saai zijn in macro? Bruine irissen zijn bij onze mooiste resultaten. Ontdek waarom bij Planet'Iris in Avelgem.",
+    "reading-time": "4 min lezen",
+    "published": "Studio Planet'Iris · Avelgem, België"
+  },
+  "article-animaux": {
+    "tag": "Artikel",
+    "hero-title": "Irisfotografie voor dieren: honden, katten, paarden en meer",
+    "hero-intro": "Wist u dat we ook de irissen van uw viervoeters fotograferen? Honden, katten, paarden... elk dier draagt in zijn ogen een unieke schoonheid die onze macrocamera met verbluffende precisie onthult.",
+    "s1-title": "Honden en katten: onze trouwe klanten",
+    "s1-p1": "De grote meerderheid van onze diersessies betreft honden en katten. Zij hebben de meest gevarieerde en fotogenieke irissen in macrofotografie. De reliëfs, kleurschakeringen en unieke patronen van elk dier leveren vaak spectaculaire resultaten op.",
+    "s1-p2": "De sessie vindt plaats <strong>bij u thuis</strong>, in een vertrouwde omgeving voor het dier. Dit vermindert de stress aanzienlijk en bevordert de samenwerking. Wij brengen alle benodigde apparatuur mee.",
+    "s2-title": "Paarden en andere soorten: we passen ons aan",
+    "s2-p1": "We ontvangen regelmatig verzoeken voor <strong>paarden</strong>. In dat geval vindt de sessie rechtstreeks plaats in de <strong>stal of op het weiland</strong>, waar het paard zich thuis voelt. Paardenirrissen zijn groot, expressief en geven werkelijk indrukwekkende resultaten.",
+    "s2-p2": "Voor andere diersoorten kunt u ons vooraf contacteren via onze sociale media. We bekijken elk verzoek serieus en passen ons zoveel mogelijk aan.",
+    "s3-title": "Een ruimer tijdslot, om samenwerking de kans te geven",
+    "s3-p1": "In tegenstelling tot een sessie met mensen is de duur van een diersessie moeilijk te voorspellen. Het hangt allemaal af van de <strong>medewerking van het dier</strong> op de dag zelf. Sommige dieren zijn nieuwsgierig en coöperatief, anderen hebben tijd nodig om te wennen aan de camera en de belichting.",
+    "s3-p2": "Daarom plannen we altijd <strong>een ruimer tijdslot</strong>. Maar één ding is zeker: we vertrekken altijd met mooie foto's. Geduld is een deel van ons werk, en het resultaat is het altijd waard.",
+    "s4-title": "Tarieven en verplaatsingskosten",
+    "s4-p1": "Een <strong>toeslag van € 65 per dier</strong> wordt toegevoegd aan het standaardtarief voor irisfotografie. Verplaatsing is inbegrepen binnen een straal van <strong>10 km rond Avelgem</strong> (d.w.z. 20 km retour). Daarboven worden verplaatsingskosten van <strong>€ 0,50 per bijkomende kilometer</strong> aangerekend.",
+    "s4-p2": "Bijvoorbeeld voor een sessie in <strong>Moeskroen</strong> (ca. 22 km van Avelgem, dus ca. 44 km retour): 1 digitale iris aan € 50 + € 65 diertoeslag + € 12 verplaatsingskosten (24 extra km x € 0,50) = <strong>€ 127 all-in</strong>, verplaatsing inbegrepen.",
+    "cta-title": "Klaar om de ogen van uw dier vast te leggen?",
+    "cta-desc": "Elke diereniris is uniek. <strong>Neem contact met ons op</strong> via onze sociale media om de haalbaarheid te controleren en uw thuissessie te boeken.",
+    "meta-desc": "Planet'Iris fotografeert dierenirrissen: honden, katten, paarden. Sessie aan huis of in de stal, resultaat gegarandeerd. Tarieven en verplaatsingsinformatie.",
+    "reading-time": "4 min lezen",
+    "published": "Studio Planet'Iris · Avelgem, België"
+  },
+  "article-famille-couleur": {
+    "tag": "Artikel",
+    "hero-title": "Een familie met blauwe ogen (of groene, of bruine): en dan?",
+    "hero-intro": "\"We hebben allemaal blauwe ogen in de familie, ze zullen allemaal op elkaar lijken.\" Dit is waarschijnlijk een van de opmerkingen die we het vaakst horen. En het is ook een van de grootste misvattingen bij irisfotografie.",
+    "s1-title": "De beginveronderstelling: kleur bepaalt het resultaat",
+    "s1-p1": "Het is logisch om te denken dat twee mensen met blauwe ogen twee gelijkaardige foto's zullen opleveren. Dat is immers wat we met het blote oog waarnemen. Maar macroirisfotografie legt geen <em>kleur</em> vast, maar een <em>structuur</em>.",
+    "s1-p2": "En die structuur is radicaal anders van persoon tot persoon, <strong>zelfs binnen dezelfde familie</strong>, zelfs met ogen van dezelfde kleur.",
+    "s2-title": "Elke iris is een unieke vingerafdruk",
+    "s2-p1": "Net als vingerafdrukken zijn geen twee irissen identiek. Zelfs niet bij een tweeling. Elke iris heeft zijn eigen <strong>crypten, reliëfs, trabekelstructuren, vlekken en pigmentatie</strong>. In macro worden deze details zichtbaar met een precisie die nergens anders bestaat.",
+    "s2-p2": "Twee blauwe irissen die met het blote oog identiek lijken, kunnen in macro een heel ander beeld tonen: de ene een dicht, vertakt vezelnetwerk, de andere een bijna kristallijne structuur met zilverachtige glinstering. Dezelfde kleur. Compleet verschillende resultaten.",
+    "s3-title": "Details die u nog nooit had opgemerkt",
+    "s3-p1": "Er zijn vaak kleine <strong>donkerdere of lichtere vlekjes</strong>, een gepigmenteerde zone die u nooit had opgemerkt, een uitgesproken textuur aan één kant, of een tint die naar groen of grijs neigt afhankelijk van de belichting. Dat is de magie van macro: onthullen wat niemand ooit heeft gezien, uzelf niet eens.",
+    "s3-p2": "En voor een familie is dat precies de schoonheid van het project. Niet foto's die op elkaar lijken, maar portretten die met elkaar in gesprek gaan: <strong>elk uniek, allemaal onmiskenbaar verbonden</strong>. Een verzameling irissen die een gemeenschappelijk verhaal vertelt.",
+    "s4-title": "Familiegelijkenis zit in de details, niet in de kleur",
+    "s4-p1": "Soms duiken er gelijkenissen op in de macrostructuren van leden van dezelfde familie. Een bepaalde vezeldichtheid, een manier waarop de crypten zijn georganiseerd. Maar deze subtiele gelijkenissen versterken het project eerder dan ze het afzwakken.",
+    "s4-p2": "De volgende keer dat iemand in uw familie zegt <em>\"we hebben allemaal dezelfde ogen\"</em>, zeg hen dan dat het onmogelijk is. En kom het bewijzen.",
+    "cta-title": "Klaar om uw irissen als familie te ontdekken?",
+    "cta-desc": "Welke kleur uw ogen ook hebben, elke iris is uniek. <strong>Neem contact op</strong> om een familiesessie in Avelgem te plannen.",
+    "meta-desc": "Heeft uw hele familie dezelfde oogkleur? Elke iris blijft uniek. In macrofotografie onthult elk oog structuren, texturen en details die nergens anders te vinden zijn.",
     "reading-time": "4 min lezen",
     "published": "Studio Planet'Iris · Avelgem, België"
   },

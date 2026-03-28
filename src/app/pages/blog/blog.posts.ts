@@ -9,10 +9,24 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: 3,
   },
   {
+    slug: 'photo-iris-animaux',
+    titleKey: 'article-animaux.hero-title',
+    descKey: 'blog-page.posts.photo-iris-animaux.desc',
+    date: new Date('2026-03-25'),
+    readingTime: 4,
+  },
+  {
+    slug: 'familles-meme-couleur-yeux',
+    titleKey: 'article-famille-couleur.hero-title',
+    descKey: 'blog-page.posts.familles-meme-couleur-yeux.desc',
+    date: new Date('2026-03-12'),
+    readingTime: 4,
+  },
+  {
     slug: 'iris-yeux-marrons',
     titleKey: 'article-marrons.hero-title',
     descKey: 'blog-page.posts.iris-yeux-marrons.desc',
     date: new Date('2026-02-12'),
     readingTime: 4,
-  }
+  },
 ];

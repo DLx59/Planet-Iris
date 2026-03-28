@@ -4,6 +4,8 @@
  * Les relations doivent être déclarées dans les deux sens.
  */
 export const BLOG_RELATIONS: Readonly<Record<string, ReadonlyArray<string>>> = {
-  'photo-iris-cataracte': ['iris-yeux-marrons'],
-  'iris-yeux-marrons':    ['photo-iris-cataracte'],
+  'photo-iris-animaux':        ['familles-meme-couleur-yeux', 'photo-iris-cataracte'],
+  'familles-meme-couleur-yeux': ['iris-yeux-marrons', 'photo-iris-animaux'],
+  'photo-iris-cataracte':      ['iris-yeux-marrons', 'photo-iris-animaux'],
+  'iris-yeux-marrons':         ['photo-iris-cataracte', 'familles-meme-couleur-yeux'],
 };
