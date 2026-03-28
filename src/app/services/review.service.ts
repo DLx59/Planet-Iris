@@ -7,8 +7,8 @@ import { Review } from '../models/review.model';
 export class ReviewService {
   private http = inject(HttpClient);
 
-  getReviews() {
-    return this.http.get<Review[]>('/reviews.php').pipe(
+  getReviews(lang: string) {
+    return this.http.get<Review[]>(`/reviews.php?lang=${lang}`).pipe(
       catchError(() => of([] as Review[]))
     );
   }
