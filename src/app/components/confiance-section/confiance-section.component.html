@@ -30,6 +30,9 @@
               </div>
               <span [innerHTML]="googleLogo()"></span>
             </div>
+            @if (review.original_lang) {
+              <span class="avis-translated" transloco="confiance.auto-translated"></span>
+            }
           </div>
         }
       } @else {

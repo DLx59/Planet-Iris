@@ -3,4 +3,5 @@ export interface Review {
   photo?: string;
   rating: number;
   text: string;
+  original_lang?: string;
 }
