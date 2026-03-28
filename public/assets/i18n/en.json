@@ -144,7 +144,8 @@
   },
   "confiance": {
     "title": "They trusted us",
-    "subtitle": "Why not you?"
+    "subtitle": "Why not you?",
+    "auto-translated": "(Automatically translated)"
   },
   "footer": {
     "follow": "Follow us",

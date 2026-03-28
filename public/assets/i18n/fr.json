@@ -144,7 +144,8 @@
   },
   "confiance": {
     "title": "Ils nous ont fait confiance",
-    "subtitle": "Pourquoi pas vous ?"
+    "subtitle": "Pourquoi pas vous ?",
+    "auto-translated": "(Traduit automatiquement)"
   },
   "footer": {
     "follow": "Suivez-nous",
