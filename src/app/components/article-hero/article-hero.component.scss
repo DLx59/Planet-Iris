@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.article-hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+
+  .article-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $clr-link-legal;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .article-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 680px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .article-meta {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .meta-sep { opacity: 0.4; }
+  }
+}

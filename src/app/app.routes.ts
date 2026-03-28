@@ -32,6 +32,11 @@ export const routes: Routes = [
       import('./pages/politique-confidentialite/politique-confidentialite.component').then(m => m.PolitiqueConfidentialiteComponent),
   },
   {
+    path: 'blog',
+    loadChildren: () =>
+      import('./app.routes.blog').then(m => m.BLOG_ROUTES),
+  },
+  {
     path: '**',
     loadComponent: () =>
       import('./pages/not-found/not-found.component').then(m => m.NotFoundComponent),

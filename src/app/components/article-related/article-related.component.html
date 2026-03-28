@@ -1,0 +1,13 @@
+@if (relatedPosts().length > 0) {
+  <aside class="article-related">
+    <p class="article-related-label" transloco="article-related.title"></p>
+    <div class="article-related-list">
+      @for (post of relatedPosts(); track post.slug) {
+        <a [routerLink]="'/blog/' + post.slug" class="article-related-card">
+          <span class="article-related-card-title" [transloco]="post.titleKey"></span>
+          <span class="article-related-arrow" aria-hidden="true">→</span>
+        </a>
+      }
+    </div>
+  </aside>
+}

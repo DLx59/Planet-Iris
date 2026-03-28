@@ -1,0 +1,48 @@
+<header class="navbar" role="banner">
+  <div class="container nav-container">
+
+    <!-- Main navigation pill -->
+    <div class="nav-menu-container bg-navbar" (mousemove)="onMouseMove($event)">
+      <a routerLink="/" class="brand">Planet'Iris</a>
+      <nav role="navigation" aria-label="Navigation principale" class="nav-menu">
+        <div class="nav-link">
+          @for (link of navLinks; track link.routerLink) {
+            <div class="nav-link-active-holder">
+              <a [routerLink]="link.routerLink"
+                 routerLinkActive="is-active"
+                 [routerLinkActiveOptions]="{ exact: link.exact }"
+                 class="nav-link-holder">
+                <div class="nav-link-text-holder">
+                  <div class="nav-link-text" [transloco]="link.labelKey"></div>
+                </div>
+              </a>
+              <a [routerLink]="link.routerLink"
+                 routerLinkActive="is-active"
+                 [routerLinkActiveOptions]="{ exact: link.exact }"
+                 class="circle-active-holder"></a>
+            </div>
+          }
+        </div>
+        <div class="nav-button-holder">
+          <a routerLink="/contact" class="button navbar-button" transloco="nav.contact"></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Language switcher pill -->
+    <nav class="lang-switcher bg-navbar"
+         [attr.aria-label]="'nav.lang-switcher' | transloco"
+         (mousemove)="onMouseMove($event)">
+      @for (lang of langOptions; track lang.code) {
+        <button class="lang-btn"
+                [class.active]="activeLang() === lang.code"
+                [attr.aria-label]="lang.label"
+                [attr.aria-pressed]="activeLang() === lang.code"
+                (click)="setLang(lang.code)">
+          {{ lang.display }}
+        </button>
+      }
+    </nav>
+
+  </div>
+</header>

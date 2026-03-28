@@ -21,6 +21,8 @@
 }
 
 .hero-text-holder {
+  width: 100%;
+  left: 0;
   perspective: 1000px;
   white-space: nowrap;
   flex-direction: row;
@@ -101,11 +103,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .iris-holder { top: 22%; }
+  .iris-holder { top: 20%; }
 }
 
 @media screen and (max-width: 479px) {
   .hero-text { font-size: 16vw; }
-  .hero-section-paragraph-holder { padding-top: 40px; }
-  .iris-holder { top: 20%; }
+  .hero-section-paragraph-holder { padding-top: clamp(80px, 14vh, 140px); }
+  .iris-holder { top: 24%; }
 }

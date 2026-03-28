@@ -10,8 +10,10 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { TranslocoModule } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { PageTitleService } from '../../services/page-title.service';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { ConfianceSectionComponent } from '../../components/confiance-section/confiance-section.component';
+import { ArticleTeaserSectionComponent } from '../../components/article-teaser-section/article-teaser-section.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { AnimationService } from '../../services/animation.service';
 
@@ -24,6 +26,7 @@ import { AnimationService } from '../../services/animation.service';
     NavbarComponent,
     HeroSectionComponent,
     ConfianceSectionComponent,
+    ArticleTeaserSectionComponent,
     FooterComponent,
   ],
   templateUrl: './home.component.html',
@@ -35,6 +38,8 @@ export class HomeComponent {
   private destroyRef = inject(DestroyRef);
 
   constructor() {
+    inject(PageTitleService).set('page-title.home');
+
     afterNextRender(() => {
       this.animationService.initFadeInOnScroll();
       this.initStatsCounters();

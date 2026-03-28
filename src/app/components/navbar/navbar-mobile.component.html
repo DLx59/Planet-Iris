@@ -1,0 +1,70 @@
+<header class="navbar-mobile" role="banner">
+  <!--
+    .mobile-wrapper : position relative, pleine largeur, SANS backdrop-filter.
+    Le menu dropdown y est positionné en absolute → left:50% = centre du viewport.
+  -->
+  <div class="mobile-wrapper">
+
+    <div class="container mobile-nav-container">
+
+      <!-- Pill : brand + hamburger -->
+      <div class="mobile-pill bg-navbar" (mousemove)="onMouseMove($event)">
+        <a routerLink="/" class="brand">Planet'Iris</a>
+        <button class="menu-button"
+                [attr.aria-label]="menuOpen() ? ('nav.close-menu' | transloco) : ('nav.open-menu' | transloco)"
+                [attr.aria-expanded]="menuOpen()"
+                aria-controls="mobile-nav-menu"
+                (click)="toggleMenu()">
+          <div class="center-box">
+            <img src="img/menu.svg" loading="lazy" alt="" aria-hidden="true"/>
+          </div>
+        </button>
+      </div>
+
+      <!-- Language switcher pill -->
+      <nav class="lang-switcher bg-navbar"
+           [attr.aria-label]="'nav.lang-switcher' | transloco"
+           (mousemove)="onMouseMove($event)">
+        @for (lang of langOptions; track lang.code) {
+          <button class="lang-btn"
+                  [class.active]="activeLang() === lang.code"
+                  [attr.aria-label]="lang.label"
+                  [attr.aria-pressed]="activeLang() === lang.code"
+                  (click)="setLang(lang.code)">
+            {{ lang.display }}
+          </button>
+        }
+      </nav>
+
+    </div>
+
+    <!-- Dropdown : HORS du pill (pas de backdrop-filter sur le containing block) -->
+    <nav id="mobile-nav-menu"
+         role="navigation"
+         aria-label="Navigation principale"
+         class="mobile-menu"
+         [class.open]="menuOpen()">
+      <div class="nav-link">
+        @for (link of navLinks; track link.routerLink) {
+          <div class="nav-link-active-holder">
+            <a [routerLink]="link.routerLink"
+               routerLinkActive="is-active"
+               [routerLinkActiveOptions]="{ exact: link.exact }"
+               class="nav-link-holder"
+               (click)="menuOpen.set(false)">
+              <div class="nav-link-text-holder">
+                <div class="nav-link-text" [transloco]="link.labelKey"></div>
+              </div>
+            </a>
+          </div>
+        }
+      </div>
+      <div class="nav-button-holder">
+        <a routerLink="/contact" class="button navbar-button"
+           transloco="nav.contact"
+           (click)="menuOpen.set(false)"></a>
+      </div>
+    </nav>
+
+  </div>
+</header>

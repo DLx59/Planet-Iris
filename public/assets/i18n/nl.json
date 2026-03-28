@@ -3,7 +3,12 @@
     "home": "Home",
     "services": "Diensten",
     "tarifs": "Tarieven",
-    "contact": "Contact"
+    "blog": "Blog",
+    "contact": "Contact",
+    "open-menu": "Menu openen",
+    "close-menu": "Menu sluiten",
+    "lang-switcher": "Taalkeuze",
+    "skip-content": "Naar hoofdinhoud gaan"
   },
   "breadcrumb": {
     "home": "Home",
@@ -11,7 +16,10 @@
     "tarifs": "Tarieven",
     "contact": "Contact",
     "mentions-legales": "Wettelijke vermeldingen",
-    "politique-de-confidentialite": "Privacybeleid"
+    "politique-de-confidentialite": "Privacybeleid",
+    "blog": "Blog",
+    "photo-iris-cataracte": "Iris & staar",
+    "iris-yeux-marrons": "Bruine ogen & iris"
   },
   "hero": {
     "desc1": "Planet'Iris legt de schoonheid van elke iris vast via unieke macrofoto's.",
@@ -112,21 +120,25 @@
     "title": "Veelgestelde vragen",
     "subtitle": "Alles wat u moet weten voordat u uw sessie boekt.",
     "q1": "Hoe verloopt een fotosessie?",
-    "a1": "De sessie duurt ongeveer 30 minuten in ons studio in Avelgem. Geen speciale voorbereiding nodig. Onze macro-lens gaat tot op enkele millimeter van uw oog om elk detail van uw iris vast te leggen: texturen, kleuren, patronen, onder de beste omstandigheden.",
+    "a1": "De sessie duurt ongeveer 30 minuten in ons studio in Avelgem. Geen speciale voorbereiding nodig. Onze macro-lens gaat tot op enkele millimeter van uw oog om elk detail van uw iris vast te leggen: texturen, kleuren, patronen, onder de beste omstandigheden. We fotograferen beide irissen en u kiest daarna op basis van uw voorkeur.",
     "q2": "Doet het pijn of is het gevaarlijk?",
-    "a2": "Helemaal niet. Het apparaat raakt uw oog nooit aan. De sessie maakt alleen gebruik van zacht licht en een macro-lens. Het is een aangenaam, contactloos ervaring, toegankelijk voor iedereen. Dragers van contactlenzen moeten deze eenvoudigweg verwijderen voor de sessie.",
-    "q3": "Hoe lang duurt het voor ik mijn foto's ontvang?",
-    "a3": "Digitale bestanden in hoge definitie worden geleverd binnen 3 werkdagen na uw sessie. Prints zijn beschikbaar binnen 15 werkdagen na ontvangst van het digitale bestand. Het digitale bestand is inbegrepen bij elke printbestelling.",
-    "q4": "Welke afdrukformaten en materialen biedt u aan?",
-    "a4": "Wij bieden verschillende materialen (papier, aluminium…) en ratio's (vierkant, rechthoek, rond). Afmetingen variëren per formaat. Bekijk onze Tarieven-pagina voor alle details over formaten, afmetingen en beschikbare prijzen.",
-    "q5": "Kunnen kinderen worden gefotografeerd?",
-    "a5": "Ja, kinderen zijn welkom. Een toeslag van €35 per kind onder 12 jaar wordt toegepast, vanwege de extra zorg die nodig is om scherp te stellen op een bewegende iris.",
-    "q6": "Kunnen huisdieren worden gefotografeerd?",
-    "a6": "Ja! Een toeslag van €65 per dier wordt toegepast. Neem vooraf contact met ons op via sociale media om de haalbaarheid te controleren afhankelijk van het diertype.",
-    "q7": "Waar is de studio gelegen?",
-    "a7": "Ons studio is gelegen in Avelgem (8580), België, tussen Kortrijk en Moeskroen. Het exacte adres wordt meegedeeld bij de bevestiging van uw afspraak.",
-    "q8": "Hoe reserveer ik een sessie?",
-    "a8": "Reserveren gebeurt uitsluitend via privébericht op onze sociale media: Facebook (planet.iris.belgique) of Instagram (planet_iris_belgique). Wij antwoorden zo snel mogelijk om een datum af te spreken."
+    "a2": "Helemaal niet. Het apparaat raakt uw oog nooit aan. Elke opname duurt slechts enkele seconden per oog. Het is een contactloze ervaring, toegankelijk voor iedereen.",
+    "q3": "In welke taal verloopt de sessie?",
+    "a3": "Onze sessies verlopen in het Frans of Engels. Aan onze Nederlandstalige vrienden bieden wij onze oprechte excuses aan : we doen ons uiterste best om de tijd te vinden om uw prachtige taal te leren!",
+    "q4": "Ik draag contactlenzen, wat moet ik doen?",
+    "a4": "U dient uw contactlenzen te verwijderen voor de sessie zodat uw iris perfect scherp op de foto staat. Neem uw bril mee of kom met blote ogen op de dag van uw afspraak.",
+    "q5": "Hoe lang duurt het voor ik mijn foto's ontvang?",
+    "a5": "Digitale bestanden in hoge definitie worden geleverd binnen 3 werkdagen na uw sessie. Prints zijn beschikbaar binnen 15 werkdagen na ontvangst van het digitale bestand. Het digitale bestand is inbegrepen bij elke printbestelling.",
+    "q6": "Welke afdrukformaten en materialen biedt u aan?",
+    "a6": "Wij bieden twee materialen: acryliek (plexiglas) en alu-dibond (matte of glanzende afwerking), in verschillende ratio's (vierkant, rechthoek, rond). Afmetingen variëren per formaat. Bekijk onze Tarieven-pagina voor alle details.",
+    "q7": "Kunnen kinderen worden gefotografeerd?",
+    "a7": "Ja, kinderen zijn welkom. Een toeslag van €35 per kind onder 12 jaar wordt toegepast, vanwege de extra zorg die nodig is om scherp te stellen op een bewegende iris.",
+    "q8": "Kunnen huisdieren worden gefotografeerd?",
+    "a8": "Ja! Een toeslag van 65 € per dier wordt aangerekend. Voor huisdieren komen wij bij u thuis. Verplaatsing is gratis binnen een straal van 10 km rond Avelgem (20 km heen en terug inbegrepen). Daarbuiten worden verplaatsingskosten van 0,50 € per kilometer aangerekend. Neem vooraf contact met ons op via onze sociale media om de haalbaarheid te controleren afhankelijk van het type dier.",
+    "q9": "Waar is de studio gelegen?",
+    "a9": "Ons studio is gelegen in Avelgem (8580), België, tussen Kortrijk en Moeskroen. Het exacte adres wordt meegedeeld bij de bevestiging van uw afspraak.",
+    "q10": "Hoe reserveer ik een sessie?",
+    "a10": "Reserveren gebeurt uitsluitend via privébericht op onze sociale media: Facebook (planet.iris.belgique) of Instagram (planet_iris_belgique). Wij antwoorden zo snel mogelijk om een datum af te spreken."
   },
   "confiance": {
     "title": "Zij vertrouwden ons",
@@ -140,12 +152,13 @@
     "tarifs": "Tarieven",
     "contact": "Contact",
     "legal": "Wettelijke vermeldingen",
-    "privacy": "Privacybeleid"
+    "privacy": "Privacybeleid",
+    "blog": "Blog"
   },
   "services-page": {
     "hero": {
       "title": "Onze formules",
-      "desc": "Van de fotosessie tot de print, alles wat u moet weten voor u reserveert."
+      "desc": "Van de fotosessie tot de print,<br>alles wat u moet weten voor u reserveert."
     },
     "included": {
       "title": "Wat is inbegrepen",
@@ -163,20 +176,34 @@
         "desc": "Prints beschikbaar binnen <strong>15 werkdagen</strong>, in vele formaten en ratio's. Ingelijst of zonder lijst, uw keuze."
       },
       "item4": {
-        "title": "Tot 6 irissen",
-        "desc": "Solo, duo, familie of huisdieren, tot 6 irissen op één print. Toeslag van €35 per kind onder 12 jaar."
+        "title": "Zoveel irissen als u wilt",
+        "desc": "Solo, duo, familie of huisdieren, combineer zoveel irissen als u wenst op één compositie."
       }
     }
   },
   "tarifs-page": {
     "hero": {
       "title": "Onze tarieven",
-      "desc": "Transparant, geen verrassingen. Kies het formaat dat bij u past."
+      "desc": "Transparant, geen verrassingen.<br>Kies het formaat dat bij u past."
     },
-    "note": "Voor elk <strong>kind onder 12 jaar</strong> wordt een toeslag van <strong>€35</strong> toegepast. <strong>Huisdierfotografie</strong> is beschikbaar met een toeslag van <strong>€65</strong> per dier.",
+    "supplements": {
+      "children": {
+        "label": "Kinderen",
+        "desc": "Mogelijk vanaf elke leeftijd, maar wij raden een <strong>minimum van 5 jaar</strong> aan voor de beste resultaten (toeslag van <strong>€35</strong>). Vanwege variabele reacties op licht en de vereiste geduld en stabiliteit kunnen wij geen resultaat garanderen. Als er geen foto gemaakt kan worden, blijft de toeslag verschuldigd voor de bestede tijd, maar de iris wordt niet aangerekend."
+      },
+      "animals": {
+        "label": "Huisdieren",
+        "desc": "Beschikbaar met een toeslag van <strong>€65</strong> per dier. Neem vooraf contact met ons op om de haalbaarheid te controleren afhankelijk van het type dier."
+      },
+      "custom": {
+        "label": "Compositie op maat",
+        "desc": "Als geen van onze modellen u bevalt, kunnen we op de dag van uw sessie een gepersonaliseerde compositie maken: schikking van de irissen, dichtheid van de schilfers, algemene plaatsing. Toeslag van <strong>€20</strong>."
+      }
+    },
     "digital-title": "Digitaal HD-bestand",
     "digital-desc": "Levering binnen 3 werkdagen na de sessie.",
     "print-desc": "Levering binnen 15 werkdagen na ontvangst van het digitale bestand.",
+    "extra-iris": "Meer dan 6 iris, elke bijkomende iris wordt aangerekend aan <strong>+€10</strong>. Geldt voor digitale bestanden en prints.",
     "impression": "Print",
     "format": "Formaat",
     "frame": "LIJST"
@@ -195,21 +222,21 @@
   "mentions-legales": {
     "title": "Wettelijke vermeldingen",
     "publisher-title": "Uitgever van de website",
-    "publisher-desc": "<strong>Planet'Iris</strong><br>Dottignies, België<br>Opgericht in 2024 door Emilie Deman en Denis Wojtowicz",
+    "publisher-desc": "<strong>Planet'Iris</strong><br>Avelgem, België<br>Opgericht in 2024 door Emilie Deman en Denis Wojtowicz",
     "responsible-title": "Verantwoordelijke voor de publicatie",
     "responsible-desc": "Denis Wojtowicz",
     "hosting-title": "Website-hosting",
-    "hosting-desc": "Naam van de host: Infomaniak<br>Adres van de host: Infomaniak Network SA - Rue Eugène Marziano 25 - 1227 Les Acacias (GE)<br>Contact van de host: <a href=\"https://www.infomaniak.com/fr/aide\">www.infomaniak.com/fr/aide</a>",
+    "hosting-desc": "Naam van de host: Hostinger<br>Adres van de host: Hostinger International Ltd - 61 Lordou Vironos Street, 6023 Larnaca, Cyprus<br>Contact van de host: <a href=\"https://www.hostinger.com/contact\">www.hostinger.com/contact</a>",
     "ip-title": "Intellectueel eigendom",
     "ip-desc": "Alle inhoud op de website Planet'Iris, inclusief maar niet beperkt tot afbeeldingen, teksten, video's, animaties, geluiden, logo's, gifs en pictogrammen en hun opmaak zijn het exclusieve eigendom van Planet'Iris, behalve handelsmerken, logo's of inhoud van andere partnerondernemingen of auteurs.",
     "data-title": "Bescherming van persoonsgegevens",
-    "data-desc": "Overeenkomstig de wet heeft u recht op inzage, rectificatie, wijziging en verwijdering van gegevens die u betreffen. U kunt dit recht uitoefenen door een e-mail te sturen naar <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>.",
+    "data-desc": "Overeenkomstig de wet heeft u recht op inzage, rectificatie, wijziging en verwijdering van gegevens die u betreffen. U kunt dit recht uitoefenen door een e-mail te sturen naar <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>.",
     "cookies-title": "Cookies",
     "cookies-desc": "Planet'Iris kan u om acceptatie van cookies vragen voor statistische en weergavedoeleinden. Een cookie is informatie die op uw harde schijf wordt opgeslagen door de server van de website die u bezoekt.",
     "links-title": "Hyperlinks",
     "links-desc": "Planet'Iris kan hyperlinks bevatten naar andere sites op het internet. Links naar deze andere bronnen brengen u weg van de website Planet'Iris.",
     "contact-title": "Contact",
-    "contact-desc": "Voor vragen of informatie over de website kunt u contact met ons opnemen via: <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>."
+    "contact-desc": "Voor vragen of informatie over de website kunt u contact met ons opnemen via: <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>."
   },
   "politique": {
     "title": "Privacybeleid",
@@ -240,6 +267,93 @@
     "rights-li5": "Bezwaar maken tegen de verwerking van uw persoonsgegevens",
     "rights-li6": "Overdraagbaarheid van uw persoonsgegevens aanvragen",
     "contact-title": "Contacteer ons",
-    "contact-desc": "E-mail: <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>"
+    "contact-desc": "E-mail: <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>"
+  },
+  "page-title": {
+    "home": "Planet'Iris – Irisfotografie | Avelgem, België",
+    "services": "Onze irisfotografie formules | Planet'Iris",
+    "tarifs": "Irisfotografie tarieven | Planet'Iris",
+    "contact": "Contact | Planet'Iris",
+    "mentions-legales": "Wettelijke vermeldingen | Planet'Iris",
+    "politique": "Privacybeleid | Planet'Iris",
+    "article-cataracte": "Iris & staar: sessie mogelijk | Planet'Iris",
+    "article-marrons": "Bruine ogen in irisfotografie: een verbluffend resultaat | Planet'Iris",
+    "blog": "Blog | Planet'Iris"
+  },
+  "blog-page": {
+    "hero-title": "Blog",
+    "hero-desc": "Tips, info en inspiratie rond irisfotografie.",
+    "read-more": "Lees het artikel",
+    "min-read": "min lezen",
+    "posts": {
+      "iris-yeux-marrons": {
+        "desc": "Denkt u dat uw bruine ogen een saai resultaat geven? Het is een van de meest voorkomende misvattingen. In macro onthullen bruine irissen texturen en kleuren die u nooit had vermoed."
+      },
+      "photo-iris-cataracte": {
+        "desc": "Heeft u staar? Ontdek waarom een irisfotografiesessie bij Planet'Iris perfect mogelijk is, met korte belichtingen per oog en geen contact met het oog."
+      }
+    }
+  },
+  "article-teaser": {
+    "tag": "Lezen",
+    "title": "Iris & staar: is een sessie mogelijk?",
+    "link": "Lees het artikel"
+  },
+  "article-cataracte": {
+    "tag": "Artikel",
+    "hero-title": "Irisfotografie en staar: het kan",
+    "hero-intro": "Heeft u staar, of een naaste die erdoor getroffen is? Goed nieuws: in de overgrote meerderheid van de gevallen is een irisfotografiesessie bij Planet'Iris perfect mogelijk. Hier leest u alles wat u moet weten.",
+    "s1-title": "Staar verhindert irisfotografie niet",
+    "s1-p1": "Staar is een vertroebeling die zich vormt op de <strong>ooglens</strong>. Het tast de iris zelf niet aan, die perfect zichtbaar en fotografeerbaar blijft. Onze macrocamera legt de <strong>texturen, reliëfs en kleuren van de iris</strong> vast, details die zich vóór de lens bevinden.",
+    "s1-p2": "Met andere woorden: ook al is uw zicht aangetast door staar, <strong>uw iris is intact</strong> en de schoonheid ervan kan probleemloos worden vastgelegd.",
+    "s2-title": "Intensieve verlichting, korte belichtingen per oog",
+    "s2-p1": "Dit is vaak de eerste bezorgdheid: <em>\"Zal het licht mijn oog niet hinderen?\"</em> Om elk detail van de iris te onthullen, is de gebruikte verlichting inderdaad intensief, dat is een technische noodzaak. Maar hier is wat telt: <strong>elke belichting per oog duurt slechts enkele seconden</strong>. De opname wordt herhaald om het beste resultaat te bereiken, maar de totale gecumuleerde tijd onder het licht blijft kort en volledig beheerst.",
+    "s2-p2": "We werken op uw tempo en nemen pauzes tussen de opnames als uw oog bijzonder gevoelig is. Het doel is de best mogelijke afbeelding te verkrijgen terwijl de totale belichtingstijd tot een minimum wordt beperkt.",
+    "s3-title": "Een sessie zonder contact, zonder risico",
+    "s3-p1": "Onze camera <strong>raakt</strong> uw oog <strong>nooit aan</strong>. De opname gebeurt op enkele millimeters afstand, in een rustige, ontspannen omgeving. U hoeft niets bijzonders te doen, kijk gewoon recht vooruit.",
+    "s3-p2": "Heeft u een bijzondere gevoeligheid, voorgeschreven oogdruppels of draagt u contactlenzen? <strong>Vertel het ons vóór de sessie</strong>. We passen onze aanpak altijd aan uw persoonlijke situatie aan.",
+    "s4-title": "Na een staaroperatie",
+    "s4-p1": "Als u recentelijk een staaroperatie heeft ondergaan, is het raadzaam te wachten tot uw oog <strong>volledig genezen</strong> is voordat u een sessie boekt, doorgaans enkele weken na de operatie. Uw oogarts kan u het beste het groene licht geven.",
+    "s4-p2": "Eenmaal hersteld is uw iris net zo fotografeerbaar, en onthult vaak nog fascinantere details.",
+    "cta-title": "Klaar om uw iris te onthullen?",
+    "cta-desc": "Heeft u vragen over uw persoonlijke situatie? <strong>Neem contact met ons op</strong>, we antwoorden u graag en vrijblijvend.",
+    "meta-desc": "Heeft u staar? Een irisfotografiesessie bij Planet'Iris is perfect mogelijk. Geen contact, gecontroleerde belichting en een gegarandeerd resultaat.",
+    "reading-time": "3 min lezen",
+    "published": "Studio Planet'Iris · Avelgem, België"
+  },
+  "article-cta": {
+    "contact": "Contact opnemen",
+    "services": "Onze formules",
+    "tarifs": "Onze tarieven"
+  },
+  "article-marrons": {
+    "tag": "Artikel",
+    "hero-title": "Bruine ogen: veel mooier dan u denkt",
+    "hero-intro": "Denkt u dat uw bruine ogen een saai resultaat geven? Het is een van de meest voorkomende misvattingen bij onze klanten, en een van de meest onjuiste. Bruine irissen zijn in de meeste gevallen absoluut fascinerend in macrofotografie.",
+    "s1-title": "De meest voorkomende misvatting",
+    "s1-p1": "Klanten komen regelmatig bij ons met de woorden: <em>\"Ik weet niet of mijn ogen het waard zijn, ze zijn gewoon bruin.\"</em> Dat is begrijpelijk: voor het blote oog ziet de bruine iris er eenvoudig, zelfs saai uit. Maar wat het blote oog niet ziet, is precies wat onze macrocamera onthult.",
+    "s1-p2": "De realiteit is vaak precies het tegenovergestelde. Bruine ogen behoren tot onze meest spectaculaire resultaten, en de reactie bij de levering is bijna altijd dezelfde: <strong>\"Ik wist niet dat mijn ogen er zo uitzagen.\"</strong>",
+    "s2-title": "Texturen die lijken op kruiden",
+    "s2-p1": "Als we bruine irissen in één beeld zouden moeten samenvatten, is het dat van een mengsel van kruiden: kaneel, komijn, saffraan, Sichuanpeper. De vezels van de iris vormen in macro dichte en complexe reliëfs, met toonvariaties die het blote oog eenvoudigweg niet kan waarnemen.",
+    "s2-p2": "Sommige bruine irissen vertonen amberkleurige, karamel- of zelfs koperen zones. Andere hebben hazelnootkleurige tinten die goud worden afhankelijk van de belichting. Het is deze dichtheid van materiaal die macrofotografie van een bruine iris zo bijzonder maakt.",
+    "s3-title": "Verborgen kleuren die u nooit had vermoed",
+    "s3-p1": "Wat het meest verrast, is de ontdekking van volkomen onverwachte kleuren. Onder macrobelichting verschijnen roodbruine, oranje en soms lichtgroene tinten in irissen die hun eigenaar gewoon <em>\"bruin\"</em> noemde. Dit is geen retoucheringseffect: het is de werkelijkheid van uw iris, eindelijk zichtbaar.",
+    "s3-p2": "De pigmentatie van de bruine iris is eigenlijk een van de rijkste die er bestaat. Melanine concentreert zich dicht en ongelijkmatig, waardoor die unieke patronen ontstaan die alleen een kwaliteitsmacroobjektief nauwkeurig kan vastleggen.",
+    "s4-title": "Het eindresultaat zal u verbazen",
+    "s4-p1": "Een bruine iris gefotografeerd in macro is een kunstwerk op zich. De details zijn scherp, de texturen diep, de kleuren warm en rijk. Of het nu als digitaal bestand is of gedrukt op acryl of alu-dibond, het resultaat is altijd indrukwekkend.",
+    "s4-p2": "Als u nog twijfelt, kom dan gewoon met uw twijfels. We laten de eindresultaten voor zichzelf spreken.",
+    "cta-title": "Klaar om uw iris te ontdekken?",
+    "cta-desc": "Welke kleur uw ogen ook hebben, elke iris is een uniek kunstwerk. <strong>Neem contact op</strong> om uw sessie in Avelgem te boeken.",
+    "meta-desc": "Denkt u dat uw bruine ogen saai zijn in macro? Bruine irissen zijn bij onze mooiste resultaten. Ontdek waarom bij Planet'Iris in Avelgem.",
+    "reading-time": "4 min lezen",
+    "published": "Studio Planet'Iris · Avelgem, België"
+  },
+  "article-related": {
+    "title": "Zie ook"
+  },
+  "article-status": {
+    "new": "Nieuw",
+    "unread": "Te lezen",
+    "read": "Gelezen"
   }
 }

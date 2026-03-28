@@ -1,12 +1,12 @@
 <app-navbar />
 <app-breadcrumb />
 
-<main>
+<main id="main-content">
   <section class="section services-hero">
     <div class="container">
       <div class="services-hero-content fade-in-on-scroll">
         <h1 class="title" transloco="services-page.hero.title"></h1>
-        <p transloco="services-page.hero.desc"></p>
+        <p [innerHTML]="'services-page.hero.desc' | transloco"></p>
       </div>
     </div>
   </section>

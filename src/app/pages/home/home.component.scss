@@ -162,11 +162,12 @@
 // ── Responsive ────────────────────────────────────
 @media screen and (max-width: 991px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .why-grid { grid-template-columns: 1fr; }
 
-  .stepper {
-    flex-direction: column;
-  }
+  .why-section { padding: 60px 0; }
+  .why-grid { grid-template-columns: 1fr; margin-top: 2.5rem; }
+
+  .process-section { padding: 60px 0; }
+  .stepper { flex-direction: column; margin-top: 2.5rem; }
 
   .stepper-step {
     flex-direction: row;
@@ -195,9 +196,25 @@
     padding-bottom: 2rem;
     padding-top: 0.9rem;
   }
+
+  .home-cta { padding: 80px 0; }
 }
 
 @media screen and (max-width: 479px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .stats-strip { padding: 1.5rem 0; }
+
+  .why-section { padding: 40px 0; }
+  .why-grid { margin-top: 1.5rem; gap: 1rem; }
+  .why-card { padding: 1.5rem 1.25rem; }
+
+  .process-section { padding: 40px 0; }
+  .stepper { margin-top: 1.5rem; }
+  .stepper-body { padding-bottom: 1.25rem; }
+
+  .home-cta { padding: 56px 0; }
+  .home-cta-content p { font-size: 16px; }
+
   .home-cta-buttons {
     flex-direction: column;
     align-items: center;

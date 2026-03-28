@@ -3,7 +3,12 @@
     "home": "Accueil",
     "services": "Services",
     "tarifs": "Tarifs",
-    "contact": "Contact"
+    "blog": "Blog",
+    "contact": "Contact",
+    "open-menu": "Ouvrir le menu",
+    "close-menu": "Fermer le menu",
+    "lang-switcher": "Choix de la langue",
+    "skip-content": "Aller au contenu principal"
   },
   "breadcrumb": {
     "home": "Accueil",
@@ -11,7 +16,10 @@
     "tarifs": "Tarifs",
     "contact": "Contact",
     "mentions-legales": "Mentions légales",
-    "politique-de-confidentialite": "Politique de confidentialité"
+    "politique-de-confidentialite": "Politique de confidentialité",
+    "blog": "Blog",
+    "photo-iris-cataracte": "Iris & cataracte",
+    "iris-yeux-marrons": "Yeux marrons & iris"
   },
   "hero": {
     "desc1": "Planet'Iris capture la beauté de chaque iris à travers des portraits photographiques uniques.",
@@ -112,21 +120,25 @@
     "title": "Questions fréquentes",
     "subtitle": "Tout ce que vous devez savoir avant de réserver votre séance.",
     "q1": "Comment se déroule une séance photo ?",
-    "a1": "La séance dure environ 30 minutes dans notre studio à Avelgem. Aucune préparation particulière n'est nécessaire. Notre appareil macro s'approche à quelques millimètres de votre œil pour capturer chaque détail de votre iris : reliefs, couleurs, motifs, dans les meilleures conditions.",
+    "a1": "La séance dure environ 30 minutes dans notre studio à Avelgem. Aucune préparation particulière n'est nécessaire. Notre appareil macro s'approche à quelques millimètres de votre œil pour capturer chaque détail de votre iris : reliefs, couleurs, motifs, dans les meilleures conditions. Nous photographions les deux iris et vous choisissez ensuite selon votre préférence.",
     "q2": "Est-ce que ça fait mal ou est-ce dangereux ?",
-    "a2": "Pas du tout. L'appareil ne touche jamais votre œil. La séance utilise uniquement une lumière douce et une lentille macro. C'est une expérience agréable et sans contact, accessible à tous. Les personnes portant des lentilles de contact doivent simplement les retirer avant la séance.",
-    "q3": "Combien de temps avant de recevoir mes photos ?",
-    "a3": "Les fichiers digitaux haute définition sont livrés dans les 3 jours ouvrables suivant votre séance. Les impressions sont disponibles sous 15 jours ouvrables à compter de la réception du fichier digital. Le fichier digital est inclus dans toute commande d'impression.",
-    "q4": "Quels formats et supports d'impression proposez-vous ?",
-    "a4": "Nous proposons plusieurs supports (papier, aluminium…) et différents ratios (carré, rectangle, rond). Les dimensions varient selon le format choisi. Consultez notre page Tarifs pour le détail complet des formats, dimensions et prix disponibles.",
-    "q5": "Peut-on photographier des enfants ?",
-    "a5": "Oui, les enfants sont les bienvenus. Un supplément de 35 € par enfant de moins de 12 ans est appliqué, en raison du soin supplémentaire nécessaire pour réaliser la mise au point sur un iris en mouvement.",
-    "q6": "Peut-on photographier des animaux de compagnie ?",
-    "a6": "Oui ! Un supplément de 65 € par animal est appliqué. Contactez-nous au préalable via nos réseaux sociaux pour vérifier la faisabilité selon le type d'animal.",
-    "q7": "Où se situe le studio ?",
-    "a7": "Notre studio est situé à Avelgem (8580), en Belgique, entre Courtrai (Kortrijk) et Mouscron. L'adresse exacte vous sera communiquée lors de la confirmation de votre rendez-vous.",
-    "q8": "Comment réserver une séance ?",
-    "a8": "La réservation se fait uniquement par message privé sur nos réseaux sociaux : Facebook (planet.iris.belgique) ou Instagram (planet_iris_belgique). Nous vous répondrons dans les plus brefs délais pour convenir d'une date."
+    "a2": "Pas du tout. L'appareil ne touche jamais votre œil. Chaque prise de vue ne dure que quelques secondes par œil. C'est une expérience sans contact et accessible à tous.",
+    "q3": "En quelle langue se déroule la séance ?",
+    "a3": "Nos séances se déroulent en français ou en anglais. Pour nos amis néerlandophones, nous vous présentons toutes nos excuses : nous faisons de notre mieux pour trouver le temps d'apprendre votre belle langue !",
+    "q4": "Je porte des lentilles de contact, que dois-je faire ?",
+    "a4": "Il est nécessaire de retirer vos lentilles avant la séance afin que l'iris soit parfaitement net sur la photo. Prévoyez vos lunettes ou venez les yeux nus le jour du rendez-vous.",
+    "q5": "Combien de temps avant de recevoir mes photos ?",
+    "a5": "Les fichiers digitaux haute définition sont livrés dans les 3 jours ouvrables suivant votre séance. Les impressions sont disponibles sous 15 jours ouvrables à compter de la réception du fichier digital. Le fichier digital est inclus dans toute commande d'impression.",
+    "q6": "Quels formats et supports d'impression proposez-vous ?",
+    "a6": "Nous proposons deux supports : l'acrylique (plexiglass) et l'alu-dibond (finition mate ou brillante), déclinés en plusieurs ratios (carré, rectangle, rond). Les dimensions varient selon le format choisi. Consultez notre page Tarifs pour le détail complet.",
+    "q7": "Peut-on photographier des enfants ?",
+    "a7": "Oui, les enfants sont les bienvenus. Un supplément de 35 € par enfant de moins de 12 ans est appliqué, en raison du soin supplémentaire nécessaire pour réaliser la mise au point sur un iris en mouvement.",
+    "q8": "Peut-on photographier des animaux de compagnie ?",
+    "a8": "Oui ! Un supplément de 65 € par animal est appliqué. Pour les animaux de compagnie, nous nous déplaçons à domicile. Le déplacement est gratuit dans un rayon de 10 km autour d'Avelgem (soit 20 km aller/retour inclus). Au-delà, des frais de déplacement de 0,50 € par kilomètre sont facturés. Contactez-nous au préalable via nos réseaux sociaux pour vérifier la faisabilité selon le type d'animal.",
+    "q9": "Où se situe le studio ?",
+    "a9": "Notre studio est situé à Avelgem (8580), en Belgique, entre Courtrai (Kortrijk) et Mouscron. L'adresse exacte vous sera communiquée lors de la confirmation de votre rendez-vous.",
+    "q10": "Comment réserver une séance ?",
+    "a10": "La réservation se fait uniquement par message privé sur nos réseaux sociaux : Facebook (planet.iris.belgique) ou Instagram (planet_iris_belgique). Nous vous répondrons dans les plus brefs délais pour convenir d'une date."
   },
   "confiance": {
     "title": "Ils nous ont fait confiance",
@@ -140,12 +152,13 @@
     "tarifs": "Tarifs",
     "contact": "Contact",
     "legal": "Mentions légales",
-    "privacy": "Politique de Confidentialité"
+    "privacy": "Politique de Confidentialité",
+    "blog": "Blog"
   },
   "services-page": {
     "hero": {
       "title": "Nos formules",
-      "desc": "De la séance photo à l'impression, tout ce qu'il faut savoir avant de réserver."
+      "desc": "De la séance photo à l'impression,<br>tout ce qu'il faut savoir avant de réserver."
     },
     "included": {
       "title": "Ce qui est inclus",
@@ -163,20 +176,34 @@
         "desc": "Tirages disponibles sous <strong>15 jours ouvrables</strong>, dans de nombreux formats et ratios. Encadré ou non selon votre choix."
       },
       "item4": {
-        "title": "Jusqu'à 6 iris",
-        "desc": "Solo, duo, famille ou animaux, jusqu'à 6 iris sur une même impression. Supplément de 35€ par enfant de moins de 12 ans."
+        "title": "Autant d'iris que vous voulez",
+        "desc": "Solo, duo, famille ou animaux, combinez autant d'iris que vous souhaitez sur une même composition."
       }
     }
   },
   "tarifs-page": {
     "hero": {
       "title": "Nos tarifs",
-      "desc": "Transparents, sans surprise. Choisissez le format qui vous correspond."
+      "desc": "Transparents, sans surprise.<br>Choisissez le format qui vous correspond."
     },
-    "note": "Pour chaque <strong>enfant de moins de 12 ans</strong>, un supplément de <strong>35 €</strong> est appliqué. La <strong>photographie d'animaux</strong> est disponible avec un supplément de <strong>65 €</strong> par animal.",
+    "supplements": {
+      "children": {
+        "label": "Enfants",
+        "desc": "Possible dès le plus jeune âge, nous recommandons un <strong>minimum de 5 ans</strong> pour de meilleurs résultats (supplément de <strong>35 €</strong>). En raison des réactions variables face à la lumière, de la patience et de la stabilité requises, nous ne pouvons garantir un résultat. En cas d'impossibilité, le supplément reste dû pour le temps consacré, mais l'iris ne vous sera pas facturé."
+      },
+      "animals": {
+        "label": "Animaux",
+        "desc": "Disponible avec un supplément de <strong>65 €</strong> par animal. Contactez-nous au préalable pour vérifier la faisabilité selon le type d'animal."
+      },
+      "custom": {
+        "label": "Composition sur mesure",
+        "desc": "Si aucun de nos modèles ne vous convient, nous pouvons créer une composition personnalisée le jour de votre séance : agencement des iris, densité des éclats, disposition générale. Supplément de <strong>20 €</strong>."
+      }
+    },
     "digital-title": "Fichier digital HD",
     "digital-desc": "Livraison sous 3 jours ouvrables après la séance.",
     "print-desc": "Livraison sous 15 jours ouvrables après réception du fichier digital.",
+    "extra-iris": "Au-delà de 6 iris, chaque iris supplémentaire est facturé <strong>+10 €</strong>. Valable pour les fichiers digitaux et les impressions.",
     "impression": "Impression",
     "format": "Format",
     "frame": "CADRE"
@@ -195,21 +222,21 @@
   "mentions-legales": {
     "title": "Mentions Légales",
     "publisher-title": "Éditeur du site",
-    "publisher-desc": "<strong>Planet'Iris</strong><br>Dottignies, Belgique<br>Créée en 2024 par Emilie Deman et Denis Wojtowicz",
+    "publisher-desc": "<strong>Planet'Iris</strong><br>Avelgem, Belgique<br>Créée en 2024 par Emilie Deman et Denis Wojtowicz",
     "responsible-title": "Responsable de la publication",
     "responsible-desc": "Denis Wojtowicz",
     "hosting-title": "Hébergement du site",
-    "hosting-desc": "Nom de l'hébergeur : Infomaniak<br>Adresse de l'hébergeur : Infomaniak Network SA - Rue Eugène Marziano 25 - 1227 Les Acacias (GE)<br>Contact de l'hébergeur : <a href=\"https://www.infomaniak.com/fr/aide\">www.infomaniak.com/fr/aide</a>",
+    "hosting-desc": "Nom de l'hébergeur : Hostinger<br>Adresse de l'hébergeur : Hostinger International Ltd - 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br>Contact de l'hébergeur : <a href=\"https://www.hostinger.fr/contact\">www.hostinger.fr/contact</a>",
     "ip-title": "Propriété intellectuelle",
     "ip-desc": "Tous les contenus présents sur le site Planet'Iris, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de Planet'Iris à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.",
     "data-title": "Protection des données personnelles",
-    "data-desc": "Conformément à la loi, vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données vous concernant. Vous pouvez exercer ce droit en envoyant un courrier électronique à <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>.",
+    "data-desc": "Conformément à la loi, vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données vous concernant. Vous pouvez exercer ce droit en envoyant un courrier électronique à <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>.",
     "cookies-title": "Cookies",
     "cookies-desc": "Le site Planet'Iris peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez.",
     "links-title": "Liens hypertextes",
     "links-desc": "Le site Planet'Iris peut contenir des liens hypertextes vers d'autres sites présents sur le réseau Internet. Les liens vers ces autres ressources vous font quitter le site Planet'Iris.",
     "contact-title": "Contact",
-    "contact-desc": "Pour toute question ou information concernant le site, vous pouvez nous contacter à l'adresse suivante : <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>."
+    "contact-desc": "Pour toute question ou information concernant le site, vous pouvez nous contacter à l'adresse suivante : <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>."
   },
   "politique": {
     "title": "Politique de Confidentialité",
@@ -240,6 +267,93 @@
     "rights-li5": "Vous opposer au traitement de vos données personnelles",
     "rights-li6": "Demander la portabilité de vos données personnelles",
     "contact-title": "Contactez-nous",
-    "contact-desc": "Email : <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>"
+    "contact-desc": "Email : <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>"
+  },
+  "page-title": {
+    "home": "Planet'Iris – Photo d'iris | Avelgem, Belgique",
+    "services": "Nos formules photo d'iris | Planet'Iris",
+    "tarifs": "Tarifs photo d'iris | Planet'Iris",
+    "contact": "Contact | Planet'Iris",
+    "mentions-legales": "Mentions légales | Planet'Iris",
+    "politique": "Confidentialité | Planet'Iris",
+    "article-cataracte": "Iris & cataracte : séance possible | Planet'Iris",
+    "article-marrons": "Yeux marrons en photo d'iris : un résultat bluffant | Planet'Iris",
+    "blog": "Blog | Planet'Iris"
+  },
+  "blog-page": {
+    "hero-title": "Blog",
+    "hero-desc": "Conseils, infos et inspirations autour de la photographie d'iris.",
+    "read-more": "Lire l'article",
+    "min-read": "min de lecture",
+    "posts": {
+      "iris-yeux-marrons": {
+        "desc": "Vous pensez que vos yeux marrons feront un résultat banal ? C'est l'une des idées reçues les plus répandues. En macro, les iris marrons révèlent des textures et des couleurs que vous n'imaginez pas."
+      },
+      "photo-iris-cataracte": {
+        "desc": "Vous avez une cataracte ? Découvrez pourquoi une séance de photo d'iris est tout à fait réalisable chez Planet'Iris, avec des expositions courtes par œil et aucun contact avec l'œil."
+      }
+    }
+  },
+  "article-teaser": {
+    "tag": "À lire",
+    "title": "Iris & cataracte : une séance est-elle possible ?",
+    "link": "Lire l'article"
+  },
+  "article-cataracte": {
+    "tag": "Article",
+    "hero-title": "Photographie d'iris et cataracte : c'est possible",
+    "hero-intro": "Vous avez une cataracte, ou un proche concerné ? Bonne nouvelle : dans la grande majorité des cas, une séance de photographie d'iris chez Planet'Iris est tout à fait réalisable. Voici tout ce que vous devez savoir.",
+    "s1-title": "La cataracte n'empêche pas la photo d'iris",
+    "s1-p1": "La cataracte est un voile qui se forme sur le <strong>cristallin</strong>, la lentille naturelle de l'œil. Elle n'affecte pas l'iris lui-même, qui reste parfaitement visible et photographiable. Notre appareil macro capture les <strong>textures, reliefs et couleurs de l'iris</strong>, des détails situés bien en avant du cristallin.",
+    "s1-p2": "Autrement dit : même si votre vision est affectée par la cataracte, <strong>votre iris est intact</strong> et sa beauté peut être immortalisée sans aucun problème.",
+    "s2-title": "Un éclairage intense, des expositions courtes par œil",
+    "s2-p1": "C'est souvent la première inquiétude : <em>« La lumière ne va-t-elle pas gêner mon œil ? »</em> Pour révéler chaque détail de l'iris, l'éclairage utilisé est effectivement intense, c'est une nécessité technique. Mais ce qui est essentiel à savoir : <strong>chaque exposition par œil dure quelques secondes</strong>. La prise de vue est répétée pour obtenir le meilleur résultat, mais le temps cumulé sous la lumière reste court et parfaitement maîtrisé.",
+    "s2-p2": "Nous travaillons à votre rythme et nous prenons des pauses entre les prises si votre œil est particulièrement sensible. L'objectif est d'obtenir la meilleure image possible en limitant au maximum la durée totale d'exposition.",
+    "s3-title": "Une séance sans contact, sans risque",
+    "s3-p1": "Notre appareil ne touche <strong>jamais</strong> votre œil. La prise de vue s'effectue à quelques millimètres de distance, dans un environnement calme et détendu. Vous n'avez rien à faire de particulier : regardez simplement droit devant vous.",
+    "s3-p2": "Si vous avez une sensibilité particulière, des gouttes ophtalmiques prescrites ou si vous portez des lentilles correctrices, <strong>signalez-le nous avant la séance</strong>. Nous adaptons toujours notre approche en fonction de votre situation.",
+    "s4-title": "Et après une opération de la cataracte ?",
+    "s4-p1": "Si vous avez récemment été opéré de la cataracte, il est conseillé d'attendre que votre œil soit <strong>complètement cicatrisé</strong> avant de réaliser une séance, généralement plusieurs semaines après l'opération. Votre ophtalmologue est le mieux placé pour vous donner le feu vert.",
+    "s4-p2": "Une fois rétabli, votre iris est tout aussi photographiable, et révèle souvent des détails encore plus fascinants.",
+    "cta-title": "Prêt à révéler votre iris ?",
+    "cta-desc": "Vous avez des questions sur votre situation personnelle ? <strong>Contactez-nous</strong>, nous vous répondrons avec plaisir et sans engagement.",
+    "meta-desc": "Vous avez une cataracte ? Une séance de photographie d'iris chez Planet'Iris est tout à fait réalisable. Sans contact, éclairage maîtrisé, résultat garanti.",
+    "reading-time": "3 min de lecture",
+    "published": "Studio Planet'Iris · Avelgem, Belgique"
+  },
+  "article-cta": {
+    "contact": "Nous contacter",
+    "services": "Nos formules",
+    "tarifs": "Voir nos tarifs"
+  },
+  "article-marrons": {
+    "tag": "Article",
+    "hero-title": "Yeux marrons : bien plus beaux que vous ne le croyez",
+    "hero-intro": "Vous pensez que vos yeux marrons feront un résultat banal ? C'est l'une des idées reçues les plus répandues chez nos clients, et l'une des plus fausses. Les iris marrons sont, dans la plupart des cas, absolument fascinants en photographie macro.",
+    "s1-title": "L'idée reçue la plus fréquente",
+    "s1-p1": "Il arrive régulièrement que des clients arrivent en nous disant : <em>« Je ne suis pas sûr que mes yeux valent le coup, ils sont juste marrons. »</em> C'est compréhensible : à l'oeil nu, l'iris marron paraît uni, voire terne. Mais ce que l'oeil nu ne voit pas, c'est précisément ce que notre appareil macro révèle.",
+    "s1-p2": "La réalité est souvent tout l'opposé de la crainte. Les yeux marrons comptent parmi nos résultats les plus spectaculaires, et la surprise de nos clients à la livraison est presque toujours la même : <strong>« Je ne savais pas que mes yeux ressemblaient à ça. »</strong>",
+    "s2-title": "Des textures comparables à des épices",
+    "s2-p1": "Si on devait résumer les iris marrons en une image, ce serait celle d'un mélange d'épices : cannelle, cumin, safran, poivre de Sichuan. Les fibres de l'iris, vues en macro, forment des reliefs denses et complexes, avec des variations de tons que l'oeil nu ne peut tout simplement pas percevoir.",
+    "s2-p2": "Certains iris marrons présentent des zones ambrées, caramel, ou même cuivrées. D'autres ont des nuances noisette qui virent au doré selon l'éclairage. C'est cette densité de matière qui rend la photographie macro d'un iris marron si particulière.",
+    "s3-title": "Des couleurs cachées que vous ne soupçonnez pas",
+    "s3-p1": "Ce qui surprend le plus, c'est la découverte de couleurs complètement inattendues. Sous l'éclairage macro, des tons roux, orangés, parfois légèrement verdâtres apparaissent dans des iris que leur propriétaire qualifiait simplement de <em>« marrons »</em>. Ce n'est pas un effet de retouche : c'est la réalité de votre iris, enfin visible.",
+    "s3-p2": "La pigmentation de l'iris marron est en réalité parmi les plus riches qui existent. La mélanine s'y concentre de façon dense et non uniforme, créant ces motifs uniques que seul un appareil macro de qualité permet de capturer fidèlement.",
+    "s4-title": "Le résultat final vous surprendra",
+    "s4-p1": "Un iris marron photographié en macro, c'est une oeuvre à part entière. Les détails sont nets, les textures profondes, les couleurs chaudes et riches. Que ce soit en fichier digital ou en impression sur acrylique ou alu-dibond, le rendu est toujours saisissant.",
+    "s4-p2": "Si vous hésitez encore, venez simplement avec vos doutes. On vous laissera juger vous-même sur la photo finale.",
+    "cta-title": "Prêt à découvrir votre iris ?",
+    "cta-desc": "Quelle que soit la couleur de vos yeux, chaque iris est une oeuvre unique. <strong>Contactez-nous</strong> pour réserver votre séance à Avelgem.",
+    "meta-desc": "Vous pensez que vos yeux marrons feront un résultat banal ? En macro, les iris marrons sont parmi les plus fascinants. Découvrez pourquoi.",
+    "reading-time": "4 min de lecture",
+    "published": "Studio Planet'Iris · Avelgem, Belgique"
+  },
+  "article-related": {
+    "title": "Voir aussi"
+  },
+  "article-status": {
+    "new": "Nouveau",
+    "unread": "À lire",
+    "read": "Lu"
   }
 }

@@ -16,6 +16,9 @@ const ROUTE_KEYS: Record<string, string> = {
   'contact': 'breadcrumb.contact',
   'mentions-legales': 'breadcrumb.mentions-legales',
   'politique-de-confidentialite': 'breadcrumb.politique-de-confidentialite',
+  'blog': 'breadcrumb.blog',
+  'photo-iris-cataracte': 'breadcrumb.photo-iris-cataracte',
+  'iris-yeux-marrons': 'breadcrumb.iris-yeux-marrons',
 };
 
 @Component({

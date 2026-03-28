@@ -1,0 +1,58 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.article-related {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.article-related-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 0 1rem;
+}
+
+.article-related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.article-related-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.14);
+  }
+
+  .article-related-card-title {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+  }
+
+  .article-related-arrow {
+    color: rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  &:hover .article-related-arrow {
+    color: rgba(255, 255, 255, 0.7);
+    transform: translateX(3px);
+  }
+}

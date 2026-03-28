@@ -1,0 +1,6 @@
+<section class="article-section fade-in-on-scroll">
+  <h2 [transloco]="section().titleKey"></h2>
+  @for (key of section().paragraphKeys; track key) {
+    <p [innerHTML]="key | transloco"></p>
+  }
+</section>

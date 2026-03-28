@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+.article-section {
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $clr-link-legal;
+  }
+
+  p {
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+
+    &:last-child { margin-bottom: 0; }
+
+    strong { color: #fff; }
+    em { font-style: italic; color: rgba(255, 255, 255, 0.65); }
+  }
+}

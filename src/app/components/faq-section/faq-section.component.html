@@ -7,14 +7,13 @@
 
     <div class="faq-list">
       @for (item of faqItems; track item.questionKey; let i = $index) {
-        <div class="faq-item fade-in-on-scroll"
-             [class.open]="openIndex() === i"
-             (click)="toggle(i)"
-             role="button"
-             [attr.aria-expanded]="openIndex() === i">
-          <div class="faq-question">
+        <div class="faq-item fade-in-on-scroll" [class.open]="openIndex() === i">
+          <button class="faq-question"
+                  [attr.aria-expanded]="openIndex() === i"
+                  [attr.aria-controls]="'faq-answer-' + i"
+                  (click)="toggle(i)">
             <span [transloco]="item.questionKey"></span>
-            <div class="faq-icon">
+            <div class="faq-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                    fill="none" stroke="currentColor" stroke-width="2.5"
                    stroke-linecap="round" stroke-linejoin="round">
@@ -22,8 +21,11 @@
                 <line x1="5" y1="12" x2="19" y2="12"/>
               </svg>
             </div>
-          </div>
-          <div class="faq-answer">
+          </button>
+          <div class="faq-answer"
+               [id]="'faq-answer-' + i"
+               role="region"
+               [attr.aria-labelledby]="'faq-btn-' + i">
             <p [transloco]="item.answerKey"></p>
           </div>
         </div>

@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslocoModule } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { PageTitleService } from '../../services/page-title.service';
 
 @Component({
   selector: 'app-mentions-legales',
@@ -11,4 +12,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
   templateUrl: './mentions-legales.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MentionsLegalesComponent {}
+export class MentionsLegalesComponent {
+  constructor() {
+    inject(PageTitleService).set('page-title.mentions-legales');
+  }
+}

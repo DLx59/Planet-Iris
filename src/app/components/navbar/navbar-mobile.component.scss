@@ -1,0 +1,226 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ── Navbar shell ──────────────────────────────────
+.navbar-mobile {
+  height: 70px;
+  background-color: transparent;
+}
+
+// ── Wrapper : position relative, pleine largeur, SANS backdrop-filter.
+// C'est le containing block du dropdown → left:50% = centre du viewport.
+.mobile-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+// ── Container des pills ───────────────────────────
+.mobile-nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+// ── Glass pill (brand + hamburger) ────────────────
+.mobile-pill {
+  height: 50px;
+  flex: 1;
+  @include glass;
+  border-radius: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.21);
+}
+
+// ── Light-blob hover effect ───────────────────────
+.bg-navbar {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 15%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    left: var(--x);
+    top: var(--y);
+  }
+
+  &:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+// ── Brand ─────────────────────────────────────────
+.brand {
+  width: 90px;
+  min-width: 90px;
+  color: $clr-white;
+}
+
+// ── Hamburger button ──────────────────────────────
+.menu-button {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: inherit;
+
+  &:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+  }
+}
+
+.center-box {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+// ── Language switcher pill ────────────────────────
+.lang-switcher {
+  height: 50px;
+  @include glass;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  gap: 2px;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.21);
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: $clr-nav-fg;
+  line-height: 1;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: $clr-glass-hover;
+    color: $clr-white;
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #111;
+  }
+}
+
+// ── Dropdown menu ─────────────────────────────────
+// position: absolute relatif à .mobile-wrapper (full-width, sans backdrop-filter)
+// → left:50% + translateX(-50%) = centré sur le viewport, garanti.
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 12px;
+  width: 400px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 10px;
+  flex-direction: column;
+  display: none;
+  z-index: 10;
+
+  &.open {
+    display: flex;
+  }
+}
+
+// ── Nav links in dropdown ─────────────────────────
+.nav-link {
+  grid-row-gap: 10px;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  display: flex;
+}
+
+.nav-link-active-holder {
+  width: 100%;
+}
+
+.nav-link-holder {
+  width: 100%;
+  text-align: center;
+  color: $clr-nav-fg;
+  border-radius: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  transition: opacity 0.2s, color 0.35s;
+  display: flex;
+
+  &:hover { color: $clr-white; }
+
+  &.is-active {
+    color: $clr-white;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.nav-link-text-holder {
+  overflow: hidden;
+}
+
+.nav-button-holder {
+  margin-top: 10px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+// ── Très petits écrans ────────────────────────────
+@include respond($bp-sm) {
+  .mobile-nav-container {
+    justify-content: space-between;
+  }
+
+  .mobile-menu {
+    width: calc(100vw - 2rem);
+    left: 1rem;
+    transform: none;
+  }
+}

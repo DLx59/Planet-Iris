@@ -1,0 +1,19 @@
+@if (teasers().length > 0) {
+  <section class="section article-teaser-section">
+    <div class="container">
+      @for (post of teasers(); track post.slug) {
+        <a [routerLink]="'/blog/' + post.slug" class="article-teaser-card fade-in-on-scroll">
+          <span class="article-teaser-tag"
+                [attr.data-status]="post.status"
+                [transloco]="'article-status.' + post.status">
+          </span>
+          <p class="article-teaser-title" [transloco]="post.titleKey"></p>
+          <span class="article-teaser-link">
+            <span transloco="article-teaser.link"></span>
+            <span aria-hidden="true"> →</span>
+          </span>
+        </a>
+      }
+    </div>
+  </section>
+}
