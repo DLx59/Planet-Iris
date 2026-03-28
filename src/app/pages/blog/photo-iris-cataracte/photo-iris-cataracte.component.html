@@ -1,0 +1,18 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main id="main-content">
+  <app-article-hero [hero]="hero" />
+
+  <article class="article-body">
+    <div class="container container--narrow">
+      @for (section of sections; track section.titleKey) {
+        <app-article-section [section]="section" />
+      }
+      <app-article-cta [cta]="cta" />
+      <app-article-related slug="photo-iris-cataracte" />
+    </div>
+  </article>
+</main>
+
+<app-footer />

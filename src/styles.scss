@@ -137,6 +137,27 @@ li {
   font-size: 18px;
 }
 
+// ── Skip to content ───────────────────────────────
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background: $clr-white;
+  color: $clr-black;
+  font-weight: 700;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s;
+
+  &:focus {
+    top: 0;
+    outline: 3px solid $clr-white;
+    outline-offset: 2px;
+  }
+}
+
 // ── Utility classes ───────────────────────────────
 .inline-block {
   max-width: 100%;
@@ -149,6 +170,10 @@ li {
 }
 
 // ── Layout ────────────────────────────────────────
+.container--narrow {
+  max-width: 720px;
+}
+
 .container {
   max-width: $container-max;
   margin-left: auto;

@@ -3,7 +3,12 @@
     "home": "Home",
     "services": "Services",
     "tarifs": "Pricing",
-    "contact": "Contact"
+    "blog": "Blog",
+    "contact": "Contact",
+    "open-menu": "Open menu",
+    "close-menu": "Close menu",
+    "lang-switcher": "Language selection",
+    "skip-content": "Skip to main content"
   },
   "breadcrumb": {
     "home": "Home",
@@ -11,7 +16,10 @@
     "tarifs": "Pricing",
     "contact": "Contact",
     "mentions-legales": "Legal Notice",
-    "politique-de-confidentialite": "Privacy Policy"
+    "politique-de-confidentialite": "Privacy Policy",
+    "blog": "Blog",
+    "photo-iris-cataracte": "Iris & cataracts",
+    "iris-yeux-marrons": "Brown eyes & iris"
   },
   "hero": {
     "desc1": "Planet'Iris captures the beauty of every iris through unique macro portraits.",
@@ -112,21 +120,25 @@
     "title": "Frequently asked questions",
     "subtitle": "Everything you need to know before booking your session.",
     "q1": "What happens during a photo session?",
-    "a1": "The session lasts about 30 minutes in our studio in Avelgem. No special preparation is needed. Our macro lens gets within a few millimetres of your eye to capture every detail of your iris: textures, colours, patterns, in the best conditions.",
+    "a1": "The session lasts about 30 minutes in our studio in Avelgem. No special preparation is needed. Our macro lens gets within a few millimetres of your eye to capture every detail of your iris: textures, colours, patterns, in the best conditions. We photograph both irises and you then choose based on your preference.",
     "q2": "Does it hurt or is it dangerous?",
-    "a2": "Not at all. The device never touches your eye. The session uses only soft light and a macro lens. It's a pleasant, contactless experience, accessible to everyone. Contact lens wearers simply need to remove them before the session.",
-    "q3": "How long before I receive my photos?",
-    "a3": "High-definition digital files are delivered within 3 business days of your session. Prints are available within 15 business days from receipt of the digital file. The digital file is included with any print order.",
-    "q4": "What print formats and materials do you offer?",
-    "a4": "We offer several materials (paper, aluminium…) and different ratios (square, rectangle, round). Dimensions vary by format. Check our Pricing page for full details on formats, dimensions and available prices.",
-    "q5": "Can children be photographed?",
-    "a5": "Yes, children are welcome. A supplement of €35 per child under 12 applies, due to the extra care needed to focus on a moving iris.",
-    "q6": "Can pets be photographed?",
-    "a6": "Yes! A supplement of €65 per animal applies. Contact us beforehand via our social media to check feasibility depending on the type of animal.",
-    "q7": "Where is the studio located?",
-    "a7": "Our studio is located in Avelgem (8580), Belgium, between Kortrijk and Mouscron. The exact address will be communicated upon confirmation of your appointment.",
-    "q8": "How do I book a session?",
-    "a8": "Booking is done exclusively via private message on our social media: Facebook (planet.iris.belgique) or Instagram (planet_iris_belgique). We will reply as soon as possible to arrange a date."
+    "a2": "Not at all. The device never touches your eye. Each shot lasts only a few seconds per eye. It's a contactless experience, accessible to everyone.",
+    "q3": "In which language is the session conducted?",
+    "a3": "Our sessions are conducted in French or English. To our Dutch-speaking friends, we sincerely apologise: we are doing our best to find the time to learn your beautiful language!",
+    "q4": "I wear contact lenses, what should I do?",
+    "a4": "You will need to remove your contact lenses before the session so that your iris is perfectly sharp in the photo. Plan to bring your glasses or come with bare eyes on the day of your appointment.",
+    "q5": "How long before I receive my photos?",
+    "a5": "High-definition digital files are delivered within 3 business days of your session. Prints are available within 15 business days from receipt of the digital file. The digital file is included with any print order.",
+    "q6": "What print formats and materials do you offer?",
+    "a6": "We offer two materials: acrylic (plexiglass) and alu-dibond (matte or glossy finish), in several ratios (square, rectangle, round). Dimensions vary by format. Check our Pricing page for full details.",
+    "q7": "Can children be photographed?",
+    "a7": "Yes, children are welcome. A supplement of €35 per child under 12 applies, due to the extra care needed to focus on a moving iris.",
+    "q8": "Can pets be photographed?",
+    "a8": "Yes! A supplement of €65 per animal applies. For pets, we travel to your home. Travel is free within a 10 km radius around Avelgem (20 km return included). Beyond that, travel costs of €0.50 per kilometre are charged. Please contact us beforehand via our social media to check feasibility depending on the type of animal.",
+    "q9": "Where is the studio located?",
+    "a9": "Our studio is located in Avelgem (8580), Belgium, between Kortrijk and Mouscron. The exact address will be communicated upon confirmation of your appointment.",
+    "q10": "How do I book a session?",
+    "a10": "Booking is done exclusively via private message on our social media: Facebook (planet.iris.belgique) or Instagram (planet_iris_belgique). We will reply as soon as possible to arrange a date."
   },
   "confiance": {
     "title": "They trusted us",
@@ -140,12 +152,13 @@
     "tarifs": "Pricing",
     "contact": "Contact",
     "legal": "Legal Notice",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "blog": "Blog"
   },
   "services-page": {
     "hero": {
       "title": "Our packages",
-      "desc": "From the photo session to the print, everything you need to know before booking."
+      "desc": "From the photo session to the print,<br>everything you need to know before booking."
     },
     "included": {
       "title": "What's included",
@@ -163,20 +176,34 @@
         "desc": "Prints available within <strong>15 business days</strong>, in many formats and ratios. Framed or unframed, your choice."
       },
       "item4": {
-        "title": "Up to 6 irises",
-        "desc": "Solo, duo, family or pets, up to 6 irises on a single print. €35 supplement per child under 12."
+        "title": "As many irises as you want",
+        "desc": "Solo, duo, family or pets, combine as many irises as you wish on a single composition."
       }
     }
   },
   "tarifs-page": {
     "hero": {
       "title": "Our pricing",
-      "desc": "Transparent, no surprises. Choose the format that suits you."
+      "desc": "Transparent, no surprises.<br>Choose the format that suits you."
     },
-    "note": "For each <strong>child under 12</strong>, a supplement of <strong>€35</strong> applies. <strong>Pet photography</strong> is available with a supplement of <strong>€65</strong> per animal.",
+    "supplements": {
+      "children": {
+        "label": "Children",
+        "desc": "Available from any age, though we recommend a <strong>minimum of 5 years</strong> for best results (supplement of <strong>€35</strong>). Due to varying reactions to light, patience and stability required, we cannot guarantee a result. If a photo cannot be taken, the supplement remains due for the time spent, but the iris will not be charged."
+      },
+      "animals": {
+        "label": "Pets",
+        "desc": "Available with a supplement of <strong>€65</strong> per animal. Please contact us beforehand to check feasibility depending on the type of animal."
+      },
+      "custom": {
+        "label": "Custom composition",
+        "desc": "If none of our models suit you, we can create a custom composition on the day of your session: iris arrangement, shard density, overall placement. Supplement of <strong>€20</strong>."
+      }
+    },
     "digital-title": "HD digital file",
     "digital-desc": "Delivery within 3 business days after the session.",
     "print-desc": "Delivery within 15 business days after receipt of the digital file.",
+    "extra-iris": "Beyond 6 iris, each additional iris is charged <strong>+€10</strong>. Applies to both digital files and prints.",
     "impression": "Print",
     "format": "Format",
     "frame": "FRAME"
@@ -195,21 +222,21 @@
   "mentions-legales": {
     "title": "Legal Notice",
     "publisher-title": "Website publisher",
-    "publisher-desc": "<strong>Planet'Iris</strong><br>Dottignies, Belgium<br>Founded in 2024 by Emilie Deman and Denis Wojtowicz",
+    "publisher-desc": "<strong>Planet'Iris</strong><br>Avelgem, Belgium<br>Founded in 2024 by Emilie Deman and Denis Wojtowicz",
     "responsible-title": "Publication manager",
     "responsible-desc": "Denis Wojtowicz",
     "hosting-title": "Website hosting",
-    "hosting-desc": "Host name: Infomaniak<br>Host address: Infomaniak Network SA - Rue Eugène Marziano 25 - 1227 Les Acacias (GE)<br>Host contact: <a href=\"https://www.infomaniak.com/fr/aide\">www.infomaniak.com/fr/aide</a>",
+    "hosting-desc": "Host name: Hostinger<br>Host address: Hostinger International Ltd - 61 Lordou Vironos Street, 6023 Larnaca, Cyprus<br>Host contact: <a href=\"https://www.hostinger.com/contact\">www.hostinger.com/contact</a>",
     "ip-title": "Intellectual property",
     "ip-desc": "All content on the Planet'Iris website, including but not limited to graphics, images, texts, videos, animations, sounds, logos, gifs and icons and their layout are the exclusive property of Planet'Iris, except for trademarks, logos or content belonging to other partner companies or authors.",
     "data-title": "Personal data protection",
-    "data-desc": "In accordance with applicable law, you have the right to access, correct, modify and delete data concerning you. You can exercise this right by sending an email to <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>.",
+    "data-desc": "In accordance with applicable law, you have the right to access, correct, modify and delete data concerning you. You can exercise this right by sending an email to <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>.",
     "cookies-title": "Cookies",
     "cookies-desc": "Planet'Iris may ask for your acceptance of cookies for statistical and display purposes. A cookie is information stored on your hard drive by the server of the site you visit.",
     "links-title": "Hyperlinks",
     "links-desc": "Planet'Iris may contain hyperlinks to other sites on the Internet. Links to these other resources will take you away from the Planet'Iris website.",
     "contact-title": "Contact",
-    "contact-desc": "For any questions or information about the website, you can contact us at: <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>."
+    "contact-desc": "For any questions or information about the website, you can contact us at: <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>."
   },
   "politique": {
     "title": "Privacy Policy",
@@ -240,6 +267,93 @@
     "rights-li5": "Object to the processing of your personal data",
     "rights-li6": "Request portability of your personal data",
     "contact-title": "Contact us",
-    "contact-desc": "Email: <a class=\"email\" href=\"mailto:contact@planetiris.com\">contact&#64;planetiris.com</a>"
+    "contact-desc": "Email: <a class=\"email\" href=\"mailto:contact@planetiris.com\">moc.siritenalp&#64;tcatnoc</a>"
+  },
+  "page-title": {
+    "home": "Planet'Iris – Iris Photography | Avelgem, Belgium",
+    "services": "Our iris photography packages | Planet'Iris",
+    "tarifs": "Iris photography pricing | Planet'Iris",
+    "contact": "Contact | Planet'Iris",
+    "mentions-legales": "Legal Notice | Planet'Iris",
+    "politique": "Privacy Policy | Planet'Iris",
+    "article-cataracte": "Iris & cataracts: session possible | Planet'Iris",
+    "article-marrons": "Brown eyes in iris photography: a stunning result | Planet'Iris",
+    "blog": "Blog | Planet'Iris"
+  },
+  "blog-page": {
+    "hero-title": "Blog",
+    "hero-desc": "Tips, info and inspiration around iris photography.",
+    "read-more": "Read the article",
+    "min-read": "min read",
+    "posts": {
+      "iris-yeux-marrons": {
+        "desc": "Think your brown eyes will look plain in a photo? It's one of the most common misconceptions. In macro, brown irises reveal textures and colours you never imagined."
+      },
+      "photo-iris-cataracte": {
+        "desc": "Have a cataract? Discover why an iris photography session is perfectly feasible at Planet'Iris, with short exposures per eye and no contact with the eye."
+      }
+    }
+  },
+  "article-teaser": {
+    "tag": "Read",
+    "title": "Iris & cataracts: is a session possible?",
+    "link": "Read the article"
+  },
+  "article-cataracte": {
+    "tag": "Article",
+    "hero-title": "Iris photography and cataracts: it's possible",
+    "hero-intro": "Have a cataract, or a loved one concerned? Good news: in the vast majority of cases, an iris photography session at Planet'Iris is perfectly feasible. Here's everything you need to know.",
+    "s1-title": "Cataracts don't prevent iris photography",
+    "s1-p1": "A cataract is a clouding that forms on the <strong>lens</strong> of the eye. It does not affect the iris itself, which remains perfectly visible and photographable. Our macro camera captures the <strong>textures, reliefs and colours of the iris</strong>, details located well in front of the lens.",
+    "s1-p2": "In other words: even if your vision is affected by cataracts, <strong>your iris is intact</strong> and its beauty can be immortalised without any issue.",
+    "s2-title": "Intense lighting, short exposures per eye",
+    "s2-p1": "This is often the first concern: <em>\"Won't the light bother my eye?\"</em> To reveal every detail of the iris, the lighting used is indeed intense, that's a technical necessity. But here's what matters: <strong>each exposure per eye lasts only a few seconds</strong>. The shot is repeated to achieve the best result, but the total cumulative time under the light remains short and fully controlled.",
+    "s2-p2": "We work at your pace and take breaks between shots if your eye is particularly sensitive. The goal is to get the best possible image while keeping the total exposure time to a minimum.",
+    "s3-title": "A session with no contact, no risk",
+    "s3-p1": "Our camera <strong>never touches</strong> your eye. The shot is taken from a few millimetres away, in a calm, relaxed environment. There's nothing particular you need to do, just look straight ahead.",
+    "s3-p2": "If you have a particular sensitivity, prescribed eye drops or wear contact lenses, <strong>let us know before your session</strong>. We always adapt our approach to your individual situation.",
+    "s4-title": "After cataract surgery",
+    "s4-p1": "If you have recently had cataract surgery, it is advisable to wait until your eye is <strong>fully healed</strong> before booking a session, generally several weeks after the operation. Your ophthalmologist is best placed to give you the green light.",
+    "s4-p2": "Once recovered, your iris is just as photographable, and often reveals even more fascinating details.",
+    "cta-title": "Ready to reveal your iris?",
+    "cta-desc": "Have questions about your personal situation? <strong>Contact us</strong>, we'll be happy to answer with no commitment.",
+    "meta-desc": "Have a cataract? An iris photography session at Planet'Iris is entirely feasible. No contact, controlled lighting, and a guaranteed result.",
+    "reading-time": "3 min read",
+    "published": "Planet'Iris Studio · Avelgem, Belgium"
+  },
+  "article-cta": {
+    "contact": "Contact us",
+    "services": "Our packages",
+    "tarifs": "See our pricing"
+  },
+  "article-marrons": {
+    "tag": "Article",
+    "hero-title": "Brown eyes: far more beautiful than you think",
+    "hero-intro": "You think your brown eyes will look plain in a photo? It's one of the most common misconceptions among our clients, and one of the most wrong. Brown irises are, in most cases, absolutely fascinating in macro photography.",
+    "s1-title": "The most common misconception",
+    "s1-p1": "Clients often arrive saying: <em>\"I'm not sure my eyes are worth it, they're just brown.\"</em> It's understandable: to the naked eye, the brown iris can look plain, even dull. But what the naked eye can't see is precisely what our macro camera reveals.",
+    "s1-p2": "The reality is often the complete opposite. Brown eyes are among our most spectacular results, and the reaction at delivery is almost always the same: <strong>\"I didn't know my eyes looked like that.\"</strong>",
+    "s2-title": "Textures that look like spices",
+    "s2-p1": "If we had to sum up brown irises in one image, it would be a blend of spices: cinnamon, cumin, saffron, Sichuan pepper. The iris fibres, seen in macro, form dense and complex reliefs, with tonal variations that the naked eye simply cannot perceive.",
+    "s2-p2": "Some brown irises feature amber, caramel or even copper zones. Others have hazel tones that shift to gold depending on the lighting. It's this density of material that makes macro photography of a brown iris so special.",
+    "s3-title": "Hidden colours you never suspected",
+    "s3-p1": "What surprises most is the discovery of completely unexpected colours. Under macro lighting, russet, orange, and sometimes slightly greenish tones appear in irises their owners simply called <em>\"brown\"</em>. This isn't a retouching effect: it's the reality of your iris, finally visible.",
+    "s3-p2": "The pigmentation of the brown iris is actually among the richest that exists. Melanin concentrates densely and unevenly, creating those unique patterns that only a quality macro lens can faithfully capture.",
+    "s4-title": "The final result will surprise you",
+    "s4-p1": "A brown iris photographed in macro is a work of art in its own right. The details are sharp, the textures deep, the colours warm and rich. Whether as a digital file or printed on acrylic or alu-dibond, the result is always striking.",
+    "s4-p2": "If you're still hesitating, just come with your doubts. We'll let the final photo speak for itself.",
+    "cta-title": "Ready to discover your iris?",
+    "cta-desc": "Whatever colour your eyes are, every iris is a unique work of art. <strong>Contact us</strong> to book your session in Avelgem.",
+    "meta-desc": "Think your brown eyes won't look great in a photo? In macro photography, brown irises are among our most spectacular results. Discover why.",
+    "reading-time": "4 min read",
+    "published": "Planet'Iris Studio · Avelgem, Belgium"
+  },
+  "article-related": {
+    "title": "See also"
+  },
+  "article-status": {
+    "new": "New",
+    "unread": "To read",
+    "read": "Read"
   }
 }

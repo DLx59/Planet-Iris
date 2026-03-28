@@ -1,6 +1,6 @@
 <app-navbar />
 
-<main>
+<main id="main-content">
   <app-hero-section />
 
   <!-- Chiffres clés -->
@@ -19,8 +19,8 @@
           <span class="stat-value" data-stat="unique">100%</span>
           <span class="stat-label" transloco="stats.unique"></span>
         </div>
-        <div class="stat-item fade-in-on-scroll">
-          <span class="stat-value" data-stat="rating">⭐ 5/5</span>
+        <div class="stat-item fade-in-on-scroll" aria-label="Note : 5 étoiles sur 5">
+          <span class="stat-value" data-stat="rating" aria-hidden="true">⭐ 5/5</span>
           <span class="stat-label" transloco="stats.reviews"></span>
         </div>
       </div>
@@ -35,17 +35,17 @@
       </div>
       <div class="why-grid">
         <div class="why-card fade-in-on-scroll">
-          <div class="why-icon">👁️</div>
+          <div class="why-icon" aria-hidden="true">👁️</div>
           <h3 transloco="why.card1.title"></h3>
           <p transloco="why.card1.desc"></p>
         </div>
         <div class="why-card fade-in-on-scroll">
-          <div class="why-icon">🎨</div>
+          <div class="why-icon" aria-hidden="true">🎨</div>
           <h3 transloco="why.card2.title"></h3>
           <p transloco="why.card2.desc"></p>
         </div>
         <div class="why-card fade-in-on-scroll">
-          <div class="why-icon">🖼️</div>
+          <div class="why-icon" aria-hidden="true">🖼️</div>
           <h3 transloco="why.card3.title"></h3>
           <p transloco="why.card3.desc"></p>
         </div>
@@ -109,6 +109,9 @@
       </div>
     </div>
   </section>
+
+  <!-- Article teaser : affiché uniquement si un article est nouveau ou à lire -->
+  <app-article-teaser-section />
 </main>
 
 <app-footer />

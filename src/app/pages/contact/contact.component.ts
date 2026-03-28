@@ -12,6 +12,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { AnimationService } from '../../services/animation.service';
+import { PageTitleService } from '../../services/page-title.service';
 
 @Component({
   selector: 'app-contact',
@@ -27,6 +28,8 @@ export class ContactComponent {
   private animationService = inject(AnimationService);
 
   constructor() {
+    inject(PageTitleService).set('page-title.contact');
+
     afterNextRender(() => {
       this.animationService.initFadeInOnScroll();
       this.initCardHover();

@@ -1,12 +1,11 @@
 <app-navbar />
 <app-breadcrumb />
-
-<main>
+<main id="main-content">
   <section class="section tarifs-hero">
     <div class="container">
       <div class="tarifs-hero-content fade-in-on-scroll">
         <h1 class="title" transloco="tarifs-page.hero.title"></h1>
-        <p transloco="tarifs-page.hero.desc"></p>
+        <p [innerHTML]="'tarifs-page.hero.desc' | transloco"></p>
       </div>
     </div>
   </section>
@@ -14,8 +13,19 @@
   <section class="section">
     <div class="container">
 
-      <div class="tarifs-note fade-in-on-scroll">
-        <p [innerHTML]="'tarifs-page.note' | transloco"></p>
+      <div class="tarifs-supplements fade-in-on-scroll">
+        <div class="supplement-item">
+          <span class="supplement-label" transloco="tarifs-page.supplements.children.label"></span>
+          <p [innerHTML]="'tarifs-page.supplements.children.desc' | transloco"></p>
+        </div>
+        <div class="supplement-item">
+          <span class="supplement-label" transloco="tarifs-page.supplements.animals.label"></span>
+          <p [innerHTML]="'tarifs-page.supplements.animals.desc' | transloco"></p>
+        </div>
+        <div class="supplement-item">
+          <span class="supplement-label" transloco="tarifs-page.supplements.custom.label"></span>
+          <p [innerHTML]="'tarifs-page.supplements.custom.desc' | transloco"></p>
+        </div>
       </div>
 
       <!-- Fichier digital HD -->
@@ -48,8 +58,10 @@
         </div>
       </div>
 
+      <p class="extra-iris-note fade-in-on-scroll" [innerHTML]="'tarifs-page.extra-iris' | transloco"></p>
+
       <!-- Impressions par support -->
-      @for (support of tarifs(); track support.support) {
+      @for (support of tarifs; track support.support) {
         <div class="tarif-block fade-in-on-scroll">
           <h2><span transloco="tarifs-page.impression"></span> {{ support.support }}</h2>
           <p transloco="tarifs-page.print-desc"></p>

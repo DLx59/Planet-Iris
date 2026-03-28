@@ -1,0 +1,54 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.article-teaser-section { padding: 0 0 1rem; }
+
+.article-teaser-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+  flex-wrap: wrap;
+
+  & + & {
+    margin-top: 0.75rem;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .article-teaser-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c6caf6;
+    white-space: nowrap;
+
+    &[data-status="new"]  { color: #eec5bd; }
+    &[data-status="read"] { color: rgba(255, 255, 255, 0.3); }
+  }
+
+  .article-teaser-title {
+    flex: 1;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+  }
+
+  .article-teaser-link {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  &:hover .article-teaser-link { color: rgba(255, 255, 255, 0.8); }
+}

@@ -1,7 +1,7 @@
 <app-navbar />
 <app-breadcrumb />
 
-<main>
+<main id="main-content">
   <section class="section contact-hero">
     <div class="container">
       <div class="contact-hero-content">
@@ -27,7 +27,7 @@
             <h2>Facebook</h2>
             <p>planet.iris.belgique</p>
           </div>
-          <div class="contact-card-arrow">
+          <div class="contact-card-arrow" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
@@ -47,7 +47,7 @@
             <h2>Instagram</h2>
             <p>planet_iris_belgique</p>
           </div>
-          <div class="contact-card-arrow">
+          <div class="contact-card-arrow" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
@@ -58,7 +58,7 @@
       </div>
 
       <div class="contact-location fade-in-on-scroll">
-        <div class="contact-location-pin">📍</div>
+        <div class="contact-location-pin" aria-hidden="true">📍</div>
         <div>
           <strong transloco="contact-page.location-name"></strong><br>
           <span transloco="contact-page.location-address"></span><br>

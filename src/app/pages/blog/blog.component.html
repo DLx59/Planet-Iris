@@ -1,0 +1,35 @@
+<app-navbar />
+<app-breadcrumb />
+
+<main id="main-content">
+  <section class="blog-hero fade-in-on-scroll">
+    <div class="container">
+      <h1 class="title" transloco="blog-page.hero-title"></h1>
+      <p class="blog-hero-desc" transloco="blog-page.hero-desc"></p>
+    </div>
+  </section>
+
+  <section class="blog-list">
+    <div class="container">
+      @for (post of postsWithStatus(); track post.slug) {
+        <article class="blog-card fade-in-on-scroll">
+          <div class="blog-card-meta">
+            <span class="article-status-badge" [attr.data-status]="post.status" [transloco]="'article-status.' + post.status"></span>
+            <time [dateTime]="post.date.toISOString()">
+              {{ post.date | date:'dd MMMM yyyy' }}
+            </time>
+            <span class="meta-sep">·</span>
+            <span>{{ post.readingTime }} {{ 'blog-page.min-read' | transloco }}</span>
+          </div>
+          <h2 class="blog-card-title" [transloco]="post.titleKey"></h2>
+          <p class="blog-card-desc" [transloco]="post.descKey"></p>
+          <a [routerLink]="'/blog/' + post.slug" class="blog-card-link">
+            {{ 'blog-page.read-more' | transloco }} →
+          </a>
+        </article>
+      }
+    </div>
+  </section>
+</main>
+
+<app-footer />

@@ -1,0 +1,9 @@
+<aside class="article-cta fade-in-on-scroll">
+  <h2 class="title" [transloco]="cta().titleKey"></h2>
+  <p [innerHTML]="cta().descKey | transloco"></p>
+  <div class="article-cta-buttons">
+    <a routerLink="/contact" class="button" transloco="article-cta.contact"></a>
+    <a routerLink="/services" class="button button-outline" transloco="article-cta.services"></a>
+    <a routerLink="/tarifs" class="button button-outline" transloco="article-cta.tarifs"></a>
+  </div>
+</aside>
