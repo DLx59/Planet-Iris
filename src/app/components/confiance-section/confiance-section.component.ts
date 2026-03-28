@@ -2,7 +2,8 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { TranslocoModule } from '@jsverse/transloco';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { switchMap } from 'rxjs';
 import { ReviewService } from '../../services/review.service';
 import { Review } from '../../models/review.model';
 
@@ -20,8 +21,14 @@ const BOX_SPEEDS = ['0.80', '1', '0.85'] as const;
 export class ConfianceSectionComponent {
   private reviewService = inject(ReviewService);
   private sanitizer = inject(DomSanitizer);
+  private transloco = inject(TranslocoService);
 
-  private allReviews = toSignal(this.reviewService.getReviews(), { initialValue: [] as Review[] });
+  private allReviews = toSignal(
+    this.transloco.langChanges$.pipe(
+      switchMap(lang => this.reviewService.getReviews(lang))
+    ),
+    { initialValue: [] as Review[] }
+  );
 
 
   displayedReviews = computed(() => {
