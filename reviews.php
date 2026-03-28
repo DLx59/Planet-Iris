@@ -4,7 +4,9 @@ header('Access-Control-Allow-Origin: https://www.planet-iris.com');
 
 require_once __DIR__ . '/config.php';
 $API_KEY    = GOOGLE_API_KEY;
-$CACHE_FILE = __DIR__ . '/reviews_cache.json';
+$DEEPL_KEY  = DEEPL_API_KEY;
+$lang       = in_array($_GET['lang'] ?? 'fr', ['fr', 'en', 'nl']) ? ($_GET['lang'] ?? 'fr') : 'fr';
+$CACHE_FILE = __DIR__ . '/reviews_cache_' . $lang . '.json';
 $CACHE_TTL  = 21600; // 6 heures
 
 // --- Retourner le cache s'il est encore frais ---
@@ -57,6 +59,34 @@ function format_name(string $full_name): string {
     return "$first $last";
 }
 
+function deepl_translate(array $texts, string $target_lang, string $api_key): array {
+    if (empty($texts)) return [];
+    $lang_map = ['en' => 'EN-US', 'nl' => 'NL'];
+    $target   = $lang_map[$target_lang] ?? strtoupper($target_lang);
+
+    $params = 'target_lang=' . urlencode($target);
+    foreach ($texts as $text) {
+        $params .= '&text=' . urlencode($text);
+    }
+
+    $ch = curl_init('https://api-free.deepl.com/v2/translate');
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 15,
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => $params,
+        CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/x-www-form-urlencoded',
+            'Authorization: DeepL-Auth-Key ' . $api_key,
+        ],
+    ]);
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    $data = $response ? json_decode($response, true) : null;
+    return $data['translations'] ?? []; // retourne text + detected_source_language
+}
+
 // --- Étape 1 : trouver le Place ID (Places API New - Text Search) ---
 $search_data = places_post(
     'https://places.googleapis.com/v1/places:searchText',
@@ -95,13 +125,26 @@ $formatted = [];
 foreach ($reviews as $review) {
     $text = $review['text']['text'] ?? '';
     if (empty(trim($text))) continue;
-    $photo = $review['authorAttribution']['photoUri'] ?? null;
     $formatted[] = [
         'name'   => format_name($review['authorAttribution']['displayName'] ?? 'Anonyme'),
         'rating' => (float) ($review['rating'] ?? 5),
         'text'   => $text,
-        'photo'  => $photo,
+        'photo'  => $review['authorAttribution']['photoUri'] ?? null,
     ];
+}
+
+// --- Étape 4 : traduire via DeepL si langue != fr ---
+if ($lang !== 'fr' && !empty($formatted)) {
+    $texts        = array_column($formatted, 'text');
+    $translations = deepl_translate($texts, $lang, $DEEPL_KEY);
+    foreach ($translations as $i => $t) {
+        if (!isset($formatted[$i])) continue;
+        $formatted[$i]['text'] = $t['text'];
+        $src = strtolower($t['detected_source_language'] ?? '');
+        if ($src && $src !== $lang) {
+            $formatted[$i]['original_lang'] = $src;
+        }
+    }
 }
 
 $result = json_encode($formatted, JSON_UNESCAPED_UNICODE);
