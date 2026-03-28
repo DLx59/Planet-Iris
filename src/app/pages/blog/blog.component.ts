@@ -8,7 +8,8 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DatePipe } from '@angular/common';
-import { TranslocoModule } from '@jsverse/transloco';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -28,10 +29,15 @@ import { BLOG_POSTS } from './blog.posts';
 export class BlogComponent {
   private animationService = inject(AnimationService);
   private articleStatusService = inject(ArticleStatusService);
+  private translocoService = inject(TranslocoService);
   private destroyRef = inject(DestroyRef);
 
+  readonly activeLang = toSignal(this.translocoService.langChanges$, { initialValue: this.translocoService.getActiveLang() });
+
   readonly postsWithStatus = computed(() =>
-    BLOG_POSTS.map(p => ({ ...p, status: this.articleStatusService.getStatus(p.slug) }))
+    [...BLOG_POSTS]
+      .sort((a, b) => b.date.getTime() - a.date.getTime())
+      .map(p => ({ ...p, status: this.articleStatusService.getStatus(p.slug) }))
   );
 
   constructor() {

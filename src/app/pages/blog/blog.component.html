@@ -16,7 +16,7 @@
           <div class="blog-card-meta">
             <span class="article-status-badge" [attr.data-status]="post.status" [transloco]="'article-status.' + post.status"></span>
             <time [dateTime]="post.date.toISOString()">
-              {{ post.date | date:'dd MMMM yyyy' }}
+              {{ post.date | date:'dd MMMM yyyy':undefined:activeLang() }}
             </time>
             <span class="meta-sep">·</span>
             <span>{{ post.readingTime }} {{ 'blog-page.min-read' | transloco }}</span>

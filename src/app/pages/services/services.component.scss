@@ -16,15 +16,19 @@
 }
 
 .included-section {
-  padding: 80px 0;
+  padding: 100px 0;
   background-color: #05050a;
+}
+
+.center-title {
+  gap: 0.75rem;
+  margin-bottom: 3rem;
 }
 
 .included-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-top: 4rem;
 }
 
 .included-item {

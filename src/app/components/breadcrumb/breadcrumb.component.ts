@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
-import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
+import { TranslocoModule } from '@jsverse/transloco';
 import { filter, map } from 'rxjs';
 
 interface BreadcrumbItem {
@@ -19,6 +19,8 @@ const ROUTE_KEYS: Record<string, string> = {
   'blog': 'breadcrumb.blog',
   'photo-iris-cataracte': 'breadcrumb.photo-iris-cataracte',
   'iris-yeux-marrons': 'breadcrumb.iris-yeux-marrons',
+  'photo-iris-animaux': 'breadcrumb.photo-iris-animaux',
+  'familles-meme-couleur-yeux': 'breadcrumb.familles-meme-couleur-yeux',
 };
 
 @Component({
@@ -31,7 +33,6 @@ const ROUTE_KEYS: Record<string, string> = {
 })
 export class BreadcrumbComponent {
   private router = inject(Router);
-  private transloco = inject(TranslocoService);
 
   private url = toSignal(
     this.router.events.pipe(

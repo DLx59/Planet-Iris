@@ -19,13 +19,15 @@
     "politique-de-confidentialite": "Privacy Policy",
     "blog": "Blog",
     "photo-iris-cataracte": "Iris & cataracts",
-    "iris-yeux-marrons": "Brown eyes & iris"
+    "iris-yeux-marrons": "Brown eyes & iris",
+    "photo-iris-animaux": "Animal iris",
+    "familles-meme-couleur-yeux": "Family & same colour"
   },
   "hero": {
     "desc1": "Planet'Iris captures the beauty of every iris through unique macro portraits.",
     "desc2": "Transform your irises into personalized works of art",
     "price": "starting from €50.",
-    "cta": "See our packages"
+    "cta": "See our services"
   },
   "stats": {
     "from": "starting from",
@@ -60,13 +62,13 @@
     },
     "step3": {
       "title": "Your artwork",
-      "desc": "HD files within 3 business days. Framed prints within 15 days. Delivered to your door."
+      "desc": "HD files within 3 business days. Framed prints within 15 days. Available for collection at the studio."
     }
   },
   "home-cta": {
     "title": "Reveal your iris",
     "desc": "Starting from <strong>€50</strong> · Studio in Avelgem, Belgium",
-    "formulas": "See our packages",
+    "services": "See our services",
     "contact": "Contact us"
   },
   "presentation": {
@@ -157,7 +159,7 @@
   },
   "services-page": {
     "hero": {
-      "title": "Our packages",
+      "title": "Our services",
       "desc": "From the photo session to the print,<br>everything you need to know before booking."
     },
     "included": {
@@ -271,13 +273,15 @@
   },
   "page-title": {
     "home": "Planet'Iris – Iris Photography | Avelgem, Belgium",
-    "services": "Our iris photography packages | Planet'Iris",
+    "services": "Our iris photography services | Planet'Iris",
     "tarifs": "Iris photography pricing | Planet'Iris",
     "contact": "Contact | Planet'Iris",
     "mentions-legales": "Legal Notice | Planet'Iris",
     "politique": "Privacy Policy | Planet'Iris",
     "article-cataracte": "Iris & cataracts: session possible | Planet'Iris",
     "article-marrons": "Brown eyes in iris photography: a stunning result | Planet'Iris",
+    "article-animaux": "Animal iris photography: dogs, cats, horses | Planet'Iris",
+    "article-famille-couleur": "Same eye colour in the family: every iris is unique | Planet'Iris",
     "blog": "Blog | Planet'Iris"
   },
   "blog-page": {
@@ -291,6 +295,12 @@
       },
       "photo-iris-cataracte": {
         "desc": "Have a cataract? Discover why an iris photography session is perfectly feasible at Planet'Iris, with short exposures per eye and no contact with the eye."
+      },
+      "photo-iris-animaux": {
+        "desc": "Did you know we also photograph animal irises? Dogs, cats, horses... Sessions take place at your home or at the stable. All about the process, pricing and travel fees."
+      },
+      "familles-meme-couleur-yeux": {
+        "desc": "Does your whole family have the same eye colour? In macro, every iris reveals a unique structure: spots, textures, reliefs. Find out why your eyes are unlike any other, even in the same family."
       }
     }
   },
@@ -323,7 +333,7 @@
   },
   "article-cta": {
     "contact": "Contact us",
-    "services": "Our packages",
+    "services": "Our services",
     "tarifs": "See our pricing"
   },
   "article-marrons": {
@@ -345,6 +355,50 @@
     "cta-title": "Ready to discover your iris?",
     "cta-desc": "Whatever colour your eyes are, every iris is a unique work of art. <strong>Contact us</strong> to book your session in Avelgem.",
     "meta-desc": "Think your brown eyes won't look great in a photo? In macro photography, brown irises are among our most spectacular results. Discover why.",
+    "reading-time": "4 min read",
+    "published": "Planet'Iris Studio · Avelgem, Belgium"
+  },
+  "article-animaux": {
+    "tag": "Article",
+    "hero-title": "Iris photography for animals: dogs, cats, horses and more",
+    "hero-intro": "Did you know we also photograph the irises of your four-legged companions? Dogs, cats, horses... every animal carries a unique beauty in its eyes that our macro camera reveals with striking precision.",
+    "s1-title": "Dogs and cats: our regulars",
+    "s1-p1": "The vast majority of our animal sessions involve dogs and cats. They have the most varied and photogenic irises in macro photography. The reliefs, colour nuances and unique patterns of each animal produce results that are often spectacular.",
+    "s1-p2": "The session takes place <strong>at your home</strong>, in a familiar environment for the animal. This significantly reduces stress and encourages cooperation. We bring all the necessary equipment.",
+    "s2-title": "Horses and other species: we adapt",
+    "s2-p1": "We regularly receive requests for <strong>horses</strong>. In these cases, the session takes place directly at the <strong>stable or in the field</strong>, where the horse feels at home. Horse irises are large, expressive, and produce truly impressive results.",
+    "s2-p2": "For other species, don't hesitate to contact us in advance via our social media. We take every request seriously and adapt as best we can.",
+    "s3-title": "A wider time slot, to allow for cooperation",
+    "s3-p1": "Unlike a human session, the length of an animal session is hard to predict. It all depends on the <strong>animal's cooperation</strong> on the day. Some are curious and cooperative from the start, others need time to get used to the camera and lighting.",
+    "s3-p2": "That's why we always set aside <strong>a wider time slot</strong>. But one thing is certain: we always leave with beautiful photos. Patience is part of our work, and the result is always worth it.",
+    "s4-title": "Pricing and travel fees",
+    "s4-p1": "A <strong>supplement of €65 per animal</strong> is added to the standard iris photography rate. Travel is included within a <strong>10 km radius of Avelgem</strong> (i.e. 20 km round trip). Beyond that, a travel fee of <strong>€0.50 per additional kilometre</strong> is charged.",
+    "s4-p2": "For example, for a session in <strong>Mouscron</strong> (approximately 22 km from Avelgem, so approx. 44 km round trip): 1 digital iris at €50 + €65 animal supplement + €12 travel fees (24 extra km x €0.50) = <strong>€127 all in</strong>, travel included.",
+    "cta-title": "Ready to capture your animal's eyes?",
+    "cta-desc": "Every animal iris is unique. <strong>Contact us</strong> via our social media to check feasibility and book your at-home session.",
+    "meta-desc": "Planet'Iris photographs animal irises: dogs, cats, horses. Session at home or at the stable, guaranteed results. Pricing and travel information included.",
+    "reading-time": "4 min read",
+    "published": "Planet'Iris Studio · Avelgem, Belgium"
+  },
+  "article-famille-couleur": {
+    "tag": "Article",
+    "hero-title": "A family with blue eyes (or green, or brown): so what?",
+    "hero-intro": "\"We all have blue eyes in the family, they'll all look the same.\" This is probably one of the comments we hear most often. And it's also one of the biggest misconceptions when it comes to iris photography.",
+    "s1-title": "The starting assumption: colour determines the result",
+    "s1-p1": "It's natural to think that two people with blue eyes will produce two similar photos. After all, that's what we perceive with the naked eye. But macro iris photography doesn't capture a <em>colour</em>, it captures a <em>structure</em>.",
+    "s1-p2": "And that structure is radically different from one individual to the next, <strong>even within the same family</strong>, even with eyes of the same colour.",
+    "s2-title": "Every iris is a unique fingerprint",
+    "s2-p1": "Like fingerprints, no two irises are identical. Not even in twins. Each iris has its own <strong>crypts, reliefs, trabecular fibres, spots and pigmentation</strong>. In macro, these details become visible with a precision that exists nowhere else.",
+    "s2-p2": "Two blue irises that look identical to the naked eye can, when photographed in macro, reveal completely different structures: one a dense, branching network of fibres, the other an almost crystalline structure, smooth, with silver highlights. Same colour. Completely different results.",
+    "s3-title": "Details you've never noticed before",
+    "s3-p1": "There are often small <strong>darker or lighter spots</strong>, a pigmented area you'd never noticed, a more pronounced texture on one side, or a hue that shifts towards green or grey depending on the lighting. That's the magic of macro: revealing what nobody has ever seen, not even you.",
+    "s3-p2": "And for a family, that's precisely where the beauty of the project lies. Not photos that look alike, but portraits that speak to each other: <strong>each one unique, all undeniably linked</strong>. A collection of irises that tells a shared story.",
+    "s4-title": "Family resemblance lies in the details, not the colour",
+    "s4-p1": "Sometimes, similarities appear in the macro structures of members of the same family. A certain fibre density, a way in which the crypts are arranged. But these subtle resemblances strengthen the project rather than weaken it.",
+    "s4-p2": "The next time someone in your family says <em>\"we all have the same eyes\"</em>, tell them it's impossible. Then come and prove it.",
+    "cta-title": "Ready to discover your family's irises?",
+    "cta-desc": "Whatever colour your eyes are, every iris is unique. <strong>Contact us</strong> to organise a family session in Avelgem.",
+    "meta-desc": "Your whole family has the same eye colour? Every iris is still unique. In macro photography, each eye reveals structures, textures and details unlike any other.",
     "reading-time": "4 min read",
     "published": "Planet'Iris Studio · Avelgem, Belgium"
   },
