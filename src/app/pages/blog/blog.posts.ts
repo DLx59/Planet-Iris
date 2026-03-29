@@ -23,6 +23,13 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: 4,
   },
   {
+    slug: 'photo-iris-hainaut',
+    titleKey: 'article-hainaut.hero-title',
+    descKey: 'blog-page.posts.photo-iris-hainaut.desc',
+    date: new Date('2026-03-07'),
+    readingTime: 4,
+  },
+  {
     slug: 'iris-yeux-marrons',
     titleKey: 'article-marrons.hero-title',
     descKey: 'blog-page.posts.iris-yeux-marrons.desc',
