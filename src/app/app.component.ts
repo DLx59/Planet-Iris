@@ -9,6 +9,7 @@ import { getArticleCataracteSchema } from './schemas/article-cataracte.schema';
 import { getArticleMarronsSchema } from './schemas/article-marrons.schema';
 import { getArticleAnimauxSchema } from './schemas/article-animaux.schema';
 import { getArticleFamilleCouleurSchema } from './schemas/article-famille-couleur.schema';
+import { getArticleHainautSchema } from './schemas/article-hainaut.schema';
 import { SchemaService } from './services/schema.service';
 import { SupportedLang } from './models/article.model';
 
@@ -38,6 +39,7 @@ export class AppComponent {
     schemaService.inject(getArticleMarronsSchema(activeLang), 'schema-article-marrons');
     schemaService.inject(getArticleAnimauxSchema(activeLang), 'schema-article-animaux');
     schemaService.inject(getArticleFamilleCouleurSchema(activeLang), 'schema-article-famille-couleur');
+    schemaService.inject(getArticleHainautSchema(activeLang), 'schema-article-hainaut');
 
     transloco.langChanges$
       .pipe(takeUntilDestroyed(destroyRef))
@@ -50,6 +52,7 @@ export class AppComponent {
         schemaService.update('schema-article-marrons', getArticleMarronsSchema(l));
         schemaService.update('schema-article-animaux', getArticleAnimauxSchema(l));
         schemaService.update('schema-article-famille-couleur', getArticleFamilleCouleurSchema(l));
+        schemaService.update('schema-article-hainaut', getArticleHainautSchema(l));
       });
   }
 }

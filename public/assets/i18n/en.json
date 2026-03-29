@@ -21,7 +21,8 @@
     "photo-iris-cataracte": "Iris & cataracts",
     "iris-yeux-marrons": "Brown eyes & iris",
     "photo-iris-animaux": "Animal iris",
-    "familles-meme-couleur-yeux": "Family & same colour"
+    "familles-meme-couleur-yeux": "Family & same colour",
+    "photo-iris-hainaut": "Iris photography Hainaut"
   },
   "hero": {
     "desc1": "Planet'Iris captures the beauty of every iris through unique macro portraits.",
@@ -283,6 +284,7 @@
     "article-marrons": "Brown eyes in iris photography: a stunning result | Planet'Iris",
     "article-animaux": "Animal iris photography: dogs, cats, horses | Planet'Iris",
     "article-famille-couleur": "Same eye colour in the family: every iris is unique | Planet'Iris",
+    "article-hainaut": "Iris photography near Hainaut and Tournai | Planet'Iris",
     "blog": "Blog | Planet'Iris"
   },
   "blog-page": {
@@ -302,6 +304,9 @@
       },
       "familles-meme-couleur-yeux": {
         "desc": "Does your whole family have the same eye colour? In macro, every iris reveals a unique structure: spots, textures, reliefs. Find out why your eyes are unlike any other, even in the same family."
+      },
+      "photo-iris-hainaut": {
+        "desc": "Looking for an iris photographer in Hainaut or near Tournai? Our studio is in Avelgem, just 20 minutes away. All about our sessions, pricing and travel costs."
       }
     }
   },
@@ -410,5 +415,27 @@
     "new": "New",
     "unread": "To read",
     "read": "Read"
+  },
+  "article-hainaut": {
+    "tag": "Article",
+    "hero-title": "Iris photography near Hainaut: Planet'Iris, 20 minutes away",
+    "hero-intro": "Looking for an iris photographer in Hainaut or near Tournai? Our studio is based in Avelgem, about 20 minutes from Tournai. Here's everything you need to know about our iris photo sessions.",
+    "s1-title": "What is iris photography?",
+    "s1-p1": "Iris photography is macro photography of your eye's iris: the coloured ring surrounding the pupil. To the naked eye, it can look uniform, even unremarkable. But under a high-definition macro lens, it reveals a world of textures, relief structures and colours you've never seen before.",
+    "s1-p2": "Every iris is unique, like a fingerprint. The results are often unexpectedly beautiful: dense fibres, crypts, tone variations that turn your iris into a true work of art. Whether as a digital file or printed on acrylic or alu-dibond, the result is always striking.",
+    "s2-title": "Our studio, 20 minutes from Tournai",
+    "s2-p1": "Planet'Iris is based in Avelgem (8580), Belgium. If you live in Tournai, Mouscron, Péruwelz, Leuze-en-Hainaut or the surrounding area, we're about 20 minutes away by road. Sessions last around 30 minutes in our studio, in a calm and relaxed setting. The studio welcomes the whole family, children included.",
+    "s2-p2": "For sessions with your pets (dogs, cats, horses), we travel to your home or stables. Travel costs are included within a 10 km radius of Avelgem, and €0.50 per additional kilometre beyond that.",
+    "s3-title": "Easily accessible from anywhere in Belgium",
+    "s3-p1": "As well as Hainaut, we regularly welcome clients from Kortrijk, Ghent, Brussels, Liège and beyond. Some even travel from France (Lille, Roubaix, Valenciennes) or the Netherlands. Sessions last just 30 minutes: a short journey for a unique and lasting result.",
+    "s3-p2": "Clients receive their HD files within 3 working days after the session. If you opt for a print (acrylic or alu-dibond), delivery is 15 days after receipt of the digital file. The digital file is included with every print order.",
+    "s4-title": "Book your session",
+    "s4-p1": "To book, simply contact us via Facebook or Instagram. We arrange sessions based on availability and confirm a slot quickly. No complex form, no online payment: everything is kept simple.",
+    "s4-p2": "Have a question about your specific situation (cataracts, contact lenses, children, pets)? Feel free to contact us before booking. We answer all questions, with no obligation.",
+    "cta-title": "Ready to photograph your iris?",
+    "cta-desc": "Our studio is just 20 minutes from Tournai and the Hainaut region. <strong>Contact us</strong> to book your iris photo session.",
+    "meta-desc": "Iris photography studio in Avelgem, 20 minutes from Tournai and Hainaut. 30-minute sessions, HD results in 3 days. Iris photographer in Belgium.",
+    "reading-time": "4 min read",
+    "published": "Studio Planet'Iris · Avelgem, Belgium"
   }
 }

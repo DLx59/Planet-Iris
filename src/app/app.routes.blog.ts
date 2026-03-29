@@ -26,4 +26,9 @@ export const BLOG_ROUTES: Routes = [
     loadComponent: () =>
       import('./pages/blog/familles-meme-couleur-yeux/familles-meme-couleur-yeux.component').then(m => m.FamillesMemeCouleurYeuxComponent),
   },
+  {
+    path: 'photo-iris-hainaut',
+    loadComponent: () =>
+      import('./pages/blog/photo-iris-hainaut/photo-iris-hainaut.component').then(m => m.PhotoIrisHainautComponent),
+  },
 ];

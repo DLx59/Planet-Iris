@@ -21,7 +21,8 @@
     "photo-iris-cataracte": "Iris & staar",
     "iris-yeux-marrons": "Bruine ogen & iris",
     "photo-iris-animaux": "Diereniris",
-    "familles-meme-couleur-yeux": "Familie & zelfde kleur"
+    "familles-meme-couleur-yeux": "Familie & zelfde kleur",
+    "photo-iris-hainaut": "Irisfoto Henegouwen"
   },
   "hero": {
     "desc1": "Planet'Iris legt de schoonheid van elke iris vast via unieke macrofoto's.",
@@ -283,6 +284,7 @@
     "article-marrons": "Bruine ogen in irisfotografie: een verbluffend resultaat | Planet'Iris",
     "article-animaux": "Irisfotografie voor dieren: honden, katten, paarden | Planet'Iris",
     "article-famille-couleur": "Dezelfde oogkleur in de familie: elke iris is uniek | Planet'Iris",
+    "article-hainaut": "Irisfoto in Henegouwen: 20 min van Doornik | Planet'Iris",
     "blog": "Blog | Planet'Iris"
   },
   "blog-page": {
@@ -302,6 +304,9 @@
       },
       "familles-meme-couleur-yeux": {
         "desc": "Heeft uw familie allemaal dezelfde oogkleur? In macro onthult elke iris een unieke structuur: vlekken, texturen, reliëfs. Ontdek waarom uw ogen uniek zijn, zelfs binnen de familie."
+      },
+      "photo-iris-hainaut": {
+        "desc": "Op zoek naar een irisfotograaf in Henegouwen of bij Doornik? Ons studio is in Avelgem, op 20 minuten. Alles over onze sessies, tarieven en verplaatsingskosten."
       }
     }
   },
@@ -410,5 +415,27 @@
     "new": "Nieuw",
     "unread": "Te lezen",
     "read": "Gelezen"
+  },
+  "article-hainaut": {
+    "tag": "Artikel",
+    "hero-title": "Irisfoto in Henegouwen: Planet'Iris, op 20 minuten van u",
+    "hero-intro": "Op zoek naar een irisfotograaf in Henegouwen of in de buurt van Doornik? Ons studio bevindt zich in Avelgem, op een twintigtal minuten van Doornik en omgeving. Alles wat u moet weten over onze irisfotosessies.",
+    "s1-title": "Wat is een irisfoto?",
+    "s1-p1": "Een irisfoto is de macrofotografie van de iris van uw oog: de gekleurde ring rondom de pupil. Met het blote oog lijkt ze vaak eenvormig, zelfs alledaags. Maar onder een hogedefinitie macro-lens onthult ze een wereld van texturen, reliëfs en kleuren die u nog nooit hebt gezien.",
+    "s1-p2": "Elke iris is uniek, zoals een vingerafdruk. De resultaten zijn vaak verrassend mooi: dichte vezels, crypten, toonvariaties die uw iris omtoveren tot een waar kunstwerk. Of het nu als digitaal bestand is of gedrukt op acryl of alu-dibond, het resultaat is altijd indrukwekkend.",
+    "s2-title": "Ons studio, op 20 minuten van Doornik",
+    "s2-p1": "Planet'Iris is gevestigd in Avelgem (8580), België. Als u in Doornik, Moeskroen, Péruwelz, Leuze-en-Henegouwen of omgeving woont, bent u op een twintigtal minuten rijden. De sessie duurt ongeveer 30 minuten in ons studio, in een rustige en ontspannen omgeving. Het studio verwelkomt het hele gezin, kinderen inbegrepen.",
+    "s2-p2": "Voor sessies met uw huisdieren (honden, katten, paarden) komen wij bij u thuis of naar uw stal. Verplaatsing is gratis binnen een straal van 10 km rond Avelgem, en € 0,50 per bijkomende kilometer daarboven.",
+    "s3-title": "Gemakkelijk bereikbaar vanuit heel België",
+    "s3-p1": "Naast Henegouwen verwelkomen we regelmatig klanten uit Kortrijk, Gent, Brussel, Luik en verder. Sommigen komen zelfs vanuit Frankrijk (Lille, Roubaix, Valenciennes) of Nederland. Een sessie duurt slechts 30 minuten: een korte rit voor een uniek en blijvend resultaat.",
+    "s3-p2": "Klanten ontvangen hun HD-bestanden binnen 3 werkdagen na de sessie. Als u kiest voor een print (acryl of alu-dibond), is de levertijd 15 dagen na ontvangst van het digitale bestand. Het digitale bestand is inbegrepen bij elke printbestelling.",
+    "s4-title": "Reserveer uw sessie",
+    "s4-p1": "Om te reserveren, neemt u gewoon contact met ons op via Facebook of Instagram. We plannen sessies op basis van beschikbaarheid en bevestigen snel een tijdslot. Geen ingewikkeld formulier, geen online betaling: alles verloopt eenvoudig.",
+    "s4-p2": "Heeft u een vraag over uw specifieke situatie (staar, contactlenzen, kinderen, huisdieren)? Aarzel niet om ons te contacteren vóór de reservatie. We beantwoorden alle vragen, geheel vrijblijvend.",
+    "cta-title": "Klaar om uw iris te fotograferen?",
+    "cta-desc": "Ons studio ligt op 20 minuten van Doornik en Henegouwen. <strong>Neem contact op</strong> om uw irisfotosessie te boeken.",
+    "meta-desc": "Studio voor irisfotografie in Avelgem, op 20 minuten van Doornik en Henegouwen. Sessies van 30 minuten, HD-resultaten binnen 3 dagen. Irisfotograaf in België.",
+    "reading-time": "4 min lezen",
+    "published": "Studio Planet'Iris · Avelgem, België"
   }
 }

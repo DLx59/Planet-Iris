@@ -21,6 +21,7 @@ const ROUTE_KEYS: Record<string, string> = {
   'iris-yeux-marrons': 'breadcrumb.iris-yeux-marrons',
   'photo-iris-animaux': 'breadcrumb.photo-iris-animaux',
   'familles-meme-couleur-yeux': 'breadcrumb.familles-meme-couleur-yeux',
+  'photo-iris-hainaut': 'breadcrumb.photo-iris-hainaut',
 };
 
 @Component({

@@ -6,6 +6,7 @@
 export const BLOG_RELATIONS: Readonly<Record<string, ReadonlyArray<string>>> = {
   'photo-iris-animaux':        ['familles-meme-couleur-yeux', 'photo-iris-cataracte'],
   'familles-meme-couleur-yeux': ['iris-yeux-marrons', 'photo-iris-animaux'],
-  'photo-iris-cataracte':      ['iris-yeux-marrons', 'photo-iris-animaux'],
+  'photo-iris-cataracte':      ['iris-yeux-marrons', 'photo-iris-hainaut'],
   'iris-yeux-marrons':         ['photo-iris-cataracte', 'familles-meme-couleur-yeux'],
+  'photo-iris-hainaut':        ['photo-iris-cataracte', 'photo-iris-animaux'],
 };
