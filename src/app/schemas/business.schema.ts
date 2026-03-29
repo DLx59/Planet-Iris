@@ -10,8 +10,8 @@ interface BusinessTranslations {
 
 const BUSINESS_DATA: Record<SupportedLang, BusinessTranslations> = {
   fr: {
-    description: "Studio de photographie d'iris à Avelgem, proche de Courtrai (Kortrijk) et Mouscron, Belgique. Portraits macro artistiques et personnalisés de vos yeux.",
-    websiteDescription: "Studio de photographie d'iris à Avelgem, proche de Dottignies (Mouscron), Belgique",
+    description: "Studio de photographie d'iris à Avelgem, Belgique. À 20 minutes de Tournai (Hainaut), proche de Kortrijk et Mouscron. Portraits macro artistiques et personnalisés de vos yeux.",
+    websiteDescription: "Studio de photographie d'iris à Avelgem, à 20 minutes de Tournai et du Hainaut, Belgique",
     offerCatalogName: "Photographie d'iris",
     serviceNames: [
       "Photo digitale HD - 1 iris",
@@ -24,8 +24,8 @@ const BUSINESS_DATA: Record<SupportedLang, BusinessTranslations> = {
     inLanguage: 'fr-BE',
   },
   en: {
-    description: 'Iris photography studio in Avelgem, near Kortrijk and Mouscron, Belgium. Artistic and personalised macro portraits of your eyes.',
-    websiteDescription: 'Iris photography studio in Avelgem, near Dottignies (Mouscron), Belgium',
+    description: 'Iris photography studio in Avelgem, Belgium. 20 minutes from Tournai (Hainaut), near Kortrijk and Mouscron. Artistic and personalised macro portraits of your eyes.',
+    websiteDescription: 'Iris photography studio in Avelgem, 20 minutes from Tournai and Hainaut, Belgium',
     offerCatalogName: 'Iris photography',
     serviceNames: [
       'HD digital photo - 1 iris',
@@ -38,8 +38,8 @@ const BUSINESS_DATA: Record<SupportedLang, BusinessTranslations> = {
     inLanguage: 'en-BE',
   },
   nl: {
-    description: 'Studio voor irisfotografie in Avelgem, dicht bij Kortrijk en Moeskroen, België. Artistieke en gepersonaliseerde macroprints van uw ogen.',
-    websiteDescription: 'Studio voor irisfotografie in Avelgem, dicht bij Dottignies (Moeskroen), België',
+    description: 'Studio voor irisfotografie in Avelgem, België. Op 20 minuten van Doornik (Henegouwen), dicht bij Kortrijk en Moeskroen. Artistieke en gepersonaliseerde macrofoto\'s van uw ogen.',
+    websiteDescription: 'Studio voor irisfotografie in Avelgem, op 20 minuten van Doornik en Henegouwen, België',
     offerCatalogName: 'Irisfotografie',
     serviceNames: [
       'HD digitale foto - 1 iris',
@@ -80,18 +80,34 @@ export function getBusinessSchema(lang: SupportedLang): object {
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: 50.7747,
-          longitude: 3.6516,
+          latitude: 50.777506,
+          longitude: 3.449666,
         },
         areaServed: [
           { '@type': 'City', name: 'Avelgem' },
           { '@type': 'City', name: 'Dottignies' },
           { '@type': 'City', name: 'Mouscron' },
+          { '@type': 'City', name: 'Moeskroen' },
+          { '@type': 'City', name: 'Menin' },
+          { '@type': 'City', name: 'Menen' },
           { '@type': 'City', name: 'Kortrijk' },
           { '@type': 'City', name: 'Courtrai' },
           { '@type': 'City', name: 'Tournai' },
+          { '@type': 'City', name: 'Péruwelz' },
+          { '@type': 'City', name: 'Leuze-en-Hainaut' },
+          { '@type': 'City', name: 'Ath' },
+          { '@type': 'City', name: 'Lessines' },
           { '@type': 'City', name: 'Lille' },
         ],
+        serviceArea: {
+          '@type': 'GeoCircle',
+          geoMidpoint: {
+            '@type': 'GeoCoordinates',
+            latitude: 50.777506,
+            longitude: 3.449666,
+          },
+          geoRadius: '50000',
+        },
         foundingDate: '2024',
         founder: [
           { '@type': 'Person', name: 'Emilie Deman' },
