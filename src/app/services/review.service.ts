@@ -8,7 +8,7 @@ export class ReviewService {
   private http = inject(HttpClient);
 
   getReviews(lang: string) {
-    return this.http.get<Review[]>(`/reviews.php?lang=${lang}`).pipe(
+    return this.http.get<Review[]>(`/api/reviews?lang=${lang}`).pipe(
       catchError(() => of([] as Review[]))
     );
   }
