@@ -94,7 +94,11 @@
   </section>
 
   <!-- Avis clients -->
-  <app-confiance-section />
+  @defer (on viewport) {
+    <app-confiance-section />
+  } @placeholder {
+    <div></div>
+  }
 
   <!-- CTA finale -->
   <section class="section home-cta">
@@ -111,7 +115,13 @@
   </section>
 
   <!-- Article teaser : affiché uniquement si un article est nouveau ou à lire -->
-  <app-article-teaser-section />
+  @defer (on viewport) {
+    <app-article-teaser-section />
+  } @placeholder {
+    <div></div>
+  }
 </main>
 
-<app-footer />
+@defer (on idle) {
+  <app-footer />
+}
