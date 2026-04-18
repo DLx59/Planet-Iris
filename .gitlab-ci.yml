@@ -45,6 +45,6 @@ deploy:
       -e "ssh"
       dist/planet-iris/
       $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/dist/
-    - ssh $SERVER_USER@$SERVER_IP "export PATH=/root/.nvm/versions/node/v22.22.2/bin:$PATH && pm2 restart planet-iris-site --update-env"
+    - ssh $SERVER_USER@$SERVER_IP "export PATH=/root/.nvm/versions/node/v22.22.2/bin:$PATH && pm2 restart $DEPLOY_DIR/ecosystem.config.js --env production"
   only:
     - master
