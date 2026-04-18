@@ -990,33 +990,33 @@
       .catch(() => {});
   })();
 
-  document.addEventListener("DOMContentLoaded", () => {
-    var e = document.createElement("iframe");
-    e.src = "https://applimova.ai/embededChatbot?id=6855d36e2abf63dae86887d0";
-    const i = innerWidth < 768, o = i ? "90%" : "420px", t = i ? "calc(100vh - 100px)" : "600px";
-    Object.assign(e.style, {
-      position: "fixed",
-      bottom: "0",
-      right: i ? "5%" : "30px",
-      border: "none",
-      zIndex: "1000",
-      width: "50px",
-      height: "70px",
-      borderRadius: "10px",
-      pointerEvents: "none"
-    });
-    document.body.appendChild(e);
-    window.addEventListener("message", n => {
-      const d = n.data;
-      if (d && typeof d === "object") {
-        if (d.chatbotOpen === true) {
-          e.style.width = o, e.style.height = t, e.style.pointerEvents = "auto"
-        } else if (d.chatbotOpen === false) {
-          e.style.width = "50px", e.style.height = "70px", e.style.pointerEvents = "none"
-        }
-      }
-    })
-  });
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   var e = document.createElement("iframe");
+  //   e.src = "https://applimova.ai/embededChatbot?id=6855d36e2abf63dae86887d0";
+  //   const i = innerWidth < 768, o = i ? "90%" : "420px", t = i ? "calc(100vh - 100px)" : "600px";
+  //   Object.assign(e.style, {
+  //     position: "fixed",
+  //     bottom: "0",
+  //     right: i ? "5%" : "30px",
+  //     border: "none",
+  //     zIndex: "1000",
+  //     width: "50px",
+  //     height: "70px",
+  //     borderRadius: "10px",
+  //     pointerEvents: "none"
+  //   });
+  //   document.body.appendChild(e);
+  //   window.addEventListener("message", n => {
+  //     const d = n.data;
+  //     if (d && typeof d === "object") {
+  //       if (d.chatbotOpen === true) {
+  //         e.style.width = o, e.style.height = t, e.style.pointerEvents = "auto"
+  //       } else if (d.chatbotOpen === false) {
+  //         e.style.width = "50px", e.style.height = "70px", e.style.pointerEvents = "none"
+  //       }
+  //     }
+  //   })
+  // });
 </script>
 </body>
 </html>

@@ -373,6 +373,59 @@ button.custom-button {
   }
 }
 
+// ── Bootstrap replacements ────────────────────────
+.text-center { text-align: center; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+.mt-2 { margin-top: 0.5rem; }
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: $clr-black;
+  background-color: $clr-white;
+
+  th, td {
+    padding: 8px 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+  }
+
+  &.table-sm th,
+  &.table-sm td {
+    padding: 4px 8px;
+  }
+
+  &.table-bordered {
+    th, td { border: 1px solid #dee2e6; }
+
+    thead tr:first-child th,
+    thead tr:first-child td { border-top-color: #4d5154; }
+
+    tbody tr:last-child td { border-bottom-color: #4d5154; }
+
+    tr th:first-child,
+    tr td:first-child { border-left-color: #4d5154; }
+
+    tr th:last-child,
+    tr td:last-child { border-right-color: #4d5154; }
+  }
+
+  &.table-hover tbody tr:hover td {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+
+  thead.table-dark {
+    background-color: #212529;
+    color: $clr-white;
+  }
+}
+
 // ── Table custom styles (tarifs page) ─────────────
 .table-responsive table.custom-table th:nth-last-child(2),
 .table-responsive table.custom-table td:nth-last-child(2) {
