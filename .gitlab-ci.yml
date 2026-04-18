@@ -1,13 +1,11 @@
 stages:
   - build
-  - backup
   - deploy
 
 variables:
   SSH_PRIVATE_KEY: $SSH_PRIVATE_KEY
   SERVER_USER: $SERVER_USER
   SERVER_IP: $SERVER_IP
-  BACKUP_DIR: $BACKUP_DIR
   DEPLOY_DIR: $DEPLOY_DIR
 
 .ssh_setup: &ssh_setup
@@ -16,9 +14,9 @@ variables:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-    - ssh-keyscan -p 65002 $SERVER_IP >> ~/.ssh/known_hosts
+    - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
-    - echo -e "Host *\n  StrictHostKeyChecking no\n  Port 65002" >> ~/.ssh/config
+    - echo -e "Host *\n  StrictHostKeyChecking no" >> ~/.ssh/config
 
 build:
   image: node:lts-alpine
@@ -32,18 +30,8 @@ build:
     - npm run build:prod
   artifacts:
     paths:
-      - dist/planet-iris/browser/
+      - dist/planet-iris/
     expire_in: 1 hour
-  only:
-    - master
-
-backup:
-  image: alpine:latest
-  stage: backup
-  <<: *ssh_setup
-  script:
-    - DATE=$(date +%d-%m-%Y-%Hh-%Mm-%Ss)
-    - ssh $SERVER_USER@$SERVER_IP "mkdir -p $BACKUP_DIR/backup_$DATE && tar czf $BACKUP_DIR/backup_$DATE/backup.tar.gz -C $DEPLOY_DIR --exclude='./planet-iris-backup' . && echo 'Deny from all' > $BACKUP_DIR/.htaccess"
   only:
     - master
 
@@ -52,6 +40,11 @@ deploy:
   stage: deploy
   <<: *ssh_setup
   script:
-    - rsync -avz --delete --exclude='config.php' --exclude='reviews_cache.json' --exclude='planet-iris-backup/' -e "ssh -p 65002" dist/planet-iris/browser/ $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/
+    - rsync -avz --delete
+      --exclude='reviews_cache_*.json'
+      -e "ssh"
+      dist/planet-iris/
+      $SERVER_USER@$SERVER_IP:$DEPLOY_DIR/dist/
+    - ssh $SERVER_USER@$SERVER_IP "pm2 restart planet-iris-site --update-env"
   only:
     - master
