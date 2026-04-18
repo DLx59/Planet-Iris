@@ -43,7 +43,6 @@ export class HomeComponent {
     afterNextRender(() => {
       this.animationService.initFadeInOnScroll();
       this.initStatsCounters();
-      this.initChatbot();
 
       this.destroyRef.onDestroy(() => {
         this.animationService.destroyAll();
@@ -78,47 +77,4 @@ export class HomeComponent {
     });
   }
 
-  private initChatbot(): void {
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://applimova.ai/embededChatbot?id=6855d36e2abf63dae86887d0';
-    const isMobile = window.innerWidth < 768;
-    const expandedWidth = isMobile ? '90%' : '420px';
-    const expandedHeight = isMobile ? 'calc(100vh - 100px)' : '600px';
-
-    Object.assign(iframe.style, {
-      position: 'fixed',
-      bottom: '0',
-      right: isMobile ? '5%' : '30px',
-      border: 'none',
-      zIndex: '1000',
-      width: '50px',
-      height: '70px',
-      borderRadius: '10px',
-      pointerEvents: 'none',
-    });
-
-    document.body.appendChild(iframe);
-
-    const messageHandler = (event: MessageEvent) => {
-      const data = event.data;
-      if (data && typeof data === 'object') {
-        if (data.chatbotOpen === true) {
-          iframe.style.width = expandedWidth;
-          iframe.style.height = expandedHeight;
-          iframe.style.pointerEvents = 'auto';
-        } else if (data.chatbotOpen === false) {
-          iframe.style.width = '50px';
-          iframe.style.height = '70px';
-          iframe.style.pointerEvents = 'none';
-        }
-      }
-    };
-
-    window.addEventListener('message', messageHandler);
-
-    this.destroyRef.onDestroy(() => {
-      window.removeEventListener('message', messageHandler);
-      iframe.remove();
-    });
-  }
 }
